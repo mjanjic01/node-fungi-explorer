@@ -1,0 +1,9 @@
+version: "2"
+plugins:
+ nodesecurity:
+  enabled: true
+ tslint:
+  enabled: true
+exclude_patterns:
+- "seed/"
+- "src/dataAccess/migrations/"
