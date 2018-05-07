@@ -59,3 +59,6 @@ typings/
 
 # application build
 dist/
+
+# ormconfig db connection options
+ormconfig.json
