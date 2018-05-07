@@ -11,7 +11,7 @@
     "migration:generate": "yarn typeorm migration:generate",
     "migration:run": "yarn typeorm migration:run",
     "build:client": "NODE_ENV='production' webpack --mode=production",
-    "build": "tsc && yarn copy",
+    "build": "tsc",
     "dev": "NODE_ENV='development' nodemon",
     "start": "NODE_ENV='production' node dist/web",
     "test": "NODE_ENV='test' mocha -r ts-node/register --reporter spec --check-leaks test/**/*.ts --globals __core-js_shared__",
