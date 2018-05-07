@@ -7,3 +7,4 @@ plugins:
 exclude_patterns:
 - "seed/"
 - "src/dataAccess/migrations/"
+- "webpack.config.js"

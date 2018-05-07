@@ -48,8 +48,8 @@ server.setConfig((app) => {
     app.use(passport.initialize());
     app.use(passport.session());
     app.use(csrf());
-    app.use(localsMiddleware);
     app.use(helmet());
+    app.use(localsMiddleware);
 
     app.use(express.static(path.resolve(__dirname, 'public')));
     app.use('/uploads', authenticationMiddleware, express.static(path.resolve(process.cwd(), 'uploads')));
