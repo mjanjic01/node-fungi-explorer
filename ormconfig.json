@@ -1,0 +1,19 @@
+{
+  "type": "",
+  "host": "",
+  "port": 0,
+  "username": "",
+  "password": "",
+  "database": "",
+  "synchronize": false,
+  "logging": false,
+  "entities": [
+    "src/dataAccess/mapping/**/*.ts"
+  ],
+  "migrations": [
+    "src/dataAccess/migrations/**/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "src/dataAccess/migrations"
+  }
+}

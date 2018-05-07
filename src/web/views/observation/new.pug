@@ -1,0 +1,34 @@
+extends ../layouts/application.pug
+block content
+
+
+  .row.justify-content-center
+    .col-md-6
+      form(action="/observation/new" method="post" enctype="multipart/form-data")
+        input(type="hidden" name="_csrf" value=csrfToken)
+
+        .form-group
+          label(for="fungi") Gljiva
+          select#fungi.form-control(name="fungi" required)
+            each fungus in fungi
+              option(value=fungus.id)= fungus.fullLatinName()
+
+        .form-group
+          label(for="date") Datum opažanja
+          input#date.form-control(type="date" name="date")
+
+        .form-group
+          label(for="description") Napomena
+          textarea#description.form-control(rows="3" name="description")
+
+        .form-group
+          label(for="image") Odaberi fotografiju
+          input#image.form-control(type="file" name="image" required)
+
+        .form-group
+          label Lokacija opažanja
+          input.form-control(type="number" name="longitude" hidden)
+          input.form-control(type="number" name="latitude" hidden)
+
+        button.btn.btn-primary(type="submit") Dodaj
+

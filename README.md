@@ -1,0 +1,13 @@
+- [x] Example domain model
+- [x] Generic repository
+- [x] Dependency injection
+- [x] MongoDB DAL example
+- [x] Controller example
+- [x] TS paths for layers
+- [ ] SQL database DAL example
+- [ ] Services example
+- [ ] Asset bundling
+- [ ] Unit testing
+- [ ] Integration testing
+- [ ] Documentation
+- [ ] Domain class diagram?

@@ -1,0 +1,21 @@
+extends ../layouts/application.pug
+block content
+
+  .row.justify-content-center
+    .col-md-6
+      form(action="/auth/login" method="post")
+        input(type="hidden" name="_csrf" value=csrfToken)
+
+        .form-group
+          label(for="username") Korisničko ime
+          input#username.form-control(type="text" name="username")
+
+        .form-group
+          label(for="password") Lozinka
+          input#password.form-control(type="password" name="password")
+
+        //- .form-check
+        //-   input#remember-me.form-check-input(type="checkbox")
+        //-   label.form-check-label(for="remember-me") Zapamti me
+
+        button.btn.btn-primary(type="submit") Prijava

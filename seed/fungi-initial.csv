@@ -1,0 +1,399 @@
+Id;Varaint;Name;zasticena;vrsta;jestivost;slika
+1;;igličarka, koraljna igličarka;1;hericum coralloides;8;/slike/gljive/ Hericiaceae_hericum coralloides_ .jpg
+2;;;;biennis;3;/slike/gljive/Abortiporus_biennis.jpg
+3;Fr;Golema pečurka;;augustus;7;/slike/gljive/Agaricus _augustus _Fr.jpg
+4;;;;benesii;7;/slike/gljive/Agaricus_benesii.jpg
+5;;;;bernardii;4;/slike/gljive/Agaricus_bernardii.jpg
+6;(Quelet) Saccardo;Dvoprstenasta pečurka, gradski šampinjon, gradska pečurka, uskočnica;;bitorquis;7;/slike/gljive/Agaricus _bitorquis _Quelet Saccardo.jpg
+7;;Busenasta rudnjača;;bohusii;7;/slike/gljive/Agaricus_bohusii.jpg
+8;L:Fr;Livadna pečurka, rudnjača, pečurka, pečura, pečurica, pečurak, poljski šampinjon;;campestris;7;/slike/gljive/Agaricus_campestris_LFr.jpg
+9;(Moell. Et Schff.) Pilat;Kračun, grkalj, velika pečurka, pokrovača;;macrosporus;7;/slike/gljive/Agaricus _macrosporus _Moell. Et Schff. Pilat.jpg
+10;Sch:Fr;Šumarica, šumska pečurka;;silvaticus;6;/slike/gljive/Agaricus _silvaticus _SchFr.jpg
+11;(Vitt) Peck;Šumska pečurka, anisova pečurka, anis šampinjon;;silvicola;6;/slike/gljive/Agaricus _silvicola _Vitt Peck.jpg
+12;Genevier;Otrovna pečurka, karbolova pečurka, žuto pjegava pečurka;;xanthoderma;2;/slike/gljive/Agaricus _xanthoderma _Genevier.jpg
+13;(Brig.) Singer;Jablanovača, topolovača, topolovka;;aegerita;7;/slike/gljive/Agrocybe _aegerita _Brig. Singer.jpg
+14;(Pers:Fr) Fayod;Rana livadarka, rana čehavka;;praecox;5;/slike/gljive/Agrocybe _praecox _PersFr Fayod.jpg
+15;;;;ovinus;5;/slike/gljive/Albatrellus _ovinus.jpg
+16;(Pers.: Fr.) Pouzar;Maglen, kozja noga, kozonoga rupičarka;1;pes-caprae;7;/slike/gljive/Albatrellus _pes-caprae _Pers. Fr. Pouzar.jpg
+17;(Pers:fr) Fuckel;Narančasto-crvena zdjeličarka;;aurantia;5;/slike/gljive/Aleuria _aurantia _Persfr Fuckel.jpg
+18;(Scop:Fr) Pers;Blagva, carevka, gospa, karžel, žerdana, blagar, kneginja, knežica, škripac, đordani;1;caesarea;7;/slike/gljive/Amanita _caesarea _ScopFr Pers.jpg
+19;(Berk & Br.) Boudier ex Bas;Tigrasta preslica, pozlaćena ovojnjača, šupljikava povojnjača;;ceciliae;6;/slike/gljive/Amanita _ceciliae _Berk  Br. Boudier ex Bas.jpg
+20;(Sch:Fr) SF Gray;Žućkasta pupavka, limunasta pupavka, citronasta pupavka;;citrina;2;/slike/gljive/Amanita _citrina _SchFr SF Gray.jpg
+21;;;;crocea;7;/slike/gljive/Amanita_crocea.jpg
+22;Quel.;Elijeva muhara;;eliae;2;/slike/gljive/Amanita_eliae_Quel..jpg
+23;(Sch:Fr) Fr;Kestenjasta preslica, smeđa preslica, golenka;;fulva;4;/slike/gljive/Amanita _fulva _SchFr Fr.jpg
+24;(Paulet) Bertillon;Svijetložuta muhara;;gemmata;3;/slike/gljive/Amanita _gemmata _Paulet Bertillon.jpg
+25;(L:Fr) Hooker;Muhara,crvena muhara, crvenjača muhor, muhomorka, zmijska gljiva, bjesnjača, omarka;;muscaria;2;/slike/gljive/Amanita_muscaria_LFr Hooker.jpg
+26;(Bull:Fr) Link;Jajasta muhara, bijela blagva, čaburka;;ovoidea;5;/slike/gljive/Amanita _ovoidea _BullFr Link.jpg
+27;(DeCand:Fr) Krombholz;Panterova muhara, panterka, tigrasta muhara, pjegava muhara;;pantherina;1;/slike/gljive/Amanita _pantherina _DeCandFr Krombholz.jpg
+28;(Vaill:Fr) Link;Zelena pupavka, otrovna pečurka, zelena muhara, gomoljevka;;phalloides;1;/slike/gljive/Amanita _phalloides _VaillFr Link.jpg
+29;(Pers:Fr) SF Gray;Biserka, bisernica, crvenkasta muhara, siva muhara;;rubescens;4;/slike/gljive/Amanita _rubescens _PersFr SF Gray.jpg
+30;(Fr) Kummer;Prava tigrica, siva muhara, krastavka;;spissa;6;/slike/gljive/Amanita _spissa _Fr Kummer.jpg
+31;(Paulet)Bertillon;Usamljena muhara, ljuskava muhara;;strobiliformis;6;/slike/gljive/Amanita _strobiliformis _PauletBertillon.jpg
+32;(Bull:Fr) Vittadini;Siva preslica, siva ovojnjača, tmurna preslica, obična preslica;;vaginata;4;/slike/gljive/Amanita _vaginata _BullFr Vittadini.jpg
+33;var. alba Gillet;Bijela preslica, prava ovojnjača,lupinar;;vaginata;6;/slike/gljive/Amanita_vaginata_alba.jpg
+34;(Vahl:Fr) Kummer;Puza, medenjača, mraznica, puzica, puzva, puzavci, migači, kljukači, grmečki;;mellea;4;/slike/gljive/Armillaria _mellea _VahlFr Kummer.jpg
+35;;smeđa puza;;obscura;4;/slike/gljive/Armillaria_obscura.jpg
+36;(Scop) Emeland;Grmača, grmica, grmačica, grmovača, grmoščica, penjušica, gola puza;;tabescens;6;/slike/gljive/Armillaria _tabescens _Scop Emeland.jpg
+37;;;;spathulata;3;/slike/gljive/Arrhenia_spathulata.jpg
+38;(Pers:Fr) Julich;Bijela grmulja, zdjeličasta capica;;pyxidatus;3;/slike/gljive/Artomyces  _pyxidatus_PersFr Julich.jpg
+39;(Pers:Pers) Morgan;Upojna zvjezdača, zvjezdarka, vlagomjerna zvjezdača, vodomjerna zvjezdača;;hygrometricus;3;/slike/gljive/Astraeus _hygrometricus _PersPers Morgan.jpg
+40;;-;;gentilis;3;/slike/gljive/Aureoboletus_gentilis.jpg
+41;(Bull:Fr.) Wettstein;Judino uho, bazgova uška;;auricula-judae;5;/slike/gljive/Auricularia _auricula-judae _BullFr. Wettstein.jpg
+42;;;;mesenterica;3;/slike/gljive/Auricularia_mesenterica.jpg
+43;;;;vulgare;7;/slike/gljive/Auriscalpium_vulgare.jpg
+44;(Tode) De Not.;Šumski dud;;moriformis;3;/slike/gljive/Bertia _moriformis _Tode De Not..jpg
+45;;;;adusta;3;/slike/gljive/Bjerkandera_adusta.jpg
+46;(Pers:Fr) Fr;Zlatni smetištar;;vitellinus;3;/slike/gljive/Bolbitius _vitellinus _PersFr Fr.jpg
+47;Bull:Fr;Hajdinski vrganj, crni vrganj, brončani vrganj, ljetni vrganj, hajdovec;;aereus;7;/slike/gljive/Boletus _aereus _BullFr.jpg
+48;(Paulet) Fr;Proljetni vrganj, mrežasti vrganj;;aestivalis;7;/slike/gljive/Boletus_aestivalis_Paulet Fr.jpg
+49;Schaeff.;Šiljatonogi vrganj, žuti vrganj, smeđa kraljevka;;appendiculatus;7;/slike/gljive/Boletus _appendiculatus _Schaeff..jpg
+50;Pers:Fr;Lijeponogi vrganj, kravlja balega;;calopus;3;/slike/gljive/Boletus _calopus _PersFr.jpg
+51;Bull:Fr;Jesenski vrganj, pravi vrganj, crnogorični vrganj, orvanj, gobanj, varganj, hrženjak, sirnjaja;;edulis;7;/slike/gljive/Boletus _edulis _BullFr.jpg
+52;Pers.;Zelenjača;;erythropus;4;/slike/gljive/Boletus _erythropus _Pers..jpg
+53;Velenovsky;Fechtnerov vrganj, blijeda kraljevka;1;fechtneri;7;/slike/gljive/Boletus _fechtneri _Velenovsky.jpg
+54;Vittad.;Mirisavi vrganj;1;fragrans;6;/slike/gljive/Boletus _fragrans _Vittad..jpg
+55;;;1;impolitus;6;/slike/gljive/Boletus_impolitus.jpg
+56;(Pilat)ex Pilat & Dermek;Lažna ludara, vragoljasti vrganj;;legaliae;2;/slike/gljive/Boletus _legaliae _Pilatex Pilat  Dermek.jpg
+57;Sch:Fr;Kovara, mrežastonogi vrganj, vrganjica, ludoglavka;;luridus;4;/slike/gljive/Boletus_luridus_SchFr.jpg
+58;Bertea & Estades;-;;luteocupreus;3;/slike/gljive/Boletus _luteocupreus _Bertea  Estades.jpg
+59;Pilat & Dermek;Borov vrganj, crveni vrganj;;pinophilus;7;/slike/gljive/Boletus _pinophilus _Pilat  Dermek.jpg
+60;(Hubert) ex Estades;Lažna kraljevka, ljupki vrganj;;pseudoregius;7;/slike/gljive/Boletus _pseudoregius _Hubert ex Estades.jpg
+61;Opatowski;Tintar, posuti vrganj, osuti vrganj;;pulverulentus;5;/slike/gljive/Boletus _pulverulentus _Opatowski.jpg
+62;Schultzer;Glatkonoška, Queletov vrganj, slavonski vrganj,;;queletii;4;/slike/gljive/Boletus  _queletii_Schultzer.jpg
+63;Pers:Fr;Gorki vrganj, bijeli gorčak;;radicans;3;/slike/gljive/Boletus _radicans _PersFr.jpg
+64;Krombholz;Kraljevka, kraljevski vrganj;1;regius;7;/slike/gljive/Boletus _regius _Krombholz.jpg
+65;(Krombholz) Kallenbach;Purpurnožuti vrganj, žuta ruževača;;rhodoxanthus;4;/slike/gljive/Boletus _rhodoxanthus _Krombholz Kallenbach.jpg
+66;Walty ex (Cheype);-;;rubrosanguineus;3;/slike/gljive/Boletus _rubrosanguineus _Walty ex Cheype .jpg
+67;Lenz;Ludara, bljutavka, luda gljiva, vražji vrganj, svinjača;;satanas;2;/slike/gljive/Boletus _satanas _Lenz.jpg
+68;;PRIJEZIRNI VRGANJ (Boletus Aemilii ss. Alessio);;Spretus;7;/slike/gljive/Boletus_Spretus.jpg
+69;;;;subappendiculatus;7;/slike/gljive/Boletus_subappendiculatus.jpg
+70;Fr. & Hok;Teški vrganj;1;torosus;4;/slike/gljive/Boletus_torosus_Fr.  Hok.jpg
+71;;;;aestivalis;3;/slike/gljive/Bovista _aestivalis.jpg
+72;(Berk.) Fr.;-;;fusarioides;3;/slike/gljive/Calloria _fusarioides _Berk. Fr..jpg
+73;;;;furcata;3;/slike/gljive/Calocera_furcata.jpg
+74;(Pers:Fr) Fr;Žuta rožnatica, viskozna capica, viskozna rožnatica;;viscosa;3;/slike/gljive/Calocera _viscosa _PersFr Fr.jpg
+75;;;1;constricta;3;/slike/gljive/Calocybe_constricta.jpg
+76;(Fr:Fr) Singer ex Donk;Jurjevka, đurđevača, đurđevka, ranka, potrnka, majska kolobarnica, svibanjska gljiva;;gambosa;7;/slike/gljive/Calocybe _gambosa _FrFr Singer ex Donk.jpg
+77;;;1;ionides;3;/slike/gljive/Calocybe _ionides.jpg
+78;(Scop:Pers) Perdeck;Batinasta puhara, vrećasta puhara, visoka ćelavica;;excipuliformis;6;/slike/gljive/Calvatia _excipuliformis _ScopPers Perdeck.jpg
+79;;Trbušasta puhara,livadska puhara,puša;;utriformis;6;/slike/gljive/Calvatia_utriformis.jpg
+80;;;;amethysteus;7;/slike/gljive/Cantharellus_amethysteus.jpg
+81;Fr:Fr;Lisičica,lisičarka, bjelkasta lisičica, lisica, pršutnica;;cibarius;7;/slike/gljive/Cantharellus_cibarius _FrFr.jpg
+82;;Pepeljasta lisičica;;cinereus;6;/slike/gljive/Cantharellus_cinereus.jpg
+83;Pers. ex Fr.;Zlatonoga trubača, žuta trubača;;lutescens;7;/slike/gljive/Cantharellus _lutescens _Pers. ex Fr..jpg
+84;;Nagaravljena lisičica;;melanoxeros;7;/slike/gljive/Cantharellus_melanoxeros.jpg
+85;Fr:Fr;Ljevkasta lisičica, peharasta lisičica;;tubaeformis;6;/slike/gljive/Cantharellus _tubaeformis _FrFr.jpg
+86;;;1;imperiale;5;/slike/gljive/Catathelasma _imperiale.jpg
+87;(Bull:fr) Bataille;Papreni vrganj, paprenjak, papreni sluzavac;;piperatus;4;/slike/gljive/Chalciporus _piperatus _Bullfr Bataille.jpg
+88;;;;fracidus;3;/slike/gljive/Chamaemyces_fracidus.jpg
+89;;;;aeruginascens;3;/slike/gljive/Chlorociboria_aeruginascens.jpg
+90;(Sch:Fr) OK Miller;Borov čavlić, bakrenasti prljavac, borov slinavac, borov polžar;;rutilus;5;/slike/gljive/Chroogomphus _rutilus _SchFr OK Miller.jpg
+91;(Berk.) Dring;Velika polipovka;;archeri;3;/slike/gljive/Clathrus _archeri _Berk. Dring.jpg
+92;;;;acuta;3;/slike/gljive/Clavaria_acuta.jpg
+93;(L:Fr) Donk;Veliki buzdovan, velika kijačarka, velika toljaga;;pistillaris;4;/slike/gljive/Clavariadelphus _pistillaris _LFr Donk.jpg
+94;;;;coralloides;3;/slike/gljive/Clavulina_coralloides.jpg
+95;(Gillet) Gillet;Aleksandrova grlašica;;alexandri;5;/slike/gljive/Clitocybe _alexandri _Gillet Gillet.jpg
+96;;;1;collina;3;/slike/gljive/Clitocybe _collina.jpg
+97;(Bull:Fr) Quelet;Martinčica, martinovka, fratarica, pršutica, veli žmuj, velika livka, pozna livka;;geotropa;6;/slike/gljive/Clitocybe _geotropa_BullFr Quelet.jpg
+98;(Pers:Fr) Kummer;Mala martinčica, smeđasta grlašica, grbičasta grlašica;;gibba;5;/slike/gljive/Clitocybe _gibba _PersFr Kummer.jpg
+99;(Scop) Patouillard;Izvrnuta grlašica, žuta uleknjača;;inversa;4;/slike/gljive/Clitocybe _inversa _Scop Patouillard.jpg
+100;(Batsch:Fr) Kummer;Maglenka, snježnica, maglena grlašica;;nebularis;4;/slike/gljive/Clitocybe_nebularis_BatschFr Kummer.jpg
+101;(Bull:Fr) Kummer;Mirisna grlašica, mirisna uleknjača, anisovka, anisova grlašica, zelena grlašica;;odora;5;/slike/gljive/Clitocybe _odora _BullFr Kummer.jpg
+102;(Pers:Fr) Kummer;Vapnenasta grlašica, bijela otrovnica, lisnata grlašica;;phyllophila;1;/slike/gljive/Clitocybe _phyllophila _PersFr Kummer.jpg
+103;;;;rivulosa;1;/slike/gljive/Clitocybe_rivulosa.jpg
+104;(Scop:fr) Quelet;Brašnjača, svilena lisičica, mlinarica, krhka brašnjača, majevka, mokarica, slivarica;;prunulus;7;/slike/gljive/Clitopilus _prunulus _Scopfr Quelet.jpg
+105;(Bull:Fr) Kummer;Maslačna plosnatica;;butyracea;5;/slike/gljive/Collybia  _butyracea_BullFr Kummer.jpg
+106;;;;cirrhata;3;/slike/gljive/Collybia _cirrhata.jpg
+107;(Bull:Fr) Kummer;Vitka plosnatica, vitka korenovka, šumska plosnatica;;dryophila;5;/slike/gljive/Collybia  _dryophila _BullFr Kummer.jpg
+108;(Bull:Fr) Quelet;Hrastova plosnatica, hrastovača;;fusipes;4;/slike/gljive/Collybia _fusipes _BullFr Quelet.jpg
+109;(Alb &Schw:Fr) Quelet;Pjegava plosnatica;;maculata;3;/slike/gljive/Collybia _maculata _Alb SchwFr Quelet.jpg
+110;(Bolt:Fr) Kummer;Ljuta plosnatica, ljuta lisnatica, runjava lisnatica;;peronata;3;/slike/gljive/Collybia  _peronata _BoltFr Kummer.jpg
+111;;;;nigra;3;/slike/gljive/Comatricha_nigra.jpg
+112;(Bull:Fr) Fr;Jajasta gnojištarka, naborana gnojištarka, obična gnojištarka, prava gnojištarka, prava tintnica;;atramentarius;4;/slike/gljive/Coprinus _atramentarius _BullFr Fr.jpg
+113;(Mull:Fr) Pers;Velika gnojištarka, ljuskava gnojištarka;;comatus;7;/slike/gljive/Coprinus _comatus _MullFr Pers.jpg
+114;(Pers:Fr) SF Gray;Rasijana gnojištarka;;disseminatus;3;/slike/gljive/Coprinus _disseminatus _PersFr SF Gray.jpg
+115;;;;gonophyllus;3;/slike/gljive/Coprinus_gonophyllus.jpg
+116;(Bull:Fr) Fr;Blistava gnojištarka, tinjčeva gnojištarka;;micaceus;5;/slike/gljive/Coprinus _micaceus _BullFr Fr.jpg
+117;(Bull:Fr) SF Gray;Šarena gnojištarka, šarena tintnica;;picaceus;3;/slike/gljive/Coprinus _picaceus _BullFr SF Gray.jpg
+118;;;;capitata;3;/slike/gljive/Cordyceps_capitata.jpg
+119;(L:Fr) Link;Stršeća gusjenica, narančasti ubojica gusjenica, narančasta batinica;;militaris;8;/slike/gljive/Cordyceps _militaris _LFr Link.jpg
+120;(Pers:Fr) Pers;Ljuskava koprenka, crvenšarka;;bolaris;2;/slike/gljive/Cortinarius _bolaris _PersFr Pers.jpg
+121;;;;elatior;3;/slike/gljive/Cortinarius_elatior.jpg
+122;;;;humicola;2;/slike/gljive/Cortinarius_humicola.jpg
+123;Fr.;Crvenjača, planinska koprenka, poljska koprenka;;orellanus;1;/slike/gljive/Cortinarius _orellanus _Fr..jpg
+124;(Cordier) Gillet;Debelonoška,ukusna koprenka;1;praestans;6;/slike/gljive/Cortinarius_praestans_Cordier Gillet.jpg
+125;;;;salor;3;/slike/gljive/Cortinarius_salor.jpg
+126;(Fr:Fr) Gillet;Polukrvna koprenka, polukrvna crvenjača;;semisanguineus;2;/slike/gljive/Cortinarius _semisanguineus _FrFr Gillet.jpg
+127;Lange;Obična koprenka;;trivialis;3;/slike/gljive/Cortinarius _trivialis _Lange.jpg
+128;;;;turmalis;3;/slike/gljive/Cortinarius_turmalis.jpg
+129;;;;variecolor;3;/slike/gljive/Cortinarius_variecolor.jpg
+130;(L:Fr) Fr;Ljubičasta koprenka;;violaceus;5;/slike/gljive/Cortinarius  _violaceus_LFr Fr.jpg
+131;(L:Fr) Pers.;Mrka trubača, mrtvačka truba, crna trubača, rog obilja;;cornucopioides;7;/slike/gljive/Craterellus _cornucopioides _LFr Pers..jpg
+132;;Batrljica;;sp.;3;/slike/gljive/Crepidotus _variabilis.jpg
+133;;;;scabella;3;/slike/gljive/Crinipellis _scabella.jpg
+134;(Huds:Pers) Willdenow;Prugasta košarica, prugasti lončić, ptičje gnijezdo;;striatus;3;/slike/gljive/Cyathus _striatus _HudsPers Willdenow.jpg
+135;(Pers.) Donk;-;;anomala;3;/slike/gljive/Cyphellopsis _anomala _Pers. Donk.jpg
+136;;Smeđa hrapavica;;amianthinum;3;/slike/gljive/Cystoderma _amianthinum.jpg
+137;Berk. & M.A. Curtis;Palmolika drhtalica;;chrysospermus;3;/slike/gljive/Dacrymyces _chrysospermus _Berk.  M.A. Curtis.jpg
+138;(L:Fr) Fr;Hrastova raznocijevka;;quercina;3;/slike/gljive/Daedalea  _quercina_LFr Fr.jpg
+139;(Krombh.) Eckblad;Golema pločarica;;gigas;3;/slike/gljive/Discina _gigas _Krombh. Eckblad.jpg
+140;(Pers:Fr) Arnault;Žilasta tavica;;venosa;4;/slike/gljive/Disciotis_ venosa _PersFr Arnault.jpg
+141;Fr.;Igličava jelen-gljiva, kratkošiljata jelen-gljiva;;muricatus;4;/slike/gljive/Elaphomyces  _muricatus_Fr. .jpg
+142;(Alb. & Sch.)Karst.;-;;fascicularis;3;/slike/gljive/Encoelia _fascicularis _Alb.  Sch.Karst..jpg
+143;(Roth) P. Karst.;-;;furfuracea;3;/slike/gljive/Encoelia _furfuracea _Roth P. Karst..jpg
+144;(L.) Kummer;Šljivovača, šljivarka, trnčica, štitasta rudoliska, sivkasta šljivovača, šljivova gljiva;;clypeatum;7;/slike/gljive/Entoloma _clypeatum _L. Kummer.jpg
+145;(Schum:Fr) Moser;Dlakavonoga rudoliska, smrdljiva rudoliska;;hirtipes;3;/slike/gljive/Entoloma _hirtipes  _SchumFr Moser.jpg
+146;;;;icterinum;3;/slike/gljive/Entoloma_icterinum.jpg
+147;(Noulet & Dassier) Richon & Roze;Bijela šljivovača, ograđena rudoliska;;sepium;7;/slike/gljive/Entoloma _sepium _Noulet  Dassier Richon  Roze.jpg
+148;(Bull:Fr) Kummer;Olovasta rudoliska, velika rudoliska;;sinuatum;2;/slike/gljive/Entoloma _sinuatum _BullFr Kummer.jpg
+149;(Bull:Fr) Fr;Bradavičasta žljezdarica, žljezdolika drhtalica;;glandulosa;3;/slike/gljive/Exidia _glandulosa _BullFr Fr.jpg
+150;;;;recisa;3;/slike/gljive/Exidia_recisa.jpg
+151;;;;carbonaria;3;/slike/gljive/Faerberia_carbonaria.jpg
+152;(Sch:Fr) With;Jetrenka, vukovo meso, jetrenjača, goveđi jezik, volovski jezik, jetrenica, volovska jetra;;hepatica;5;/slike/gljive/Fistulina _hepatica _SchFr With.jpg
+153;(Curt:Fr) Karsten;Zimska panjevčica, baršunasta panjevčica, zimska plamenjača;;velutipes;8;/slike/gljive/Flammulina _velutipes _CurtFr Karsten.jpg
+154;(L:Fr) Fr;Kresivna guba, kopitarka, bukova guba;;fomentarius;3;/slike/gljive/Fomes _fomentarius _LFr Fr.jpg
+155;(Swartz:Fr) Karsten;Obrubljena guba, smrekina kopitarka;;pinicola;3;/slike/gljive/Fomitopsis _pinicola _SwartzFr Karsten.jpg
+156;(L.) F.H. Wigg.;Žuta sluznjača;;septica;3;/slike/gljive/Fuligo_ septica _L. F.H. Wigg..jpg
+157;(Curt:Fr) Karsten;Hrastova sjajnica;;lucidum;8;/slike/gljive/Ganoderma _lucidum _CurtFr Karsten.jpg
+158;(Huds.) Hook.;Zategnuta zvjezdača;;fornicatum;3;/slike/gljive/Geastrum  _fornicatum_Huds. Hook..jpg
+159;;;;quadrifidum;3;/slike/gljive/Geastrum_quadrifidum.jpg
+160;Junghuhn;Troslojna zvjezdača, trostruka zvjezdača;;triplex;3;/slike/gljive/Geastrum _triplex _Junghuhn.jpg
+161;(Cooke) M. Torre;Cedrova krunčica;;sumneriana;3;/slike/gljive/Geopora _sumneriana _Cooke M. Torre.jpg
+162;(Alb. & Sch.) Sacc.;Ugljenski pehar;;carbonaria;3;/slike/gljive/Geopyxis _carbonaria _Alb.  Sch. Sacc..jpg
+163;(Sch:fr) Fr;Veliki slinar;;glutinosus;6;/slike/gljive/Gomphidius _glutinosus _Schfr Fr.jpg
+164;;;1;roseus;5;/slike/gljive/Gomphidius _roseus.jpg
+165;(Dicks.) Gray;Zečarka, zec-gljiva, klepetača, zajčeki, veliki žbunac, dedik, sivi žbunac;;frondosa;8;/slike/gljive/Grifola _frondosa _Dicks. Gray.jpg
+166;(Pers.) Pilat;Jelenovo uho, hrastov žbunac, sarvašica, jelenček, jelenak, gljivice;1;umbellata;6;/slike/gljive/Grifola _umbellata _Pers. Pilat.jpg
+167;;;;helvelloides;5;/slike/gljive/Guepinia_helvelloides.jpg
+168;(Fr:Fr) Smith;Divna plamenka, Čudesna razornica;;spectabilis;2;/slike/gljive/Gymnopilus_spectabilis.jpg
+169;(Pers:Fr) Fr;Proljetni hrčak, rani hrčak, proljetna moždanica, lažni smrčak;1;esculenta;2;/slike/gljive/Gyromitra _esculenta _PersFr Fr.jpg
+170;;;;infula;2;/slike/gljive/Gyromitra_infula.jpg
+171;(Bull:Fr) Quelet;Kestenjasti vrganj, kestenov vrganj, kestenov žljebovac, maronka;;castaneus;6;/slike/gljive/Gyroporus _castaneus _BullFr Quelet.jpg
+172;(Paulet) Gillet;Rotkvičava tupavica, gorušičina plavulja;;sinapizans;2;/slike/gljive/Hebeloma_sinapizans _Paulet Gillet.jpg
+173;(L.) Quel.;Proljetna rebrašica;;acetabulum;3;/slike/gljive/Helvella _acetabulum _L. Quel..jpg
+174;(Scop:Fr) Fr;Jesenski hrčak, jesenji hrčak, jesenja jamičarka;;crispa;4;/slike/gljive/Helvella _crispa _ScopFr Fr.jpg
+175;;;;elastica;3;/slike/gljive/Helvella _elastica.jpg
+176;(Pers.) Nannf.;Crnobijela rebrašica;;leucomelaena;3;/slike/gljive/Helvella _leucomelaena.jpg
+177;Schaeff.;Crnobijeli hrčak;1;spadicea;3;/slike/gljive/Helvella_spadicea _Schaeff..jpg
+178;;;;lactea;3;/slike/gljive/Hemimycena _lactea.jpg
+179;(Pers.) Nikol.;Kovrčasti igličar, bodljikavi igličar;;cirrhatum;5;/slike/gljive/Hericium _cirrhatum _Pers. Nikol..jpg
+180;;;;hemisphaerica;3;/slike/gljive/Humaria_hemisphaerica.jpg
+181;(Pers.) P. Karst.;Nezgrapna ježevica, zbijena plutovka;;compactum;3;/slike/gljive/Hydnellum _compactum _Pers. P. Karst..jpg
+182;;;;peckii;3;/slike/gljive/Hydnellum_peckii.jpg
+183;;;;albidum;5;/slike/gljive/Hydnum_albidum.jpg
+184;L:Fr;Prosenjak, migač, žuta ježevica;;repandum;6;/slike/gljive/Hydnum _repandum _LFr.jpg
+185;;Ružičasta (ljubičasta) vlažnica;1;calyptriformis;5;/slike/gljive/Hygrociba_Calyptryformus.jpg
+186;(Scop:Fr) Kummer;Stožasta vlažnica, konična vlažnica, stožasta staklača, stožarka;;conica;3;/slike/gljive/Hygrocybe  _conica_ScopFr Kummer.jpg
+187;(Fr.) Murrill;Livadna zlatača,livadna sočnica;;pratensis;7;/slike/gljive/Camarophyllus_pratensis.jpg
+188;;Velika crvena vlaznica,Crvenoglava socnica;1;punicea(Fr.:Fr.)Kummer;7;/slike/gljive/Hygrocybe_puniceaFr.Fr.Kummer.jpg
+189;(Wulfen) Orton & Watling;Djevičanska vlažnica, djevičanska sočnica, snježna sočnica;;virginea;5;/slike/gljive/Hygrocybe  _virginea _Wulfen Orton  Watling.jpg
+190;;-;;(splendidissima/aurantiosplendens);5;/slike/gljive/Hygrocybe_coccinea.jpg
+191;(Wulf:Fr) Maire;Lažna lisičica;;aurantiaca;3;/slike/gljive/Hygrophoropsis _aurantiaca _WulfFr Maire.jpg
+192;(Fr) Fr;Mirisna puževica, bademova puževica;;agathosmus;5;/slike/gljive/Hygrophorus _agathosmus _Fr Fr.jpg
+193;(Arrh.)Fries;Zlatna puzevica;1;aureus;7;/slike/gljive/Hygrophorus_aureusArrh.Fries.jpg
+194;(Batsch:Fr) Fr;Zlatnožuta puževica, zlatnozuba puževica, zlatnomrljasta puževica;;chrysodon;5;/slike/gljive/Hygrophorus _chrysodon _BatschFr Fr.jpg
+195;;;;dichrous;6;/slike/gljive/Hygrophorus _dichrous.jpg
+196;(Fr.: Fr.) Fr.;Kasna puzevica,Jesenja puzevica;1;hypothejus;7;/slike/gljive/Hygrophorus _hypotheius.jpg
+197;Britzelm.;Viskozna puževica;;latitabundus;7;/slike/gljive/Hygrophorus_olivaceoalbus.jpg
+198;Kalchbr.;Ariševa puževica;1;lucorum;5;/slike/gljive/Hygrophorus _lucorum _Kalchbr..jpg
+199;(Fr:Fr) Bresadola;Ožujka, martovka, marčnica, ožujska puževica, snježnica, proljetna sočnica, marčevka;1;marzuolus;7;/slike/gljive/Hygrophorus_marzuolus_FrFr Bresadola.jpg
+200;(Pers:Fr) Fr;Tupoglavka, tupoglava puževica, šumska puževica;;nemoreus;6;/slike/gljive/Hygrophorus _nemoreus _PersFr Fr.jpg
+201;Fr.;Suha puževica, tvrda puževica;;penarius;7;/slike/gljive/Hygrophorus _penarius_ Fr..jpg
+202;;;;persicolor;3;/slike/gljive/Hygrophorus_persicolor.jpg
+203;Heim;Pjesnička puževica;1;poetarum;6;/slike/gljive/Hygrophorus _poetarum _Heim.jpg
+204;(Sch:Fr) Quelet;Medenka, medena puževica, crvenomrljasta puževica, voštana puževica, pjegava puževica;;russula;6;/slike/gljive/Hygrophorus _russula _SchFr Quelet.jpg
+205;(Huds:Fr) Kummer;Sumporača, prava sumporača, obična sumporača;;fasciculare;2;/slike/gljive/Hypholoma _fasciculare _HudsFr Kummer.jpg
+206;(Fr) Quelet;Crvenkasta panjevčica, crvenkasta sumporača, ciglastocrvena sumporača;;sublateritium;4;/slike/gljive/Hypholoma _sublateritium _Fr Quelet.jpg
+207;(Alb. & Sch.) Tul.;-;;rosellus;3;/slike/gljive/Hypomyces _rosellus _Alb.  Sch. Tul..jpg
+208;(Pers.) J. Kickx f.;-;;fragiforme;3;/slike/gljive/Hypoxylon _fragiforme _Pers. J. Kickx f..jpg
+209;Quelet;Zvjezdastosporna cjepača, zvjezdasta cjepača;;asterospora;2;/slike/gljive/Inocybe _asterospora _Quelet.jpg
+210;A. Blytt;Crvenkasta cjepača, Patouillardova cjepača;;erubescens;1;/slike/gljive/Inocybe _erubescens _A. Blytt.jpg
+211;(Pers:Fr) Murr.;Hrastov kopitar;;dryadeus;3;/slike/gljive/Inonotus _dryadeus _PersFr Murr..jpg
+212;;;;hispidus;3;/slike/gljive/Inonotus_hispidus.jpg
+213;"(Bull.;Fr.)P.Karst.";Cupavi rupicar;;hispidus;5;/slike/gljive/INONOTUS _HISPIDUS_Bull.Fr.P.Karst..jpg
+214;;Chaga, Čaga;;obliquus;8;/slike/gljive/Inonotus obliquus_Inonotus obliquus.jpg
+215;(Scop:Fr) Smith & Sing;Panjevčica, aromatična panjevčica, promijenljiva ljuskavica;;mutabilis;7;/slike/gljive/Kuehneromyces er_mutabilis _ScopFr Smith  Sing.jpg
+216;(Huds.) Cooke;Ljubičasta gljivica, ljubičasta lakovka;;amethystina;5;/slike/gljive/Laccaria _amethystina _Huds. Cooke.jpg
+217;(Scop:Fr) Cooke;Crvenkasta gljivica, obična lakovka;;laccata;5;/slike/gljive/Laccaria  _laccata_ScopFr Cooke.jpg
+218;;Lažna rujnica;;chrysorrheus;3;/slike/gljive/Lactarius_chrysorrheus.jpg
+219;(L:Fr) SF Gray;Rujnica, brinovka;;deliciosus;7;/slike/gljive/Lactarius_deliciosus_LFr SF Gray.jpg
+220;;;;deterrimus;6;/slike/gljive/Lactarius_deterrimus.jpg
+221;Boud.;Žućkasta mliječnica;;flavidus;3;/slike/gljive/Lactarius _flavidus _Boud..jpg
+222;(Fr:Fr) Fr;Kokosova mliječnica, pahuljičasta mliječnica;;glyciosmus;3;/slike/gljive/Lactarius _glyciosmus _FrFr Fr.jpg
+223;;;;necator;3;/slike/gljive/Lactarius_necator.jpg
+224;(Scop:Fr) Pers;Mliječnica, paprena mliječnica, mliječ, paprenjača, paprenjaci;;piperatus;4;/slike/gljive/Lactarius _piperatus_ScopFr Pers.jpg
+225;(Fr:Fr) Fr;Hrastova mliječnica;;quietus;4;/slike/gljive/Lactarius _quietus _FrFr Fr.jpg
+226;Heim & Leclair;Jelova rujnica, lososova rujnica;;salmonicolor;5;/slike/gljive/Lactarius _salmonicolor _Heim  Leclair.jpg
+227;(Paulet:Fr) Fr;Krvna rujnica, krvotočna rujnica, vrsovnica, južnjačka rujnica, žrnovčica;;sanguifluus;7;/slike/gljive/Lactarius _sanguifluus _PauletFr Fr.jpg
+228;;;;scrobiculatus;3;/slike/gljive/Lactarius_scrobiculatus.jpg
+229;(Schff. Ex Fr.) Gray;Runjava mliječnica, brezovka, lažna rujnica;;torminosus;3;/slike/gljive/Lactarius _torminosus _Schff. Ex Fr. Gray.jpg
+230;;;;uvidus;3;/slike/gljive/Lactarius_uvidus.jpg
+231;(Fr:Fr) Fr;Presnac, sirovka, pečenica, pastirska mliječnica, prijesna mliječnica, sirogriz, samojetka;;volemus;6;/slike/gljive/Lactarius _volemus _FrFr Fr.jpg
+232;(Bull.) Bondar. & Sing.;Žuti kruh, sumporasti žbunac, šumsko pile;;sulphureus;5;/slike/gljive/Laetiporus _sulphureus _Bull. Bondar.  Sing..jpg
+233;(Batsch) Rostk.;Golema puhara, velika ćelavica, gigantska puhara, najveća puhara;;gigantea;6;/slike/gljive/Langermannia _gigantea _Batsch Rostk. .jpg
+234;(Pers.)Ces.&De Not.;-;;ovina;3;/slike/gljive/Lasiosphaeria _ovina _Pers.Ces.De Not..jpg
+235;(Hoffm.)Ces.&De Not.;-;;spermoides;3;/slike/gljive/Lasiosphaeria  _spermoides_Hoffm.Ces.De Not..jpg
+236;(Bull) SF Gray;Crveni hrapavac, trepetljikin turčin, topolov turčin, turčin, topolin hrapavac, palčec;;aurantiacum;6;/slike/gljive/Leccinum _aurantiacum _Bull SF Gray.jpg
+237;(Schulzer) Moser ex Reid;Grabov djed, grabov dedek, grabov vrganj, grabovac, sivi hrapavac;;carpini;6;/slike/gljive/Leccinum  _carpini_Schulzer Moser ex Reid.jpg
+238;(Letell.) Watling;Žuti djed, žuti dedek, plemeniti hrapavac, djed kornjačar;;crocipodium;6;/slike/gljive/Leccinum  _crocipodium_Letell. Watling.jpg
+239;;;;duriusculum;7;/slike/gljive/Leccinum_duriusculum.jpg
+240;(Pilat)Green & Watling;Hrastov turčin;;quercinum;7;/slike/gljive/Leccinum _quercinum _PilatGreen  Watling.jpg
+241;(Bull:Fr) SF Gray;Brezov djed, pravi djed, dedek, obični hrapavac, kapucin, pasji vrganj, brezovac, kravarik;;scabrum;6;/slike/gljive/Leccinum _scabrum _BullFr SF Gray.jpg
+242;(Hoffm:Fr) Karsten;Žilava aniska, anisova žilavka;;cochleatus;4;/slike/gljive/Lentinellus  _cochleatus_HoffmFr Karsten.jpg
+243;;;;flabelliformis;3;/slike/gljive/Lentinellus_flabelliformis.jpg
+244;(Berk.) Pegler;Shii-take, šitake, mirisna aniska;;edodes;8;/slike/gljive/Lentinula edodes _edodes_Berk. Pegler.jpg
+245;(Bull:Fr) Schroeter;Školjkasta busenjača;;conchatus;4;/slike/gljive/Lentinus _conchatus _BullFr Schroeter.jpg
+246;(Bull:Fr) Fr;Busenasta tigrica, tigrasta busenjača, tigrasta pilašica, vrbovača;;tigrinus;4;/slike/gljive/Lentinus _tigrinus _BullFr Fr.jpg
+247;;;;fragilis;3;/slike/gljive/Leocarpus _fragilis.jpg
+248;(Scop:Fr) Pers.;Glatka kapica, žuti čavlić;;lubrica;3;/slike/gljive/Leotia _lubrica _ScopFr Pers..jpg
+249;(Pers.) Quel.;Trnovača, račvasta trnovača, bodljikava suncobranka;;aspera;2;/slike/gljive/Lepiota _aspera _Pers. Quel..jpg
+250;(Bull:Fr) Kummer;Bijelonoga štitarka, štitarka, obuvena suncobranka;;clypeolaria;3;/slike/gljive/Lepiota _clypeolaria _BullFr Kummer.jpg
+251;(Bres.) Singer;Blijedoljubičasta koturnica;;glaucocana;4;/slike/gljive/Lepista _glaucocana _Bres. Singer .jpg
+252;(Bull:Fr) Cooke;Modrikača, modra koturnica, modrikasta jesenjača;;nuda;7;/slike/gljive/Lepista _nuda _BullFr Cooke .jpg
+253;;Mala koturnica;;sordida;5;/slike/gljive/Lepista_sordida.jpg
+254;;;;squamosus;3;/slike/gljive/Leratiomyces_squamosus.jpg
+255;(Vittadini) Wasser;Bjelkasta pečurkovica, turkinja, crvenkastolisna sunčica;;leucothites;5;/slike/gljive/Leucoagaricus _leucothites _Vittadini Wasser.jpg
+256;;;;birnabumii;4;/slike/gljive/Agaricaceae_Leucocoprinus birnabumii.jpg
+257;(Alb & Schw:Fr) Singer;Bijelolistićava koprenka, gomoljasta bijelosporka;;bulbiger;5;/slike/gljive/Leucocortinarius _bulbiger _Alb  SchwFr Singer.jpg
+258;;;;mollusca;3;/slike/gljive/Leucogyrophana_mollusca.jpg
+259;(Schulzer) Bohus;Glavata debeljača, glavata podvijenka;1;macrocephalus;3;/slike/gljive/Leucopaxillus _macrocephalus _Schulzer Bohus.jpg
+260;(Schrad.) Chevall.;-;;arundinaceum;3;/slike/gljive/Lophodermium _arundinaceum _Schrad. Chevall..jpg
+261;;Naježena puhara,bodljikava puhara;;echinatum;5;/slike/gljive/Lycoperdon_echinatum.jpg
+262;Pers:Pers;Tikvasta puhara, zrnata puhara, puša, prha, prhavica;;perlatum;5;/slike/gljive/Lycoperdon _perlatum _PersPers.jpg
+263;(Pers.) P.D. Orton;Obična sraštenica, kostanjevčica, siva sraštenica;;fumosum;7;/slike/gljive/Lyophyllum _fumosum _Pers. P.D. Orton.jpg
+264;(Fr) Kuhn.;Tvrdokožna sraštenica, hrskavica, pozna kostanjevka, oklopljena kostanjevka;;loricatum;6;/slike/gljive/Lyophyllum _loricatum _Fr Kuhn..jpg
+265;(Pers:Fr) Josserand;Velikocistidna mirisnica;;cucumis;3;/slike/gljive/Macrocystidia _cucumis _PersFr Josserand.jpg
+266;;Oguljena sunčanica;;excoriata;7;/slike/gljive/Macrolepiota_excoriata.jpg
+267;(Scop:Fr) Singer;Sunčanica, velika sunčanica, šugarica, srnjaki, srndakuša, kozara, parazol;;procera;7;/slike/gljive/Macrolepiota _procera _ScopFr Singer.jpg
+268;(Vittadini) Singer;Kuštrava sunčanica, crvenkasta sunčanica;;rhacodes;5;/slike/gljive/Macrolepiota  _rhacodes_Vittadini Singer.jpg
+269;;;;filiformis;3;/slike/gljive/Macrotyphula_filiformis.jpg
+270;(Kuhner) Noordeloos;-;;omphaliformis;3;/slike/gljive/Marasmiellus _omphaliformis_Kuhner Noordeloos.jpg
+271;(Jacq:Fr) Fr;Bukova čamavka, dugonogi klinčac, lukovka, lukova čamavka, nitasta češnjevka;;alliaceus;4;/slike/gljive/Marasmius _alliaceus _JacqFr Fr.jpg
+272;;;;buillardii;3;/slike/gljive/Marasmius_buillardii.jpg
+273;;;;cohaerens;3;/slike/gljive/Marasmius_cohaerens.jpg
+274;(Bolt:Fr) Fr;Vilin klinčac, mirisna čamavka, jušna gljiva, jesenski ili poljski museron;;oreades;6;/slike/gljive/Marasmius _oreades _BoltFr Fr.jpg
+275;(Scop:Fr) Fr;Koturasta sušičarka, koturasta čamavka;;rotula;3;/slike/gljive/Marasmius _rotula _ScopFr Fr.jpg
+276;;;;scorodonius;5;/slike/gljive/Marasmius_scorodonius.jpg
+277;(Pers:Fr)Kotl.&Pouz.;Raspucana širokoliska, širokolisna korjenjača;;platyphylla;5;/slike/gljive/Megacollybia _platyphylla _PersFrKotl.Pouz..jpg
+278;;;;grammopodia;5;/slike/gljive/Melanoleuca_grammopodia.jpg
+279;(Pers:Fr) Murrill;Obična gustoliska;;melaleuca;5;/slike/gljive/Melanoleuca _melaleuca _PersFr Murrill.jpg
+280;(Pers.) P. Karst.;Orijaška zrašćenka, orijaška rupičavka, golemi žbunac, veliki žbunac;;giganteus;4;/slike/gljive/Meripilus _giganteus _Pers. P. Karst..jpg
+281;;;;tremellosus;3;/slike/gljive/Merulius_tremellosus.jpg
+282;(DeCand:Fr) Leveille;Zvonasti smrčak, hibridni smrčak, prirasli smrčak;;semilibera;6;/slike/gljive/Mitrophora _semilibera _DeCandFr Leveille.jpg
+283;;Stožasti smrčak,marohlin,mavrica;;conica;7;/slike/gljive/Morchella_conica.jpg
+284;(L.) Pers.;Smrčak, pravi smrčak, srček, marohlin, maruh, svijetli smrčak, žuti smrčak;;esculenta;7;/slike/gljive/Morchella _esculenta _L. Pers. .jpg
+285;(Huds:Pers) Fr.;Pasji stršak, pasjak;;caninus;3;/slike/gljive/Mutinus _caninus _HudsPers Fr..jpg
+286;(Fr) Quelet;Kosoglava šljemovka, kosoglavka, žutonožna šljemovka, smrdljiva šljemovka;;inclinata;3;/slike/gljive/Mycena_ inclinata _Fr Quelet.jpg
+287;(Schrad:Fr) Kummer;Narančastosočna šljemovka, šafranasta šljemovka;;crocata;3;/slike/gljive/Mycena _crocata _SchradFr Kummer.jpg
+288;(Scop:Fr) SF Gray;Naborana šljemovka, naherena šljemovka;;galericulata;3;/slike/gljive/Mycena _galericulata _ScopFr SF Gray.jpg
+289;;;;olivaceomarginata;3;/slike/gljive/Mycena _olivaceomarginata.jpg
+290;Quelet;Žutonoga šljemovka;;renati;3;/slike/gljive/Mycena _renati _Quelet.jpg
+291;;;;rorida;3;/slike/gljive/Mycena_rorida.jpg
+292;;;;tintinnabulum;3;/slike/gljive/Mycena_tintinnabulum.jpg
+293;(Ber. & Riou.) Paden;-;;pouchetii;3;/slike/gljive/Neournula _pouchetii _Ber.  Riou. Paden.jpg
+294;(De Cand:Fr) Fayod;Zavodnica, maslinova gljiva, bragara;;olearius;2;/slike/gljive/Omphalotus _olearius _De CandFr Fayod.jpg
+295;(Pers:Fr) Fuckel;Velika žutouška, magareće uho;;onotica;5;/slike/gljive/Otidea  _onotica_PersFr Fuckel.jpg
+296;(Schrad:Fr) Hohnel;Sluzava korjenjača, ledenjača;;mucida;5;/slike/gljive/Oudemansiella _mucida _SchradFr Hohnel.jpg
+297;(Rehl:Fr) Singer;Korjenjača, vitka korjenjača, glatkonoga korjenjača, korijenka;;radicata;5;/slike/gljive/Oudemansiella  _radicata_RehlFr Singer.jpg
+298;(Fr) Quelet;Zvonasti smetištar, zvonoliki smetištar;;sphinctrinus;3;/slike/gljive/Panaeolus _sphinctrinus _Fr Quelet.jpg
+299;(Bull:Fr) Karsten;Trpki grudovac, gorki grudovac;;stipticus;3;/slike/gljive/Panellus _stipticus _BullFr Karsten.jpg
+300;(Hedw.) Fr.;-;;atrata;3;/slike/gljive/Patellaria  _atrata_Hedw. Fr..jpg
+301;(Batsch:Fr) Fr;Crnonoga uvijača, baršunasta uvijača;;atrotomentosus;3;/slike/gljive/Paxillus _atrotomentosus _BatschFr Fr.jpg
+302;(Batsch:Fr) Fr;Osjetljiva uvijača, obična uvijača;;involutus;2;/slike/gljive/Paxillus  _involutus_BatschFr Fr.jpg
+303;Cooke;Trobojna pločarica, doratasto-zbunjujuća zdjeličarka;;phyllogena;5;/slike/gljive/Peziza _phyllogena _Cooke.jpg
+304;(Fr.) Pat.;Crnogorični rupičavac, Schweinitzov rupičar;;schweinitzii;3;/slike/gljive/Phaeolus _schweinitzii _Fr. Pat..jpg
+305;L:Pers;Smrdljivi stršak, stršak, pupavac, vražje jajce, smrdljivi mavrah, kuga;;impudicus;4;/slike/gljive/Phallus _impudicus _LPers .jpg
+306;;;;niger;3;/slike/gljive/Phellodon_niger.jpg
+307;;;;faginea;3;/slike/gljive/Phleogena_faginea.jpg
+308;;;;gummosa;3;/slike/gljive/Pholiota_gummosa.jpg
+309;;;;pinicola;3;/slike/gljive/Pholiota_pinicola.jpg
+310;(Pers.) Kuyp. & Tjall.;Topolova ljuskavica, topolova čehavka, razorna čehavka;;populnea;3;/slike/gljive/Pholiota _populnea _Pers. Kuyp.  Tjall..jpg
+311;(Mull:Fr) Kummer;Hrapava ljuskavica;;squarrosa;3;/slike/gljive/Pholiota_squarrosa _MullFr Kummer.jpg
+312;(Lev.) Quel.;Crvenkasti listićavac, crvenozlatna listoporka;1;pelletieri;5;/slike/gljive/Phylloporus _pelletieri _Lev. Quel..jpg
+313;(Bull.) P. Karst.;Brezina guba, brezovaca;;betulinus;8;/slike/gljive/Piptoporus _betulinus _Bull. P. Karst..jpg
+314;(Sowerby) Fuckel;Crvenkasta crnočaška;1;melastoma;3;/slike/gljive/Plectania _melastoma _Sowerby Fuckel.jpg
+315;;;;dryinus;5;/slike/gljive/Pleurotus_dryinus.jpg
+316;;Šumska ostriga,Bukovača;;ostreatus;7;/slike/gljive/Pleurotus_ostreatus.jpg
+317;;;;crispa;3;/slike/gljive/Plicaturopsis _crispa.jpg
+318;;;;brumalis;3;/slike/gljive/Polyporus_brumalis.jpg
+319;(Huds.) Fr.;Škriplin, škripac, škripavac, ljuskavi rupičar;;squamosus;5;/slike/gljive/Polyporus_squamosus_Huds. Fr..jpg
+320;;;1;porphyrosporus;3;/slike/gljive/Porphyrellus_porphyrosporus.jpg
+321;(Pers.) Fr.;-;;farinosa;3;/slike/gljive/Propolis  _farinosa _Pers. Fr..jpg
+322;;;1;ammophila;3;/slike/gljive/Psathyrella_ammophila.jpg
+323;;Siva slabunjavka;1;melanthina;3;/slike/gljive/Psathyrella _melanthina.jpg
+324;;Peharasta grlašica;;cyathiformis;6;/slike/gljive/Pseudoclitocybe_cyathiformis.jpg
+325;;;;gelatinosum;5;/slike/gljive/Pseudohydnum_gelatinosum.jpg
+326;(Pers.) Fuckel;Blistava crnočaška;;nigrella;3;/slike/gljive/Pseudoplectania _nigrella _Pers. Fuckel.jpg
+327;;;;cinnabarinus;3;/slike/gljive/Pycnoporellus_cinnabarinus.jpg
+328;;crvenkasta capica;;botrytis;6;/slike/gljive/Ramaria_botrytis.jpg
+329;(Pers.) Quel.;Trobojna griva,trobojna capica,trobojna koraljka;;formosa;2;/slike/gljive/Ramaria  _formosa _Pers. Quel..jpg
+330;;blijeda capica;;pallida;2;/slike/gljive/Ramaria_pallida.jpg
+331;(Schaeff.) Quel.;Zlatna capica,prsteci;;(aurea);5;/slike/gljive/Ramaria_aurea.jpg
+332;(Batsch) Gray;-;;applicatus;3;/slike/gljive/Resupinatus _applicatus _Batsch Gray.jpg
+333;;;;gemina;5;/slike/gljive/Rhodocybe_gemina.jpg
+334;(Fr.) Nits. ex Fuck.;-;;filicinus;3;/slike/gljive/Rhopographus _filicinus _Fr. Nits. ex Fuck..jpg
+335;(Pers.) Fr.;-;;acerinum;3;/slike/gljive/Rhytisma _acerinum _Pers. Fr..jpg
+336;;;;swartzii;3;/slike/gljive/Rickenella _swartzii.jpg
+337;;;;aeruginea;3;/slike/gljive/Russula_aeruginea.jpg
+338;;;;caerulea;3;/slike/gljive/Russula_caerulea.jpg
+339;(Sch.) Fr;Ljubičastozelena krasnica, plavka, sivka, sivozelenkasta krasnica;;cyanoxantha;7;/slike/gljive/Russula_cyanoxantha_Sch. Fr.jpg
+340;;;;emetica;3;/slike/gljive/Russula_emetica.jpg
+341;;smrdljiva krasnica, smrdača;;foetens;2;/slike/gljive/Russula_foetens.jpg
+342;;;;integra;6;/slike/gljive/Russula_integra.jpg
+343;;;;laeta;5;/slike/gljive/Russula_laeta.jpg
+344;;;;lilacea;5;/slike/gljive/Russula_lilacea.jpg
+345;Killerman.1936;Alpska golubica;;nana;3;/slike/gljive/Russula _nanaKillerman.1936_Alpina.jpg
+346;;;;persicina;3;/slike/gljive/Russula_persicina.jpg
+347;Fr.;Queletijeva krasnica;;queletii;3;/slike/gljive/Russula _queletii _Fr..jpg
+348;Ferdinansen & Winge;Sunceva golubica;;solaris;3;/slike/gljive/Russula_solarisFerdinansen Winge.jpg
+349;;;;versicolor;3;/slike/gljive/Russula_versicolor.jpg
+350;;Jestiva krasnica;;vesca;7;/slike/gljive/Russula_vesca.jpg
+351;;Golubača,blavijenka,zeka;;virescens;7;/slike/gljive/Russula _virescens.jpg
+352;;;;xerampelina;5;/slike/gljive/Russula_xerampelina.jpg
+353;(Batsch) Rehm;Grabova čašica;;bolaris;3;/slike/gljive/Rutstroemia _bolaris _Batsch Rehm.jpg
+354;(Rabenh.)Karst.;;;bulgarioides;3;/slike/gljive/Rutstroemia_bulgarioides _Rabenh.Karst..jpg
+355;;;;imbricatus;5;/slike/gljive/Sarcodon_imbricatus.jpg
+356;;Crveni peharcek,Srlatna casica,Babino uho;1;(coccinea/austriaca);5;/slike/gljive/Sarcoscypha _coccinea_Scop.Lamb.jpg
+357;(Jacq.) J. Schrot.;Ljubičasta krunašica;;coronaria;1;/slike/gljive/Sarcosphaera_coronaria_Jacq. J. Schrot..jpg
+358;;;;verrucosum;2;/slike/gljive/Scleroderma_verrucosum.jpg
+359;(Hedw.) Fuckel;Šumaričin pehar;;tuberosa;3;/slike/gljive/Sclerotinia _tuberosa _Hedw. Fuckel.jpg
+360;;;1;crispa;6;/slike/gljive/Sparassis _crispa.jpg
+361;;;;nemecii;6;/slike/gljive/Sparassis_nemecii.jpg
+362;;Žuta spatula,Žuta lopatica;;flavida;3;/slike/gljive/Spathularia_flavida.jpg
+363;Tode;Top gljiva;;stellatus;3;/slike/gljive/Sphaerobolus _stellatus _Tode.jpg
+364;;;;sanguinolentum;3;/slike/gljive/Stereum _sanguinolentum.jpg
+365;(Wulfen) Singer;Smrekova češerka;;esculentus;5;/slike/gljive/Strobilurus _esculentus _Wulfen Singer.jpg
+366;Kreisel;Plava vitičarka;;caerulea;3;/slike/gljive/Stropharia_cyanea.jpg
+367;;;;bovinus;5;/slike/gljive/Suillus_bovinus.jpg
+368;;Slinavka,ovčarka;;granulatus;7;/slike/gljive/Suillus_granulatus.jpg
+369;(Klotzsch)Singer;Prstenjak,elegantni vrganj,lični vrganj;;grevillei;5;/slike/gljive/Suillus _grevillei.jpg
+370;;;;luteus;6;/slike/gljive/Suillus_luteus.jpg
+371;;;;variegatus;5;/slike/gljive/Suillus_variegatus.jpg
+372;;;;viscidus;5;/slike/gljive/Suillus_viscidus.jpg
+373;;;;caryophyllea;3;/slike/gljive/Thelephora_caryophyllea.jpg
+374;;;;palmata;3;/slike/gljive/Thelephora_palmata.jpg
+375;Schaeff.;Zlatnožuta drhtalica;;mesenterica;3;/slike/gljive/Tremella  _mesenterica_Schaeff..jpg
+376;;;;abietinum;3;/slike/gljive/Trichaptum_abietinum.jpg
+377;;;;argyraceum;5;/slike/gljive/Tricholoma_argyraceum.jpg
+378;;;;arvernense;3;/slike/gljive/Tricholoma_arvernense.jpg
+379;;;;atrosquamosum;5;/slike/gljive/Tricholoma_atrosquamosum.jpg
+380;;;1;aurantium;3;/slike/gljive/Tricholoma_aurantium.jpg
+381;;;;basirubens;5;/slike/gljive/Tricholoma_basirubens.jpg
+382;;;;columbetta;7;/slike/gljive/Tricholoma_columbetta.jpg
+383;(Linn.:Fr.)Kummer;Zelenka;;equestre;2;/slike/gljive/Tricholoma_EquestreLinn.Fr.Kummer.jpg
+384;;;;focale;3;/slike/gljive/Tricholoma_focale.jpg
+385;;;;pardinum;2;/slike/gljive/Tricholoma_pardinum.jpg
+386;;čehava vitezovka;;squarrulosum;5;/slike/gljive/Tricholoma _squarrulosum.jpg
+387;(Sch:Fr) Kummer;Mišek, lažna sivka, miška, zemljana vitezovka, prljava vitezovka;;terreum;6;/slike/gljive/Tricholoma _terreum_SchFr Kummer.jpg
+388;;;;vaccinum;3;/slike/gljive/Tricholoma_vaccinum.jpg
+389;;;;decora;3;/slike/gljive/Tricholomopsis_decora.jpg
+390;(Schwein.)Fr.;Crni pehar;1;craterium;3;/slike/gljive/Urnula_craterium_Schwein.Fr..jpg
+391;(Krombh.) J. Schrot;Češka smrčkovica;1;bohemica;4;/slike/gljive/Verpa _bohemica _Krombh. J. Schrot.jpg
+392;(O.F. Mull.) Sw.;Prstasta smrčkovica;;conica;4;/slike/gljive/Verpa _conica _O.F. Mull. Sw..jpg
+393;(Sch:Fr.)Singer;Svilenkasta tobolcarka,?umski ?i?ak;;bombycina;5;/slike/gljive/Volvariela _bombicina SchFr.Singer.jpg
+394;;;;ripariellus;5;/slike/gljive/Xerocomus_ripariellus.jpg
+395;(Krbh.) Quelet;Crvenkasti bar?unovac;;rubellus;5;/slike/gljive/XEROCOMUS_RUBELLUS_KRBH. QUELET.jpg
+396;;;;campanella;3;/slike/gljive/Xeromphalina_campanella.jpg
+397;(Pers.) Fr.;-;;carpophila;3;/slike/gljive/Xylaria _carpophila _Pers. Fr..jpg
+398;;;;hypoxylon;3;/slike/gljive/Xylaria_hypoxylon.jpg

@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es6"],
+    "types": [
+      "reflect-metadata",
+      "node",
+      "express",
+      "mocha",
+      "supertest"
+    ],
+    "target": "es6",
+    "sourceMap": true,
+    "allowJs": false,
+    "outDir": "./dist"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "client/**/*",
+    "**/*.spec.ts"
+  ]
+}
+

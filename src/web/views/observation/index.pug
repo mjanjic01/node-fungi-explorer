@@ -1,0 +1,20 @@
+extends ../layouts/application.pug
+block content
+
+  table.table.table-striped.table-hover
+    thead
+      tr
+        th(scope="col") Slika
+        th(scope="col") Gljiva
+        th(scope="col") Opis
+        th(scope="col") Datum
+    tbody
+      each observation in observations
+        tr
+          td
+            img(src=`${observation.image}` width="100px")
+
+          td= observation.fungi.name
+          td= observation.description
+          td= observation.date
+

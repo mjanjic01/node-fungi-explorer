@@ -1,0 +1,21 @@
+extends ../layouts/application.pug
+block content
+
+  .row.justify-content-center
+    .col-md-6
+      form(action="/auth/register" method="post")
+        input(type="hidden" name="_csrf" value=csrfToken)
+
+        .form-group
+          label(for="username") Korisničko ime
+          input#username.form-control(type="text" name="username" required)
+
+        .form-group
+          label(for="password") Lozinka
+          input#password.form-control(type="password" name="password" required)
+
+        .form-group
+          label(for="repeat-password") Ponovljena lozinka:
+          input#repeat-password.form-control(type="password" name="repeatedPassword" required)
+
+        button.btn.btn-primary(type="submit") Registracija

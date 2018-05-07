@@ -1,0 +1,8 @@
+{
+  "extends": "@infinumjs/tslint-config",
+  "linterOptions": {
+      "exclude": [
+          "src/dataAccess/migrations/*.ts"
+      ]
+  }
+}

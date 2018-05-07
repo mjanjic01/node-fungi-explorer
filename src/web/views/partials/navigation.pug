@@ -1,0 +1,34 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(href="/") Gljivar
+  button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+    span.navbar-toggler-icon
+  #navbar-content.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      li.nav-item.active
+        a.nav-link(href="/")
+          | Početna
+          span.sr-only (current)
+
+      li.nav-item
+        a.nav-link(href="/fungi") Gljive
+
+      li.nav-item
+        a.nav-link(href="/observation") Zapažanja
+
+      li.nav-item
+        a.nav-link(href="/observation/new") Dodaj zapažanje
+
+
+    ul.navbar-nav
+      if user
+        li.nav-item
+          a.nav-link(href="/auth/logout") Odjava
+
+      else
+        li.nav-item
+          a.nav-link(href="/auth/login") Prijava
+
+        li.nav-item
+          a.nav-link(href="/auth/register") Registracija
+
+
