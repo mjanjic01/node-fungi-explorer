@@ -15,7 +15,9 @@ import { InversifyExpressServer } from 'inversify-express-utils';
 
 import { container } from '../ioc';
 import '../ioc/loader';
+import assetsMiddleware from './middleware/assets';
 import authenticationMiddleware from './middleware/authentication';
+import developmentMiddleware from './middleware/development';
 import localsMiddleware from './middleware/locals';
 
 const server = new InversifyExpressServer(container);
@@ -27,8 +29,14 @@ passport.serializeUser((user, done) => done(null, user));
 passport.deserializeUser((user, done) => done(null, user));
 
 server.setConfig((app) => {
+    app.locals.title = 'Gljivar';
     dotenv.config();
 
+    if (process.env.NODE_ENV === 'development') {
+      app.use(developmentMiddleware);
+    }
+
+    app.use(assetsMiddleware);
     app.use(compression());
     app.set('port', process.env.PORT || 3000);
     app.set('views', path.join(__dirname, 'views'));

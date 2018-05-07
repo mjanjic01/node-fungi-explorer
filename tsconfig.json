@@ -14,8 +14,7 @@
       "reflect-metadata",
       "node",
       "express",
-      "mocha",
-      "supertest"
+      "mocha"
     ],
     "target": "es6",
     "sourceMap": true,
@@ -23,10 +22,11 @@
     "outDir": "./dist"
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "typings/**/*",
   ],
   "exclude": [
-    "client/**/*",
+    "test/**/*",
     "**/*.spec.ts"
   ]
 }
