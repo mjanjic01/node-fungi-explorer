@@ -28,11 +28,4 @@ export default class FungiController {
       fungi: (await this.fungiService.getFungi()).map((fungi) => new FungiViewModel(fungi)),
     });
   }
-
-  @httpGet('/explore')
-  public async exploreFungi(@response() res: Response) {
-    // return res.render('fungi/explore', {
-    //   fungi: (await this.fungiService.getFungi()).map((fungi) => new FungiViewModel(fungi)),
-    // });
-  }
 }
