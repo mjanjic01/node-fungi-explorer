@@ -60,10 +60,17 @@ export default class AuthController {
   @httpGet('/logout')
   public async getLogout(req, res) {
     req.logout();
-    return res.redirect('/auth/login');
+    req.session = null;
+    res.redirect('/auth/login');
   }
 
   private loginUser(req, res, user) {
-    return req.login(user, () => res.redirect('/'));
+    if (req.body.rememberMe) {
+      req.session.cookie.maxAge = null;
+    }
+
+    req.login(user, () => res.redirect(req.session._referringRoute || '/'));
+    delete req.session._referringRoute;
+    req.session.save();
   }
 }
