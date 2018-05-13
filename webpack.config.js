@@ -1,8 +1,12 @@
 const path = require('path');
 const webpack = require('webpack');
+const dotenv = require('dotenv');
+
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const StatsWriterPlugin = require('webpack-stats-plugin').StatsWriterPlugin;
+
+dotenv.config();
 
 const INDENT = 2;
 const PROD = process.env.NODE_ENV === 'production';
@@ -58,6 +62,9 @@ const config = {
   },
 
   plugins: [
+    new webpack.DefinePlugin({
+      MAPBOX_ACCESS_TOKEN: JSON.stringify(process.env.MAPBOX_ACCESS_TOKEN),
+    }),
     new MiniCssExtractPlugin({
       filename: "[name]-[contenthash].min.css",
     }),
