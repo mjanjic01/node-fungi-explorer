@@ -18,7 +18,6 @@ if ($map) {
     center: coordinates
   });
 
-
   let marker;
   map
     .on('click', ({ lngLat }) => {
@@ -26,11 +25,20 @@ if ($map) {
         marker.remove();
       }
 
-      $lonInput.value = lngLat.lat;
-      $latInput.value = lngLat.lng;
+      $lonInput.value = lngLat.lng;
+      $latInput.value = lngLat.lat;
 
       marker = new mapboxgl.Marker()
       .setLngLat(lngLat)
       .addTo(map);
     });
+
+  if ($lonInput.value && $latInput.value) {
+    marker = new mapboxgl.Marker()
+      .setLngLat({
+        lng: $lonInput.value,
+        lat: $latInput.value,
+      })
+      .addTo(map);
+  }
 }
