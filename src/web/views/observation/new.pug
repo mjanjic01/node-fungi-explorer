@@ -1,37 +1,40 @@
-extends ../layouts/application.pug
+extends /layouts/application.pug
 block content
-
 
   .row.justify-content-center
     .col-md-6
+      include /partials/errors
+
       form(action="/observation/new" method="post" enctype="multipart/form-data")
         input(type="hidden" name="_csrf" value=csrfToken)
-
         .form-group
           label(for="fungi") Gljiva
-          select#fungi.form-control(name="fungi" required)
+          select#fungi.form-control(name="fungi" value=data.fungi class=errors.fungi && 'is-invalid' required)
+            option(value="") Odaberite gljivu
             each fungus in fungi
               option(value=fungus.id)= fungus.fullLatinName()
 
+          +errorMessage(errors.fungi)
+
         .form-group
           label(for="date") Datum opažanja
-          input#date.form-control(type="date" name="date")
+          input#date.form-control(type="date" name="date" value=data.date class=errors.date && 'is-invalid' required)
+          +errorMessage(errors.date)
 
         .form-group
           label(for="description") Napomena
-          textarea#description.form-control(rows="3" name="description")
+          textarea#description.form-control(rows="3" name="description" value=data.description)
 
         .form-group
           label(for="image") Odaberi fotografiju
-          input#image.js-image-input.form-control(type="file" name="image" accept="image/*" required)
+          input#image.js-image-input.form-control(type="file" name="image" accept="image/*")
           div.js-image-preview.image-preview
 
         .form-group
           label Lokacija opažanja
-          input.js-observation-lon(name="longitude" hidden required="false")
-          input.js-observation-lat(name="latitude" hidden required="false")
+          input.js-observation-lon(name="longitude" hidden value=data.longitude)
+          input.js-observation-lat(name="latitude" hidden value=data.latitude)
           .js-observation-map(style="width: 400px; height: 300px;")
-
 
         button.btn.btn-primary(type="submit") Dodaj
 

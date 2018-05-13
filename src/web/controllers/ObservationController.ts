@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+import { body, Result, validationResult } from 'express-validator/check';
 import { inject } from 'inversify';
 import {
   controller,
@@ -36,9 +37,23 @@ export default class ObservationController {
     });
   }
 
-  @httpPost('/new', authenticationMiddleware)
+  @httpPost(
+    '/new',
+    authenticationMiddleware,
+    body('fungi').not().isEmpty().withMessage('Gljiva je obvezna'),
+    body('date').not().isEmpty().withMessage('Datum je obvezan'),
+  )
   public async createObservation(req, res) {
-    const image = req.file;
+    const errors: Result = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.render('observation/new', {
+        data: req.body,
+        errors: errors.mapped(),
+        fungi: (await this.observationService.getFungi()).map((f) => new FungiViewModel(f)),
+      });
+    }
+
+    const image = req.file || {};
     const {
       date,
       description,

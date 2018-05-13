@@ -33,7 +33,10 @@ export class ObservationService implements IObservationService {
   }
 
   public async createObservation(observationData: Observation): Promise<Observation> {
-    const observationLocation: Location = await this.locationRepository.insert(observationData.location);
+    let observationLocation: Location = null;
+    if (observationData.location.latitude && observationData.location.latitude) {
+      observationLocation = await this.locationRepository.insert(observationData.location);
+    }
     return await this.observationRepository.insert({
       date: observationData.date,
       description: observationData.description,
