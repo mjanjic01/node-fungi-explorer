@@ -1,5 +1,5 @@
 require('ts-node/register');
 
-const app = require('./web/index.ts');
+const app = require('./main.ts');
 
 module.exports = app;
