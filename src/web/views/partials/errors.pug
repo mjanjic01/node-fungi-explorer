@@ -1,4 +1,4 @@
-if errors && errors.length
+if errors && Object.keys(errors).length
   .alert.alert-danger(role="alert")
     strong Greška
     each e in errors
