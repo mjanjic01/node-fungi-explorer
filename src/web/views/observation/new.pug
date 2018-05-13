@@ -23,12 +23,13 @@ block content
 
         .form-group
           label(for="image") Odaberi fotografiju
-          input#image.form-control(type="file" name="image" required)
+          input#image.js-image-input.form-control(type="file" name="image" accept="image/*" required)
+          div.js-image-preview.image-preview
 
         .form-group
           label Lokacija opažanja
-          input.form-control(type="number" name="longitude" hidden)
-          input.form-control(type="number" name="latitude" hidden)
+          input.js-observation-lon(name="longitude" hidden required="false")
+          input.js-observation-lat(name="latitude" hidden required="false")
           .js-observation-map(style="width: 400px; height: 300px;")
 
 

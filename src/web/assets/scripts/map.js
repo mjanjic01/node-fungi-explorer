@@ -1,7 +1,12 @@
 import mapboxgl from 'mapbox-gl';
 
-const coordinates = [15.9709069, 45.8007152];
+const coordinates = {
+  lng: 15.9709069,
+  lat: 45.8007152
+};
 const $map = document.querySelector('.js-observation-map');
+const $lonInput = document.querySelector('.js-observation-lon');
+const $latInput = document.querySelector('.js-observation-lat');
 
 mapboxgl.accessToken = MAPBOX_ACCESS_TOKEN;
 
@@ -13,9 +18,18 @@ if ($map) {
     center: coordinates
   });
 
+
+  let marker;
   map
     .on('click', ({ lngLat }) => {
-      const marker = new mapboxgl.Marker()
+      if (marker) {
+        marker.remove();
+      }
+
+      $lonInput.value = lngLat.lat;
+      $latInput.value = lngLat.lng;
+
+      marker = new mapboxgl.Marker()
       .setLngLat(lngLat)
       .addTo(map);
     });

@@ -36,7 +36,8 @@ const config = {
       use: {
         loader: 'file-loader',
         options: {
-          name: '[name]-[contenthash].[ext]'
+          name: '[name].[ext]',
+          outputPath: 'images/'
         }
       }
     }, {
@@ -70,6 +71,7 @@ const config = {
     }),
     new CleanWebpackPlugin(['./src/web/public/assets'], {
       verbose: false,
+      watch: true,
     })
   ]
 };
