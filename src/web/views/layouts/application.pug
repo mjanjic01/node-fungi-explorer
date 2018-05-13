@@ -7,7 +7,8 @@ html
     meta(name='theme-color' content='#0275D8')
     title= title
 
-    link(href=`/assets/${_webpackBundle.stylesheets}` rel="stylesheet")
+    each stylesheet in _webpackBundle.stylesheets
+      link(href=stylesheet rel="stylesheet")
   body
     header
       include ../partials/navigation
@@ -15,4 +16,5 @@ html
       block content
     footer
 
-    script(type="text/javascript" src=`/assets/${_webpackBundle.javascripts}`)
+    each script in _webpackBundle.javascripts
+      script(type="text/javascript" src=script)

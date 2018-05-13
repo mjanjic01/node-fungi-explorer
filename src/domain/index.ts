@@ -10,6 +10,7 @@ import Species from './Species';
 import User from './User';
 
 import IFungiRepository from './repositories/IFungiRepository';
+import ILocationRepository from './repositories/ILocationRepository';
 import IObservationRepository from './repositories/IObservationRepository';
 import IRepository from './repositories/IRepository';
 import IUserRepository from './repositories/IUserRepository';
@@ -27,6 +28,7 @@ export {
   User,
 
   IFungiRepository,
+  ILocationRepository,
   IObservationRepository,
   IUserRepository,
   IRepository,

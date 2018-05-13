@@ -1,6 +1,13 @@
 import { inject } from 'inversify';
 
-import { Fungi, IFungiRepository, IObservationRepository, Observation } from '../domain';
+import {
+  Fungi,
+  IFungiRepository,
+  ILocationRepository,
+  IObservationRepository,
+  Location,
+  Observation,
+} from '../domain';
 import { Provide, TYPES } from '../ioc';
 
 export interface IObservationService {
@@ -14,6 +21,7 @@ export class ObservationService implements IObservationService {
   constructor(
     @inject(TYPES.FungiRepository) private fungiRepository: IFungiRepository,
     @inject(TYPES.ObservationRepository) private observationRepository: IObservationRepository,
+    @inject(TYPES.LocationRepository) private locationRepository: ILocationRepository,
   ) { }
 
   public async getObservations(): Promise<Array<Observation>> {
@@ -24,7 +32,14 @@ export class ObservationService implements IObservationService {
     return await this.fungiRepository.getAll();
   }
 
-  public async createObservation(observation: Observation): Promise<Observation> {
-    return await this.observationRepository.insert(observation);
+  public async createObservation(observationData: Observation): Promise<Observation> {
+    const observationLocation: Location = await this.locationRepository.insert(observationData.location);
+    return await this.observationRepository.insert({
+      date: observationData.date,
+      description: observationData.description,
+      fungi: observationData.fungi,
+      image: observationData.image,
+      location: observationLocation,
+    });
   }
 }

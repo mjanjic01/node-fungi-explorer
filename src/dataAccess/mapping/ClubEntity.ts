@@ -23,7 +23,7 @@ export class ClubEntity extends Club {
       length: 50,
       nullable: true,
     })
-    public address: string;
+    public address?: string;
 
     @OneToMany((type) => UserEntity, (user) => user.club)
     public member: UserEntity;

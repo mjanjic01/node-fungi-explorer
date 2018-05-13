@@ -21,7 +21,7 @@ export class ObservationEntity extends Observation {
     @Column({
       nullable: true,
     })
-    public description: string;
+    public description?: string;
 
     @Column({
       type: 'date',
@@ -31,7 +31,7 @@ export class ObservationEntity extends Observation {
     @Column({
       nullable: true,
     })
-    public image: string;
+    public image?: string;
 
     @ManyToOne((type) => FungiEntity, (fungi) => fungi.observations, {
       eager: true,

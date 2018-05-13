@@ -43,6 +43,8 @@ export default class ObservationController {
       date,
       description,
       fungi,
+      latitude,
+      longitude,
     } = req.body;
 
     await this.observationService.createObservation({
@@ -50,6 +52,10 @@ export default class ObservationController {
       description,
       fungi,
       image: image.path,
+      location: {
+        latitude,
+        longitude,
+      },
     });
 
     return res.redirect('/observation');
