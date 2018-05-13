@@ -30,6 +30,9 @@ passport.deserializeUser((user, done) => done(null, user));
 
 server.setConfig((app) => {
     app.locals.title = 'Gljivar';
+    app.locals.data = {};
+    app.locals.errors = {};
+
     dotenv.config();
     if (process.env.NODE_ENV === 'development') {
       app.use(developmentMiddleware);

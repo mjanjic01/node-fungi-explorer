@@ -13,7 +13,7 @@ import {
   response,
 } from 'inversify-express-utils';
 
-import { IObservationRepository, Observation } from '../../domain';
+import { Fungi, IObservationRepository, Observation } from '../../domain';
 import { TYPES } from '../../ioc';
 import { IObservationService } from '../../services/ObservationService';
 import authenticationMiddleware from '../middleware/authentication';
@@ -33,7 +33,7 @@ export default class ObservationController {
   @httpGet('/new', authenticationMiddleware)
   public async getCreateObservation(req, res) {
     return res.render('observation/new', {
-      fungi: (await this.observationService.getFungi()).map((fungi) => new FungiViewModel(fungi)),
+      fungi: this.mapToViewModels(await this.observationService.getFungi()),
     });
   }
 
@@ -49,7 +49,7 @@ export default class ObservationController {
       return res.render('observation/new', {
         data: req.body,
         errors: errors.mapped(),
-        fungi: (await this.observationService.getFungi()).map((f) => new FungiViewModel(f)),
+        fungi: this.mapToViewModels(await this.observationService.getFungi()),
       });
     }
 
@@ -74,5 +74,9 @@ export default class ObservationController {
     });
 
     return res.redirect('/observation');
+  }
+
+  private mapToViewModels(fungi: Array<Fungi>): Array<FungiViewModel> {
+    return fungi.map((f) => new FungiViewModel(f));
   }
 }
