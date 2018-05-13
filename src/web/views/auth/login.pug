@@ -8,14 +8,14 @@ block content
 
         .form-group
           label(for="username") Korisničko ime
-          input#username.form-control(type="text" name="username")
+          input#username.form-control(type="text" name="username" required)
 
         .form-group
           label(for="password") Lozinka
-          input#password.form-control(type="password" name="password")
+          input#password.form-control(type="password" name="password" required)
 
-        //- .form-check
-        //-   input#remember-me.form-check-input(type="checkbox")
-        //-   label.form-check-label(for="remember-me") Zapamti me
+        .form-check
+          input#remember-me.form-check-input(type="checkbox" name="rememberMe")
+          label.form-check-label(for="remember-me") Zapamti me
 
         button.btn.btn-primary(type="submit") Prijava

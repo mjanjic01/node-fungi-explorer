@@ -18,7 +18,11 @@ import '../ioc/loader';
 import assetsMiddleware from './middleware/assets';
 import authenticationMiddleware from './middleware/authentication';
 import developmentMiddleware from './middleware/development';
+import errorHandler from './middleware/errorHandler';
 import localsMiddleware from './middleware/locals';
+
+const CSRF_ERR_CODE = 'EBADCSRFTOKEN';
+const SESSION_MAX_AGE = 7200000; // 2 * 60 * 60 * 1000 (2 hours)
 
 const server = new InversifyExpressServer(container);
 
@@ -48,26 +52,43 @@ server.setConfig((app) => {
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(bodyParser.json());
     app.use(session({
+      cookie: {
+        maxAge: SESSION_MAX_AGE,
+      },
       name: 'sess-id',
       resave: false,
+      rolling: true,
       saveUninitialized: false,
       secret: process.env.SESSION_SECRET,
       store: new RedisStore(),
+      unset: 'destroy',
     }));
 
     app.use(upload.single('image'));
     app.use(passport.initialize());
     app.use(passport.session());
     app.use(csrf());
+    app.use((err, req, res, next) => {
+      if (err.code !== CSRF_ERR_CODE) {
+        return next(err);
+      }
+
+      res.status(403);
+      res.render('error/403');
+    });
     app.use(helmet());
     app.use(localsMiddleware);
+    app.use(errorHandler);
 
     app.use(express.static(path.resolve(__dirname, 'public')));
     app.use('/uploads', authenticationMiddleware, express.static(path.resolve(process.cwd(), 'uploads')));
 });
 
 const serverInstance = server.build();
-serverInstance.get('*', (req, res) => res.render('error/404'));
+serverInstance.get('*', (req, res) => {
+  res.status(404);
+  res.render('error/404');
+});
 serverInstance.listen(serverInstance.get('port'));
 
 // tslint:disable-next-line no-console
