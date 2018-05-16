@@ -1,22 +1,23 @@
 extends /layouts/application.pug
 block content
 
-  table.table.table-striped.table-hover
-    thead
-      tr
-        th(scope="col") Rod
-        th(scope="col") Vrsta
-        th(scope="col") Varijanta
-        th(scope="col") Naziv
-        th(scope="col") Zaštićena
-        th(scope="col") Jestivost
-    tbody
-      each fungus in fungi
+  .table-responsive
+    table.table.table-striped.table-hover
+      thead
         tr
-          td= fungus.genus
-          td= fungus.species
-          td= fungus.variant
-          td= fungus.name
-          td
-            input(type="checkbox" checked=fungus.isProtected disabled)
-          td= fungus.edibility
+          th(scope="col") Rod
+          th(scope="col") Vrsta
+          th(scope="col") Varijanta
+          th(scope="col") Naziv
+          th(scope="col") Zaštićena
+          th(scope="col") Jestivost
+      tbody
+        each fungus in fungi
+          tr
+            td= fungus.genus
+            td= fungus.species
+            td= fungus.variant
+            td= fungus.name
+            td
+              input(type="checkbox" checked=fungus.isProtected disabled)
+            td= fungus.edibility

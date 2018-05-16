@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+import { sanitizeParam } from 'express-validator/filter';
 import { inject } from 'inversify';
 import {
   controller,
@@ -25,7 +26,23 @@ export default class FungiController {
   @httpGet('/', authenticationMiddleware)
   public async getFungi(@response() res: Response) {
     return res.render('fungi', {
-      fungi: (await this.fungiService.getFungi()).map((fungi) => new FungiViewModel(fungi)),
+      fungi: this.mapToViewModels(await this.fungiService.getFungi()),
     });
+  }
+
+  @httpGet('/search', authenticationMiddleware, sanitizeParam('query').trim())
+  public async searchFungi(@response() res: Response, @queryParam('query') query: string) {
+    const result = query ?
+      await this.fungiService.searchFungi(query) :
+      await this.fungiService.getFungi();
+
+    return res.render('fungi/search', {
+      data: { query },
+      fungi: this.mapToViewModels(result),
+    });
+  }
+
+  private mapToViewModels(fungi: Array<Fungi>): Array<FungiViewModel> {
+    return fungi.map((f) => new FungiViewModel(f));
   }
 }

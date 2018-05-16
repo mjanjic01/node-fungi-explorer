@@ -4,8 +4,9 @@ import { Fungi, IFungiRepository } from '../domain';
 import { Provide, TYPES } from '../ioc';
 
 export interface IFungiService {
-  getFungi(): Promise<Array<Fungi>>
-  createFungi(Fungi: Fungi): Promise<Fungi>
+  getFungi(): Promise<Array<Fungi>>;
+  createFungi(Fungi: Fungi): Promise<Fungi>;
+  searchFungi(searchTerm: string): Promise<Array<Fungi>>;
 }
 
 @Provide(TYPES.FungiService)
@@ -18,5 +19,9 @@ export class FungiService implements IFungiService {
 
   public async createFungi(fungi: Fungi): Promise<Fungi> {
     return await this.fungiRepository.insert(fungi);
+  }
+
+  public async searchFungi(searchTerm: string): Promise<Array<Fungi>> {
+    return await this.fungiRepository.searchByName(searchTerm);
   }
 }

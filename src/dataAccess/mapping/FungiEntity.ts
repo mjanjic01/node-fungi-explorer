@@ -1,6 +1,7 @@
 import {
   Column,
   Entity,
+  Index,
   JoinColumn,
   ManyToOne,
   OneToMany,
@@ -59,4 +60,12 @@ export class FungiEntity extends Fungi {
 
     @OneToMany((type) => ObservationEntity, (observation) => observation.fungi)
     public observations: ObservationEntity;
+
+    @Column({
+      type: 'tsvector',
+    })
+    @Index('weighted_tsv_idx', {
+      synchronize: false,
+    })
+    public weightedTsv: ObservationEntity;
 }

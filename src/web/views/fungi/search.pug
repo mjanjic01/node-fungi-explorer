@@ -1,11 +1,14 @@
 extends /layouts/application.pug
 block content
+  form(action="/fungi/search" method="action")
+        input(type="hidden" name="_csrf" value=csrfToken)
+        .form-group
+          input.form-control(name="query" type="search" placeholder="Upišite pojmove za pretragu" value=data.query)
 
   .table-responsive
     table.table.table-striped.table-hover
       thead
         tr
-          th(scope="col") Slika
           th(scope="col") Rod
           th(scope="col") Vrsta
           th(scope="col") Varijanta
@@ -15,7 +18,6 @@ block content
       tbody
         each fungus in fungi
           tr
-            td= fungus.image
             td= fungus.genus
             td= fungus.species
             td= fungus.variant
