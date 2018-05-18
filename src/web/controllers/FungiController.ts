@@ -17,7 +17,6 @@ import { Fungi, IFungiRepository } from '../../domain';
 import { TYPES } from '../../ioc';
 import { IFungiService } from '../../services/FungiService';
 import authenticationMiddleware from '../middleware/authentication';
-import FungiViewModel from '../models/FungiViewModel';
 
 @controller('/fungi')
 export default class FungiController {
@@ -26,23 +25,44 @@ export default class FungiController {
   @httpGet('/', authenticationMiddleware)
   public async getFungi(@response() res: Response) {
     return res.render('fungi', {
-      fungi: this.mapToViewModels(await this.fungiService.getFungi()),
+      fungi: await this.fungiService.getFungi(),
     });
   }
 
   @httpGet('/search', authenticationMiddleware, sanitizeParam('query').trim())
   public async searchFungi(@response() res: Response, @queryParam('query') query: string) {
-    const result = query ?
-      await this.fungiService.searchFungi(query) :
-      await this.fungiService.getFungi();
-
     return res.render('fungi/search', {
       data: { query },
-      fungi: this.mapToViewModels(result),
+      fungi: await this.fungiService.searchFungi(query),
     });
   }
 
-  private mapToViewModels(fungi: Array<Fungi>): Array<FungiViewModel> {
-    return fungi.map((f) => new FungiViewModel(f));
+  @httpGet('/:fungiId', authenticationMiddleware)
+  public async fungiDetails(@response() res: Response, @requestParam('fungiId') fungiId: number) {
+    const fungi = await this.fungiService.getFungiById(fungiId);
+
+    if (!fungi) {
+      return res.render('error/404');
+    }
+
+    const fungiObservations = await this.fungiService.fungiObservations(fungiId);
+    const { images, locations } = fungiObservations.reduce((acc, observation) => {
+      if (observation.location) {
+        acc.locations.push(observation.location);
+      }
+      if (observation.image) {
+        acc.images.push(observation.image);
+      }
+      return acc;
+    }, {
+      images: [],
+      locations: [],
+    });
+
+    return res.render('fungi/details', {
+      fungi,
+      images,
+      locations,
+    });
   }
 }

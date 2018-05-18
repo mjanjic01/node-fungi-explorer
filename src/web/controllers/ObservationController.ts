@@ -15,25 +15,24 @@ import {
 
 import { Fungi, IObservationRepository, Observation } from '../../domain';
 import { TYPES } from '../../ioc';
-import { IObservationService } from '../../services/ObservationService';
+import { IFungiService } from '../../services/FungiService';
 import authenticationMiddleware from '../middleware/authentication';
-import FungiViewModel from '../models/FungiViewModel';
 
 @controller('/observation')
 export default class ObservationController {
-  constructor(@inject(TYPES.ObservationService) private observationService: IObservationService) { }
+  constructor(@inject(TYPES.FungiService) private fungiService: IFungiService) { }
 
   @httpGet('/', authenticationMiddleware)
   public async getObservations(req, res) {
     return res.render('observation', {
-      observations: await this.observationService.getObservations(),
+      observations: await this.fungiService.getObservations(),
     });
   }
 
   @httpGet('/new', authenticationMiddleware)
   public async getCreateObservation(req, res) {
     return res.render('observation/new', {
-      fungi: this.mapToViewModels(await this.observationService.getFungi()),
+      fungi: await this.fungiService.getFungi(),
     });
   }
 
@@ -49,10 +48,9 @@ export default class ObservationController {
       return res.render('observation/new', {
         data: req.body,
         errors: errors.mapped(),
-        fungi: this.mapToViewModels(await this.observationService.getFungi()),
+        fungi: await this.fungiService.getFungi(),
       });
     }
-
     const image = req.file || {};
     const {
       date,
@@ -62,7 +60,7 @@ export default class ObservationController {
       longitude,
     } = req.body;
 
-    await this.observationService.createObservation({
+    await this.fungiService.createObservation({
       date,
       description,
       fungi,
@@ -74,9 +72,5 @@ export default class ObservationController {
     });
 
     return res.redirect('/observation');
-  }
-
-  private mapToViewModels(fungi: Array<Fungi>): Array<FungiViewModel> {
-    return fungi.map((f) => new FungiViewModel(f));
   }
 }
