@@ -13,9 +13,10 @@ block content
         each observation in observations
           tr
             td
-              img(src=`${observation.image}` width="100px")
+              if observation.image
+                img(src=observation.image width="100px")
 
-            td= observation.fungi.name
+            td= observation.fungi.name || observation.fungi.fullLatinName
             td= observation.description
             td= observation.date
 

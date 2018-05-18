@@ -12,7 +12,7 @@ block content
           select#fungi.form-control(name="fungi" value=data.fungi class=errors.fungi && 'is-invalid' required)
             option(value="") Odaberite gljivu
             each fungus in fungi
-              option(value=fungus.id selected=data.fungi == fungus.id)= fungus.fullLatinName()
+              option(value=fungus.id selected=(data.fungi == fungus.id))= fungus
 
           +errorMessage(errors.fungi)
 
@@ -34,7 +34,7 @@ block content
           label Lokacija opažanja
           input.js-observation-lon(name="longitude" hidden value=data.longitude)
           input.js-observation-lat(name="latitude" hidden value=data.latitude)
-          .js-observation-map(style="width: 100%; height: 300px;")
+          .map.js-observation-map
 
         button.btn.btn-primary(type="submit") Dodaj
 

@@ -18,10 +18,14 @@ block content
       tbody
         each fungus in fungi
           tr
-            td= fungus.genus
+            td= fungus.species.genus
             td= fungus.species
             td= fungus.variant
             td= fungus.name
-            td
-              input(type="checkbox" checked=fungus.isProtected disabled)
+            if fungus.isProtected
+              td.icon-cell(title="Zaštićena")
+                .protected-icon
+                  include /icons/ic-shield.svg
+            else
+              td
             td= fungus.edibility
