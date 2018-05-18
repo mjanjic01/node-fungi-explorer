@@ -8,4 +8,16 @@ export default class Fungi extends Entity {
   public name?: string;
   public isProtected?: boolean;
   public edibility?: Edibility;
+
+  public get fullLatinName() {
+    return `${this.species.genus.name} ${this.species.name} ${this.variant || ''}`;
+  }
+
+  public toString() {
+    if (this.name && this.name.length) {
+      return `${this.name} - [${this.fullLatinName}]`;
+    }
+
+    return this.fullLatinName;
+  }
 }
