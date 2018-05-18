@@ -1,25 +1,25 @@
 id;Genus;Species;Variant;Name;protected;edibilityId
-1;Hericiaceae;hericum coralloides;;igličarka, koraljna igličarka;TRUE;8
+1;Hericiaceae;hericum coralloides;;igličarka, koraljna igličarka;TRUE;6
 2;Abortiporus;biennis;;;FALSE;3
-3;Agaricus;augustus;Fr;Golema pečurka;FALSE;7
-4;Agaricus;benesii;;;FALSE;7
+3;Agaricus;augustus;Fr;Golema pečurka;FALSE;5
+4;Agaricus;benesii;;;FALSE;5
 5;Agaricus;bernardii;;;FALSE;4
-6;Agaricus;bitorquis;(Quelet) Saccardo;Dvoprstenasta pečurka, gradski šampinjon, gradska pečurka, uskočnica;FALSE;7
-7;Agaricus;bohusii;;Busenasta rudnjača;FALSE;7
-8;Agaricus;campestris;L:Fr;Livadna pečurka, rudnjača, pečurka, pečura, pečurica, pečurak, poljski šampinjon;FALSE;7
-9;Agaricus;macrosporus;(Moell. Et Schff.) Pilat;Kračun, grkalj, velika pečurka, pokrovača;FALSE;7
-10;Agaricus;silvaticus;Sch:Fr;Šumarica, šumska pečurka;FALSE;6
-11;Agaricus;silvicola;(Vitt) Peck;Šumska pečurka, anisova pečurka, anis šampinjon;FALSE;6
+6;Agaricus;bitorquis;(Quelet) Saccardo;Dvoprstenasta pečurka, gradski šampinjon, gradska pečurka, uskočnica;FALSE;5
+7;Agaricus;bohusii;;Busenasta rudnjača;FALSE;5
+8;Agaricus;campestris;L:Fr;Livadna pečurka, rudnjača, pečurka, pečura, pečurica, pečurak, poljski šampinjon;FALSE;5
+9;Agaricus;macrosporus;(Moell. Et Schff.) Pilat;Kračun, grkalj, velika pečurka, pokrovača;FALSE;5
+10;Agaricus;silvaticus;Sch:Fr;Šumarica, šumska pečurka;FALSE;5
+11;Agaricus;silvicola;(Vitt) Peck;Šumska pečurka, anisova pečurka, anis šampinjon;FALSE;5
 12;Agaricus;xanthoderma;Genevier;1 pečurka, karbolova pečurka, žuto pjegava pečurka;FALSE;2
-13;Agrocybe;aegerita;(Brig.) Singer;Jablanovača, topolovača, topolovka;FALSE;7
+13;Agrocybe;aegerita;(Brig.) Singer;Jablanovača, topolovača, topolovka;FALSE;5
 14;Agrocybe;praecox;(Pers:Fr) Fayod;Rana livadarka, rana čehavka;FALSE;5
 15;Albatrellus;ovinus;;;FALSE;5
-16;Albatrellus;pes-caprae;(Pers.: Fr.) Pouzar;Maglen, kozja noga, kozonoga rupičarka;TRUE;7
+16;Albatrellus;pes-caprae;(Pers.: Fr.) Pouzar;Maglen, kozja noga, kozonoga rupičarka;TRUE;5
 17;Aleuria;aurantia;(Pers:fr) Fuckel;Narančasto-crvena zdjeličarka;FALSE;5
-18;Amanita;caesarea;(Scop:Fr) Pers;Blagva, carevka, gospa, karžel, žerdana, blagar, kneginja, knežica, škripac, đordani;TRUE;7
-19;Amanita;ceciliae;(Berk & Br.) Boudier ex Bas;Tigrasta preslica, pozlaćena ovojnjača, šupljikava povojnjača;FALSE;6
+18;Amanita;caesarea;(Scop:Fr) Pers;Blagva, carevka, gospa, karžel, žerdana, blagar, kneginja, knežica, škripac, đordani;TRUE;5
+19;Amanita;ceciliae;(Berk & Br.) Boudier ex Bas;Tigrasta preslica, pozlaćena ovojnjača, šupljikava povojnjača;FALSE;5
 20;Amanita;citrina;(Sch:Fr) SF Gray;Žućkasta pupavka, limunasta pupavka, citronasta pupavka;FALSE;2
-21;Amanita;crocea;;;FALSE;7
+21;Amanita;crocea;;;FALSE;5
 22;Amanita;eliae;Quel.;Elijeva muhara;FALSE;2
 23;Amanita;fulva;(Sch:Fr) Fr;Kestenjasta preslica, smeđa preslica, golenka;FALSE;4
 24;Amanita;gemmata;(Paulet) Bertillon;Svijetložuta muhara;FALSE;3
@@ -28,62 +28,62 @@ id;Genus;Species;Variant;Name;protected;edibilityId
 27;Amanita;pantherina;(DeCand:Fr) Krombholz;Panterova muhara, panterka, tigrasta muhara, pjegava muhara;FALSE;1
 28;Amanita;phalloides;(Vaill:Fr) Link;Zelena pupavka, 1 pečurka, zelena muhara, gomoljevka;FALSE;1
 29;Amanita;rubescens;(Pers:Fr) SF Gray;Biserka, bisernica, crvenkasta muhara, siva muhara;FALSE;4
-30;Amanita;spissa;(Fr) Kummer;Prava tigrica, siva muhara, krastavka;FALSE;6
-31;Amanita;strobiliformis;(Paulet)Bertillon;Usamljena muhara, ljuskava muhara;FALSE;6
+30;Amanita;spissa;(Fr) Kummer;Prava tigrica, siva muhara, krastavka;FALSE;5
+31;Amanita;strobiliformis;(Paulet)Bertillon;Usamljena muhara, ljuskava muhara;FALSE;5
 32;Amanita;vaginata;(Bull:Fr) Vittadini;Siva preslica, siva ovojnjača, tmurna preslica, obična preslica;FALSE;4
-33;Amanita;vaginata;var. alba Gillet;Bijela preslica, prava ovojnjača,lupinar;FALSE;6
+33;Amanita;vaginata;var. alba Gillet;Bijela preslica, prava ovojnjača,lupinar;FALSE;5
 34;Armillaria;mellea;(Vahl:Fr) Kummer;Puza, medenjača, mraznica, puzica, puzva, puzavci, migači, kljukači, grmečki;FALSE;4
 35;Armillaria;obscura;;smeđa puza;FALSE;4
-36;Armillaria;tabescens;(Scop) Emeland;Grmača, grmica, grmačica, grmovača, grmoščica, penjušica, gola puza;FALSE;6
+36;Armillaria;tabescens;(Scop) Emeland;Grmača, grmica, grmačica, grmovača, grmoščica, penjušica, gola puza;FALSE;5
 37;Arrhenia;spathulata;;;FALSE;3
 38;Artomyces;pyxidatus;(Pers:Fr) Julich;Bijela grmulja, zdjeličasta capica;FALSE;3
 39;Astraeus;hygrometricus;(Pers:Pers) Morgan;Upojna zvjezdača, zvjezdarka, vlagomjerna zvjezdača, vodomjerna zvjezdača;FALSE;3
 40;Aureoboletus;gentilis;;-;FALSE;3
 41;Auricularia;auricula-judae;(Bull:Fr.) Wettstein;Judino uho, bazgova uška;FALSE;5
 42;Auricularia;mesenterica;;;FALSE;3
-43;Auriscalpium;vulgare;;;FALSE;7
+43;Auriscalpium;vulgare;;;FALSE;5
 44;Bertia;moriformis;(Tode) De Not.;Šumski dud;FALSE;3
 45;Bjerkandera;adusta;;;FALSE;3
 46;Bolbitius;vitellinus;(Pers:Fr) Fr;Zlatni smetištar;FALSE;3
-47;Boletus;aereus;Bull:Fr;Hajdinski vrganj, crni vrganj, brončani vrganj, ljetni vrganj, hajdovec;FALSE;7
-48;Boletus;aestivalis;(Paulet) Fr;Proljetni vrganj, mrežasti vrganj;FALSE;7
-49;Boletus;appendiculatus;Schaeff.;Šiljatonogi vrganj, žuti vrganj, smeđa kraljevka;FALSE;7
+47;Boletus;aereus;Bull:Fr;Hajdinski vrganj, crni vrganj, brončani vrganj, ljetni vrganj, hajdovec;FALSE;5
+48;Boletus;aestivalis;(Paulet) Fr;Proljetni vrganj, mrežasti vrganj;FALSE;5
+49;Boletus;appendiculatus;Schaeff.;Šiljatonogi vrganj, žuti vrganj, smeđa kraljevka;FALSE;5
 50;Boletus;calopus;Pers:Fr;Lijeponogi vrganj, kravlja balega;FALSE;3
-51;Boletus;edulis;Bull:Fr;Jesenski vrganj, pravi vrganj, crnogorični vrganj, orvanj, gobanj, varganj, hrženjak, sirnjaja;FALSE;7
+51;Boletus;edulis;Bull:Fr;Jesenski vrganj, pravi vrganj, crnogorični vrganj, orvanj, gobanj, varganj, hrženjak, sirnjaja;FALSE;5
 52;Boletus;erythropus;Pers.;Zelenjača;FALSE;4
-53;Boletus;fechtneri;Velenovsky;Fechtnerov vrganj, blijeda kraljevka;TRUE;7
-54;Boletus;fragrans;Vittad.;Mirisavi vrganj;TRUE;6
-55;Boletus;impolitus;;;TRUE;6
+53;Boletus;fechtneri;Velenovsky;Fechtnerov vrganj, blijeda kraljevka;TRUE;5
+54;Boletus;fragrans;Vittad.;Mirisavi vrganj;TRUE;5
+55;Boletus;impolitus;;;TRUE;5
 56;Boletus;legaliae;(Pilat)ex Pilat & Dermek;Lažna ludara, vragoljasti vrganj;FALSE;2
 57;Boletus;luridus;Sch:Fr;Kovara, mrežastonogi vrganj, vrganjica, ludoglavka;FALSE;4
 58;Boletus;luteocupreus;Bertea & Estades;-;FALSE;3
-59;Boletus;pinophilus;Pilat & Dermek;Borov vrganj, crveni vrganj;FALSE;7
-60;Boletus;pseudoregius;(Hubert) ex Estades;Lažna kraljevka, ljupki vrganj;FALSE;7
+59;Boletus;pinophilus;Pilat & Dermek;Borov vrganj, crveni vrganj;FALSE;5
+60;Boletus;pseudoregius;(Hubert) ex Estades;Lažna kraljevka, ljupki vrganj;FALSE;5
 61;Boletus;pulverulentus;Opatowski;Tintar, posuti vrganj, osuti vrganj;FALSE;5
 62;Boletus;queletii;Schultzer;Glatkonoška, Queletov vrganj, slavonski vrganj,;FALSE;4
 63;Boletus;radicans;Pers:Fr;Gorki vrganj, bijeli gorčak;FALSE;3
-64;Boletus;regius;Krombholz;Kraljevka, kraljevski vrganj;TRUE;7
+64;Boletus;regius;Krombholz;Kraljevka, kraljevski vrganj;TRUE;5
 65;Boletus;rhodoxanthus;(Krombholz) Kallenbach;Purpurnožuti vrganj, žuta ruževača;FALSE;4
 66;Boletus;rubrosanguineus;Walty ex (Cheype);-;FALSE;3
 67;Boletus;satanas;Lenz;Ludara, bljutavka, luda gljiva, vražji vrganj, svinjača;FALSE;2
-68;Boletus;Spretus;;PRIJEZIRNI VRGANJ (Boletus Aemilii ss. Alessio);FALSE;7
-69;Boletus;subappendiculatus;;;FALSE;7
+68;Boletus;Spretus;;PRIJEZIRNI VRGANJ (Boletus Aemilii ss. Alessio);FALSE;5
+69;Boletus;subappendiculatus;;;FALSE;5
 70;Boletus;torosus;Fr. & Hok;Teški vrganj;TRUE;4
 71;Bovista;aestivalis;;;FALSE;3
 72;Calloria;fusarioides;(Berk.) Fr.;-;FALSE;3
 73;Calocera;furcata;;;FALSE;3
 74;Calocera;viscosa;(Pers:Fr) Fr;Žuta rožnatica, viskozna capica, viskozna rožnatica;FALSE;3
 75;Calocybe;constricta;;;TRUE;3
-76;Calocybe;gambosa;(Fr:Fr) Singer ex Donk;Jurjevka, đurđevača, đurđevka, ranka, potrnka, majska kolobarnica, svibanjska gljiva;FALSE;7
+76;Calocybe;gambosa;(Fr:Fr) Singer ex Donk;Jurjevka, đurđevača, đurđevka, ranka, potrnka, majska kolobarnica, svibanjska gljiva;FALSE;5
 77;Calocybe;ionides;;;TRUE;3
-78;Calvatia;excipuliformis;(Scop:Pers) Perdeck;Batinasta puhara, vrećasta puhara, visoka ćelavica;FALSE;6
-79;Calvatia;utriformis;;Trbušasta puhara,livadska puhara,puša;FALSE;6
-80;Cantharellus;amethysteus;;;FALSE;7
-81;Cantharellus;cibarius;Fr:Fr;Lisičica,lisičarka, bjelkasta lisičica, lisica, pršutnica;FALSE;7
-82;Cantharellus;cinereus;;Pepeljasta lisičica;FALSE;6
-83;Cantharellus;lutescens;Pers. ex Fr.;Zlatonoga trubača, žuta trubača;FALSE;7
-84;Cantharellus;melanoxeros;;Nagaravljena lisičica;FALSE;7
-85;Cantharellus;tubaeformis;Fr:Fr;Ljevkasta lisičica, peharasta lisičica;FALSE;6
+78;Calvatia;excipuliformis;(Scop:Pers) Perdeck;Batinasta puhara, vrećasta puhara, visoka ćelavica;FALSE;5
+79;Calvatia;utriformis;;Trbušasta puhara,livadska puhara,puša;FALSE;5
+80;Cantharellus;amethysteus;;;FALSE;5
+81;Cantharellus;cibarius;Fr:Fr;Lisičica,lisičarka, bjelkasta lisičica, lisica, pršutnica;FALSE;5
+82;Cantharellus;cinereus;;Pepeljasta lisičica;FALSE;5
+83;Cantharellus;lutescens;Pers. ex Fr.;Zlatonoga trubača, žuta trubača;FALSE;5
+84;Cantharellus;melanoxeros;;Nagaravljena lisičica;FALSE;5
+85;Cantharellus;tubaeformis;Fr:Fr;Ljevkasta lisičica, peharasta lisičica;FALSE;5
 86;Catathelasma;imperiale;;;TRUE;5
 87;Chalciporus;piperatus;(Bull:fr) Bataille;Papreni vrganj, paprenjak, papreni sluzavac;FALSE;4
 88;Chamaemyces;fracidus;;;FALSE;3
@@ -95,14 +95,14 @@ id;Genus;Species;Variant;Name;protected;edibilityId
 94;Clavulina;coralloides;;;FALSE;3
 95;Clitocybe;alexandri;(Gillet) Gillet;Aleksandrova grlašica;FALSE;5
 96;Clitocybe;collina;;;TRUE;3
-97;Clitocybe;geotropa;(Bull:Fr) Quelet;Martinčica, martinovka, fratarica, pršutica, veli žmuj, velika livka, pozna livka;FALSE;6
+97;Clitocybe;geotropa;(Bull:Fr) Quelet;Martinčica, martinovka, fratarica, pršutica, veli žmuj, velika livka, pozna livka;FALSE;5
 98;Clitocybe;gibba;(Pers:Fr) Kummer;Mala martinčica, smeđasta grlašica, grbičasta grlašica;FALSE;5
 99;Clitocybe;inversa;(Scop) Patouillard;Izvrnuta grlašica, žuta uleknjača;FALSE;4
 100;Clitocybe;nebularis;(Batsch:Fr) Kummer;Maglenka, snježnica, maglena grlašica;FALSE;4
 101;Clitocybe;odora;(Bull:Fr) Kummer;Mirisna grlašica, mirisna uleknjača, anisovka, anisova grlašica, zelena grlašica;FALSE;5
 102;Clitocybe;phyllophila;(Pers:Fr) Kummer;Vapnenasta grlašica, bijela otrovnica, lisnata grlašica;FALSE;1
 103;Clitocybe;rivulosa;;;FALSE;1
-104;Clitopilus;prunulus;(Scop:fr) Quelet;Brašnjača, svilena lisičica, mlinarica, krhka brašnjača, majevka, mokarica, slivarica;FALSE;7
+104;Clitopilus;prunulus;(Scop:fr) Quelet;Brašnjača, svilena lisičica, mlinarica, krhka brašnjača, majevka, mokarica, slivarica;FALSE;5
 105;Collybia;butyracea;(Bull:Fr) Kummer;Maslačna plosnatica;FALSE;5
 106;Collybia;cirrhata;;;FALSE;3
 107;Collybia;dryophila;(Bull:Fr) Kummer;Vitka plosnatica, vitka korenovka, šumska plosnatica;FALSE;5
@@ -111,25 +111,25 @@ id;Genus;Species;Variant;Name;protected;edibilityId
 110;Collybia;peronata;(Bolt:Fr) Kummer;Ljuta plosnatica, ljuta lisnatica, runjava lisnatica;FALSE;3
 111;Comatricha;nigra;;;FALSE;3
 112;Coprinus;atramentarius;(Bull:Fr) Fr;Jajasta gnojištarka, naborana gnojištarka, obična gnojištarka, prava gnojištarka, prava tintnica;FALSE;4
-113;Coprinus;comatus;(Mull:Fr) Pers;Velika gnojištarka, ljuskava gnojištarka;FALSE;7
+113;Coprinus;comatus;(Mull:Fr) Pers;Velika gnojištarka, ljuskava gnojištarka;FALSE;5
 114;Coprinus;disseminatus;(Pers:Fr) SF Gray;Rasijana gnojištarka;FALSE;3
 115;Coprinus;gonophyllus;;;FALSE;3
 116;Coprinus;micaceus;(Bull:Fr) Fr;Blistava gnojištarka, tinjčeva gnojištarka;FALSE;5
 117;Coprinus;picaceus;(Bull:Fr) SF Gray;Šarena gnojištarka, šarena tintnica;FALSE;3
 118;Cordyceps;capitata;;;FALSE;3
-119;Cordyceps;militaris;(L:Fr) Link;Stršeća gusjenica, narančasti ubojica gusjenica, narančasta batinica;FALSE;8
+119;Cordyceps;militaris;(L:Fr) Link;Stršeća gusjenica, narančasti ubojica gusjenica, narančasta batinica;FALSE;6
 120;Cortinarius;bolaris;(Pers:Fr) Pers;Ljuskava koprenka, crvenšarka;FALSE;2
 121;Cortinarius;elatior;;;FALSE;3
 122;Cortinarius;humicola;;;FALSE;2
 123;Cortinarius;orellanus;Fr.;Crvenjača, planinska koprenka, poljska koprenka;FALSE;1
-124;Cortinarius;praestans;(Cordier) Gillet;Debelonoška,ukusna koprenka;TRUE;6
+124;Cortinarius;praestans;(Cordier) Gillet;Debelonoška,ukusna koprenka;TRUE;5
 125;Cortinarius;salor;;;FALSE;3
 126;Cortinarius;semisanguineus;(Fr:Fr) Gillet;Polukrvna koprenka, polukrvna crvenjača;FALSE;2
 127;Cortinarius;trivialis;Lange;Obična koprenka;FALSE;3
 128;Cortinarius;turmalis;;;FALSE;3
 129;Cortinarius;variecolor;;;FALSE;3
 130;Cortinarius;violaceus;(L:Fr) Fr;Ljubičasta koprenka;FALSE;5
-131;Craterellus;cornucopioides;(L:Fr) Pers.;Mrka trubača, mrtvačka truba, crna trubača, rog obilja;FALSE;7
+131;Craterellus;cornucopioides;(L:Fr) Pers.;Mrka trubača, mrtvačka truba, crna trubača, rog obilja;FALSE;5
 132;Crepidotus;sp.;;Batrljica;FALSE;3
 133;Crinipellis;scabella;;;FALSE;3
 134;Cyathus;striatus;(Huds:Pers) Willdenow;Prugasta košarica, prugasti lončić, ptičje gnijezdo;FALSE;3
@@ -142,34 +142,34 @@ id;Genus;Species;Variant;Name;protected;edibilityId
 141;Elaphomyces;muricatus;Fr.;Igličava jelen-gljiva, kratkošiljata jelen-gljiva;FALSE;4
 142;Encoelia;fascicularis;(Alb. & Sch.)Karst.;-;FALSE;3
 143;Encoelia;furfuracea;(Roth) P. Karst.;-;FALSE;3
-144;Entoloma;clypeatum;(L.) Kummer;Šljivovača, šljivarka, trnčica, štitasta rudoliska, sivkasta šljivovača, šljivova gljiva;FALSE;7
+144;Entoloma;clypeatum;(L.) Kummer;Šljivovača, šljivarka, trnčica, štitasta rudoliska, sivkasta šljivovača, šljivova gljiva;FALSE;5
 145;Entoloma;hirtipes;(Schum:Fr) Moser;Dlakavonoga rudoliska, smrdljiva rudoliska;FALSE;3
 146;Entoloma;icterinum;;;FALSE;3
-147;Entoloma;sepium;(Noulet & Dassier) Richon & Roze;Bijela šljivovača, ograđena rudoliska;FALSE;7
+147;Entoloma;sepium;(Noulet & Dassier) Richon & Roze;Bijela šljivovača, ograđena rudoliska;FALSE;5
 148;Entoloma;sinuatum;(Bull:Fr) Kummer;Olovasta rudoliska, velika rudoliska;FALSE;2
 149;Exidia;glandulosa;(Bull:Fr) Fr;Bradavičasta žljezdarica, žljezdolika drhtalica;FALSE;3
 150;Exidia;recisa;;;FALSE;3
 151;Faerberia;carbonaria;;;FALSE;3
 152;Fistulina;hepatica;(Sch:Fr) With;Jetrenka, vukovo meso, jetrenjača, goveđi jezik, volovski jezik, jetrenica, volovska jetra;FALSE;5
-153;Flammulina;velutipes;(Curt:Fr) Karsten;Zimska panjevčica, baršunasta panjevčica, zimska plamenjača;FALSE;8
+153;Flammulina;velutipes;(Curt:Fr) Karsten;Zimska panjevčica, baršunasta panjevčica, zimska plamenjača;FALSE;6
 154;Fomes;fomentarius;(L:Fr) Fr;Kresivna guba, kopitarka, bukova guba;FALSE;3
 155;Fomitopsis;pinicola;(Swartz:Fr) Karsten;Obrubljena guba, smrekina kopitarka;FALSE;3
 156;Fuligo;septica;(L.) F.H. Wigg.;Žuta sluznjača;FALSE;3
-157;Ganoderma;lucidum;(Curt:Fr) Karsten;Hrastova sjajnica;FALSE;8
+157;Ganoderma;lucidum;(Curt:Fr) Karsten;Hrastova sjajnica;FALSE;6
 158;Geastrum;fornicatum;(Huds.) Hook.;Zategnuta zvjezdača;FALSE;3
 159;Geastrum;quadrifidum;;;FALSE;3
 160;Geastrum;triplex;Junghuhn;Troslojna zvjezdača, trostruka zvjezdača;FALSE;3
 161;Geopora;sumneriana;(Cooke) M. Torre;Cedrova krunčica;FALSE;3
 162;Geopyxis;carbonaria;(Alb. & Sch.) Sacc.;Ugljenski pehar;FALSE;3
-163;Gomphidius;glutinosus;(Sch:fr) Fr;Veliki slinar;FALSE;6
+163;Gomphidius;glutinosus;(Sch:fr) Fr;Veliki slinar;FALSE;5
 164;Gomphidius;roseus;;;TRUE;5
-165;Grifola;frondosa;(Dicks.) Gray;Zečarka, zec-gljiva, klepetača, zajčeki, veliki žbunac, dedik, sivi žbunac;FALSE;8
-166;Grifola;umbellata;(Pers.) Pilat;Jelenovo uho, hrastov žbunac, sarvašica, jelenček, jelenak, gljivice;TRUE;6
+165;Grifola;frondosa;(Dicks.) Gray;Zečarka, zec-gljiva, klepetača, zajčeki, veliki žbunac, dedik, sivi žbunac;FALSE;6
+166;Grifola;umbellata;(Pers.) Pilat;Jelenovo uho, hrastov žbunac, sarvašica, jelenček, jelenak, gljivice;TRUE;5
 167;Guepinia;helvelloides;;;FALSE;5
 168;Gymnopilus;spectabilis;(Fr:Fr) Smith;Divna plamenka, Čudesna razornica;FALSE;2
 169;Gyromitra;esculenta;(Pers:Fr) Fr;Proljetni hrčak, rani hrčak, proljetna moždanica, lažni smrčak;TRUE;2
 170;Gyromitra;infula;;;FALSE;2
-171;Gyroporus;castaneus;(Bull:Fr) Quelet;Kestenjasti vrganj, kestenov vrganj, kestenov žljebovac, maronka;FALSE;6
+171;Gyroporus;castaneus;(Bull:Fr) Quelet;Kestenjasti vrganj, kestenov vrganj, kestenov žljebovac, maronka;FALSE;5
 172;Hebeloma;sinapizans;(Paulet) Gillet;Rotkvičava tupavica, gorušičina plavulja;FALSE;2
 173;Helvella;acetabulum;(L.) Quel.;Proljetna rebrašica;FALSE;3
 174;Helvella;crispa;(Scop:Fr) Fr;Jesenski hrčak, jesenji hrčak, jesenja jamičarka;FALSE;4
@@ -182,27 +182,27 @@ id;Genus;Species;Variant;Name;protected;edibilityId
 181;Hydnellum;compactum;(Pers.) P. Karst.;Nezgrapna ježevica, zbijena plutovka;FALSE;3
 182;Hydnellum;peckii;;;FALSE;3
 183;Hydnum;albidum;;;FALSE;5
-184;Hydnum;repandum;L:Fr;Prosenjak, migač, žuta ježevica;FALSE;6
+184;Hydnum;repandum;L:Fr;Prosenjak, migač, žuta ježevica;FALSE;5
 185;Hygrocybe;calyptriformis;;Ružičasta (ljubičasta) vlažnica;TRUE;5
 186;Hygrocybe;conica;(Scop:Fr) Kummer;Stožasta vlažnica, konična vlažnica, stožasta staklača, stožarka;FALSE;3
-187;Hygrocybe;pratensis;(Fr.) Murrill;Livadna zlatača,livadna sočnica;FALSE;7
-188;Hygrocybe;punicea(Fr.:Fr.)Kummer;;Velika crvena vlaznica,Crvenoglava socnica;TRUE;7
+187;Hygrocybe;pratensis;(Fr.) Murrill;Livadna zlatača,livadna sočnica;FALSE;5
+188;Hygrocybe;punicea(Fr.:Fr.)Kummer;;Velika crvena vlaznica,Crvenoglava socnica;TRUE;5
 189;Hygrocybe;virginea;(Wulfen) Orton & Watling;Djevičanska vlažnica, djevičanska sočnica, snježna sočnica;FALSE;5
 190;Hygrocybe_sp;(splendidissima/aurantiosplendens);;-;FALSE;5
 191;Hygrophoropsis;aurantiaca;(Wulf:Fr) Maire;Lažna lisičica;FALSE;3
 192;Hygrophorus;agathosmus;(Fr) Fr;Mirisna puževica, bademova puževica;FALSE;5
-193;Hygrophorus;aureus;(Arrh.)Fries;Zlatna puzevica;TRUE;7
+193;Hygrophorus;aureus;(Arrh.)Fries;Zlatna puzevica;TRUE;5
 194;Hygrophorus;chrysodon;(Batsch:Fr) Fr;Zlatnožuta puževica, zlatnozuba puževica, zlatnomrljasta puževica;FALSE;5
-195;Hygrophorus;dichrous;;;FALSE;6
-196;Hygrophorus;hypothejus;(Fr.: Fr.) Fr.;Kasna puzevica,Jesenja puzevica;TRUE;7
-197;Hygrophorus;latitabundus;Britzelm.;Viskozna puževica;FALSE;7
+195;Hygrophorus;dichrous;;;FALSE;5
+196;Hygrophorus;hypothejus;(Fr.: Fr.) Fr.;Kasna puzevica,Jesenja puzevica;TRUE;5
+197;Hygrophorus;latitabundus;Britzelm.;Viskozna puževica;FALSE;5
 198;Hygrophorus;lucorum;Kalchbr.;Ariševa puževica;TRUE;5
-199;Hygrophorus;marzuolus;(Fr:Fr) Bresadola;Ožujka, martovka, marčnica, ožujska puževica, snježnica, proljetna sočnica, marčevka;TRUE;7
-200;Hygrophorus;nemoreus;(Pers:Fr) Fr;Tupoglavka, tupoglava puževica, šumska puževica;FALSE;6
-201;Hygrophorus;penarius;Fr.;Suha puževica, tvrda puževica;FALSE;7
+199;Hygrophorus;marzuolus;(Fr:Fr) Bresadola;Ožujka, martovka, marčnica, ožujska puževica, snježnica, proljetna sočnica, marčevka;TRUE;5
+200;Hygrophorus;nemoreus;(Pers:Fr) Fr;Tupoglavka, tupoglava puževica, šumska puževica;FALSE;5
+201;Hygrophorus;penarius;Fr.;Suha puževica, tvrda puževica;FALSE;5
 202;Hygrophorus;persicolor;;;FALSE;3
-203;Hygrophorus;poetarum;Heim;Pjesnička puževica;TRUE;6
-204;Hygrophorus;russula;(Sch:Fr) Quelet;Medenka, medena puževica, crvenomrljasta puževica, voštana puževica, pjegava puževica;FALSE;6
+203;Hygrophorus;poetarum;Heim;Pjesnička puževica;TRUE;5
+204;Hygrophorus;russula;(Sch:Fr) Quelet;Medenka, medena puževica, crvenomrljasta puževica, voštana puževica, pjegava puževica;FALSE;5
 205;Hypholoma;fasciculare;(Huds:Fr) Kummer;Sumporača, prava sumporača, obična sumporača;FALSE;2
 206;Hypholoma;sublateritium;(Fr) Quelet;Crvenkasta panjevčica, crvenkasta sumporača, ciglastocrvena sumporača;FALSE;4
 207;Hypomyces;rosellus;(Alb. & Sch.) Tul.;-;FALSE;3
@@ -212,37 +212,37 @@ id;Genus;Species;Variant;Name;protected;edibilityId
 211;Inonotus;dryadeus;(Pers:Fr) Murr.;Hrastov kopitar;FALSE;3
 212;Inonotus;hispidus;;;FALSE;3
 213;Inonotus;hispidus;"(Bull.;Fr.)P.Karst.";Cupavi rupicar;FALSE;5
-214;Inonotus;obliquus;;Chaga, Čaga;FALSE;8
-215;Kuehneromyces er;mutabilis;(Scop:Fr) Smith & Sing;Panjevčica, aromatična panjevčica, promijenljiva ljuskavica;FALSE;7
+214;Inonotus;obliquus;;Chaga, Čaga;FALSE;6
+215;Kuehneromyces er;mutabilis;(Scop:Fr) Smith & Sing;Panjevčica, aromatična panjevčica, promijenljiva ljuskavica;FALSE;5
 216;Laccaria;amethystina;(Huds.) Cooke;Ljubičasta gljivica, ljubičasta lakovka;FALSE;5
 217;Laccaria;laccata;(Scop:Fr) Cooke;Crvenkasta gljivica, obična lakovka;FALSE;5
 218;Lactarius;chrysorrheus;;Lažna rujnica;FALSE;3
-219;Lactarius;deliciosus;(L:Fr) SF Gray;Rujnica, brinovka;FALSE;7
-220;Lactarius;deterrimus;;;FALSE;6
+219;Lactarius;deliciosus;(L:Fr) SF Gray;Rujnica, brinovka;FALSE;5
+220;Lactarius;deterrimus;;;FALSE;5
 221;Lactarius;flavidus;Boud.;Žućkasta mliječnica;FALSE;3
 222;Lactarius;glyciosmus;(Fr:Fr) Fr;Kokosova mliječnica, pahuljičasta mliječnica;FALSE;3
 223;Lactarius;necator;;;FALSE;3
 224;Lactarius;piperatus;(Scop:Fr) Pers;Mliječnica, paprena mliječnica, mliječ, paprenjača, paprenjaci;FALSE;4
 225;Lactarius;quietus;(Fr:Fr) Fr;Hrastova mliječnica;FALSE;4
 226;Lactarius;salmonicolor;Heim & Leclair;Jelova rujnica, lososova rujnica;FALSE;5
-227;Lactarius;sanguifluus;(Paulet:Fr) Fr;Krvna rujnica, krvotočna rujnica, vrsovnica, južnjačka rujnica, žrnovčica;FALSE;7
+227;Lactarius;sanguifluus;(Paulet:Fr) Fr;Krvna rujnica, krvotočna rujnica, vrsovnica, južnjačka rujnica, žrnovčica;FALSE;5
 228;Lactarius;scrobiculatus;;;FALSE;3
 229;Lactarius;torminosus;(Schff. Ex Fr.) Gray;Runjava mliječnica, brezovka, lažna rujnica;FALSE;3
 230;Lactarius;uvidus;;;FALSE;3
-231;Lactarius;volemus;(Fr:Fr) Fr;Presnac, sirovka, pečenica, pastirska mliječnica, prijesna mliječnica, sirogriz, samojetka;FALSE;6
+231;Lactarius;volemus;(Fr:Fr) Fr;Presnac, sirovka, pečenica, pastirska mliječnica, prijesna mliječnica, sirogriz, samojetka;FALSE;5
 232;Laetiporus;sulphureus;(Bull.) Bondar. & Sing.;Žuti kruh, sumporasti žbunac, šumsko pile;FALSE;5
-233;Langermannia;gigantea;(Batsch) Rostk.;Golema puhara, velika ćelavica, gigantska puhara, najveća puhara;FALSE;6
+233;Langermannia;gigantea;(Batsch) Rostk.;Golema puhara, velika ćelavica, gigantska puhara, najveća puhara;FALSE;5
 234;Lasiosphaeria;ovina;(Pers.)Ces.&De Not.;-;FALSE;3
 235;Lasiosphaeria;spermoides;(Hoffm.)Ces.&De Not.;-;FALSE;3
-236;Leccinum;aurantiacum;(Bull) SF Gray;Crveni hrapavac, trepetljikin turčin, topolov turčin, turčin, topolin hrapavac, palčec;FALSE;6
-237;Leccinum;carpini;(Schulzer) Moser ex Reid;Grabov djed, grabov dedek, grabov vrganj, grabovac, sivi hrapavac;FALSE;6
-238;Leccinum;crocipodium;(Letell.) Watling;Žuti djed, žuti dedek, plemeniti hrapavac, djed kornjačar;FALSE;6
-239;Leccinum;duriusculum;;;FALSE;7
-240;Leccinum;quercinum;(Pilat)Green & Watling;Hrastov turčin;FALSE;7
-241;Leccinum;scabrum;(Bull:Fr) SF Gray;Brezov djed, pravi djed, dedek, obični hrapavac, kapucin, pasji vrganj, brezovac, kravarik;FALSE;6
+236;Leccinum;aurantiacum;(Bull) SF Gray;Crveni hrapavac, trepetljikin turčin, topolov turčin, turčin, topolin hrapavac, palčec;FALSE;5
+237;Leccinum;carpini;(Schulzer) Moser ex Reid;Grabov djed, grabov dedek, grabov vrganj, grabovac, sivi hrapavac;FALSE;5
+238;Leccinum;crocipodium;(Letell.) Watling;Žuti djed, žuti dedek, plemeniti hrapavac, djed kornjačar;FALSE;5
+239;Leccinum;duriusculum;;;FALSE;5
+240;Leccinum;quercinum;(Pilat)Green & Watling;Hrastov turčin;FALSE;5
+241;Leccinum;scabrum;(Bull:Fr) SF Gray;Brezov djed, pravi djed, dedek, obični hrapavac, kapucin, pasji vrganj, brezovac, kravarik;FALSE;5
 242;Lentinellus;cochleatus;(Hoffm:Fr) Karsten;Žilava aniska, anisova žilavka;FALSE;4
 243;Lentinellus;flabelliformis;;;FALSE;3
-244;Lentinula;edodes;(Berk.) Pegler;Shii-take, šitake, mirisna aniska;FALSE;8
+244;Lentinula;edodes;(Berk.) Pegler;Shii-take, šitake, mirisna aniska;FALSE;6
 245;Lentinus;conchatus;(Bull:Fr) Schroeter;Školjkasta busenjača;FALSE;4
 246;Lentinus;tigrinus;(Bull:Fr) Fr;Busenasta tigrica, tigrasta busenjača, tigrasta pilašica, vrbovača;FALSE;4
 247;Leocarpus;fragilis;;;FALSE;3
@@ -250,7 +250,7 @@ id;Genus;Species;Variant;Name;protected;edibilityId
 249;Lepiota;aspera;(Pers.) Quel.;Trnovača, račvasta trnovača, bodljikava suncobranka;FALSE;2
 250;Lepiota;clypeolaria;(Bull:Fr) Kummer;Bijelonoga štitarka, štitarka, obuvena suncobranka;FALSE;3
 251;Lepista;glaucocana;(Bres.) Singer;Blijedoljubičasta koturnica;FALSE;4
-252;Lepista;nuda;(Bull:Fr) Cooke;Modrikača, modra koturnica, modrikasta jesenjača;FALSE;7
+252;Lepista;nuda;(Bull:Fr) Cooke;Modrikača, modra koturnica, modrikasta jesenjača;FALSE;5
 253;Lepista;sordida;;Mala koturnica;FALSE;5
 254;Leratiomyces;squamosus;;;FALSE;3
 255;Leucoagaricus;leucothites;(Vittadini) Wasser;Bjelkasta pečurkovica, turkinja, crvenkastolisna sunčica;FALSE;5
@@ -261,18 +261,18 @@ id;Genus;Species;Variant;Name;protected;edibilityId
 260;Lophodermium;arundinaceum;(Schrad.) Chevall.;-;FALSE;3
 261;Lycoperdon;echinatum;;Naježena puhara,bodljikava puhara;FALSE;5
 262;Lycoperdon;perlatum;Pers:Pers;Tikvasta puhara, zrnata puhara, puša, prha, prhavica;FALSE;5
-263;Lyophyllum;fumosum;(Pers.) P.D. Orton;Obična sraštenica, kostanjevčica, siva sraštenica;FALSE;7
-264;Lyophyllum;loricatum;(Fr) Kuhn.;Tvrdokožna sraštenica, hrskavica, pozna kostanjevka, oklopljena kostanjevka;FALSE;6
+263;Lyophyllum;fumosum;(Pers.) P.D. Orton;Obična sraštenica, kostanjevčica, siva sraštenica;FALSE;5
+264;Lyophyllum;loricatum;(Fr) Kuhn.;Tvrdokožna sraštenica, hrskavica, pozna kostanjevka, oklopljena kostanjevka;FALSE;5
 265;Macrocystidia;cucumis;(Pers:Fr) Josserand;Velikocistidna mirisnica;FALSE;3
-266;Macrolepiota;excoriata;;Oguljena sunčanica;FALSE;7
-267;Macrolepiota;procera;(Scop:Fr) Singer;Sunčanica, velika sunčanica, šugarica, srnjaki, srndakuša, kozara, parazol;FALSE;7
+266;Macrolepiota;excoriata;;Oguljena sunčanica;FALSE;5
+267;Macrolepiota;procera;(Scop:Fr) Singer;Sunčanica, velika sunčanica, šugarica, srnjaki, srndakuša, kozara, parazol;FALSE;5
 268;Macrolepiota;rhacodes;(Vittadini) Singer;Kuštrava sunčanica, crvenkasta sunčanica;FALSE;5
 269;Macrotyphula;filiformis;;;FALSE;3
 270;Marasmiellus;omphaliformis;(Kuhner) Noordeloos;-;FALSE;3
 271;Marasmius;alliaceus;(Jacq:Fr) Fr;Bukova čamavka, dugonogi klinčac, lukovka, lukova čamavka, nitasta češnjevka;FALSE;4
 272;Marasmius;buillardii;;;FALSE;3
 273;Marasmius;cohaerens;;;FALSE;3
-274;Marasmius;oreades;(Bolt:Fr) Fr;Vilin klinčac, mirisna čamavka, jušna gljiva, jesenski ili poljski museron;FALSE;6
+274;Marasmius;oreades;(Bolt:Fr) Fr;Vilin klinčac, mirisna čamavka, jušna gljiva, jesenski ili poljski museron;FALSE;5
 275;Marasmius;rotula;(Scop:Fr) Fr;Koturasta sušičarka, koturasta čamavka;FALSE;3
 276;Marasmius;scorodonius;;;FALSE;5
 277;Megacollybia;platyphylla;(Pers:Fr)Kotl.&Pouz.;Raspucana širokoliska, širokolisna korjenjača;FALSE;5
@@ -280,9 +280,9 @@ id;Genus;Species;Variant;Name;protected;edibilityId
 279;Melanoleuca;melaleuca;(Pers:Fr) Murrill;Obična gustoliska;FALSE;5
 280;Meripilus;giganteus;(Pers.) P. Karst.;Orijaška zrašćenka, orijaška rupičavka, golemi žbunac, veliki žbunac;FALSE;4
 281;Merulius;tremellosus;;;FALSE;3
-282;Mitrophora;semilibera;(DeCand:Fr) Leveille;Zvonasti smrčak, hibridni smrčak, prirasli smrčak;FALSE;6
-283;Morchella;conica;;Stožasti smrčak,marohlin,mavrica;FALSE;7
-284;Morchella;esculenta;(L.) Pers.;Smrčak, pravi smrčak, srček, marohlin, maruh, svijetli smrčak, žuti smrčak;FALSE;7
+282;Mitrophora;semilibera;(DeCand:Fr) Leveille;Zvonasti smrčak, hibridni smrčak, prirasli smrčak;FALSE;5
+283;Morchella;conica;;Stožasti smrčak,marohlin,mavrica;FALSE;5
+284;Morchella;esculenta;(L.) Pers.;Smrčak, pravi smrčak, srček, marohlin, maruh, svijetli smrčak, žuti smrčak;FALSE;5
 285;Mutinus;caninus;(Huds:Pers) Fr.;Pasji stršak, pasjak;FALSE;3
 286;Mycena;inclinata;(Fr) Quelet;Kosoglava šljemovka, kosoglavka, žutonožna šljemovka, smrdljiva šljemovka;FALSE;3
 287;Mycena;crocata;(Schrad:Fr) Kummer;Narančastosočna šljemovka, šafranasta šljemovka;FALSE;3
@@ -311,10 +311,10 @@ id;Genus;Species;Variant;Name;protected;edibilityId
 310;Pholiota;populnea;(Pers.) Kuyp. & Tjall.;Topolova ljuskavica, topolova čehavka, razorna čehavka;FALSE;3
 311;Pholiota;squarrosa;(Mull:Fr) Kummer;Hrapava ljuskavica;FALSE;3
 312;Phylloporus;pelletieri;(Lev.) Quel.;Crvenkasti listićavac, crvenozlatna listoporka;TRUE;5
-313;Piptoporus;betulinus;(Bull.) P. Karst.;Brezina guba, brezovaca;FALSE;8
+313;Piptoporus;betulinus;(Bull.) P. Karst.;Brezina guba, brezovaca;FALSE;6
 314;Plectania;melastoma;(Sowerby) Fuckel;Crvenkasta crnočaška;TRUE;3
 315;Pleurotus;dryinus;;;FALSE;5
-316;Pleurotus;ostreatus;;Šumska ostriga,Bukovača;FALSE;7
+316;Pleurotus;ostreatus;;Šumska ostriga,Bukovača;FALSE;5
 317;Plicaturopsis;crispa;;;FALSE;3
 318;Polyporus;brumalis;;;FALSE;3
 319;Polyporus;squamosus;(Huds.) Fr.;Škriplin, škripac, škripavac, ljuskavi rupičar;FALSE;5
@@ -322,11 +322,11 @@ id;Genus;Species;Variant;Name;protected;edibilityId
 321;Propolis;farinosa;(Pers.) Fr.;-;FALSE;3
 322;Psathyrella;ammophila;;;TRUE;3
 323;Psathyrella;melanthina;;Siva slabunjavka;TRUE;3
-324;Pseudoclitocybe;cyathiformis;;Peharasta grlašica;FALSE;6
+324;Pseudoclitocybe;cyathiformis;;Peharasta grlašica;FALSE;5
 325;Pseudohydnum;gelatinosum;;;FALSE;5
 326;Pseudoplectania;nigrella;(Pers.) Fuckel;Blistava crnočaška;FALSE;3
 327;Pycnoporellus;cinnabarinus;;;FALSE;3
-328;Ramaria;botrytis;;crvenkasta capica;FALSE;6
+328;Ramaria;botrytis;;crvenkasta capica;FALSE;5
 329;Ramaria;formosa;(Pers.) Quel.;Trobojna griva,trobojna capica,trobojna koraljka;FALSE;2
 330;Ramaria;pallida;;blijeda capica;FALSE;2
 331;Ramaria sp.;(aurea);(Schaeff.) Quel.;Zlatna capica,prsteci;FALSE;5
@@ -337,10 +337,10 @@ id;Genus;Species;Variant;Name;protected;edibilityId
 336;Rickenella;swartzii;;;FALSE;3
 337;Russula;aeruginea;;;FALSE;3
 338;Russula;caerulea;;;FALSE;3
-339;Russula;cyanoxantha;(Sch.) Fr;Ljubičastozelena krasnica, plavka, sivka, sivozelenkasta krasnica;FALSE;7
+339;Russula;cyanoxantha;(Sch.) Fr;Ljubičastozelena krasnica, plavka, sivka, sivozelenkasta krasnica;FALSE;5
 340;Russula;emetica;;;FALSE;3
 341;Russula;foetens;;smrdljiva krasnica, smrdača;FALSE;2
-342;Russula;integra;;;FALSE;6
+342;Russula;integra;;;FALSE;5
 343;Russula;laeta;;;FALSE;5
 344;Russula;lilacea;;;FALSE;5
 345;Russula;nana;Killerman.1936;Alpska golubica;FALSE;3
@@ -348,8 +348,8 @@ id;Genus;Species;Variant;Name;protected;edibilityId
 347;Russula;queletii;Fr.;Queletijeva krasnica;FALSE;3
 348;Russula;solaris;Ferdinansen & Winge;Sunceva golubica;FALSE;3
 349;Russula;versicolor;;;FALSE;3
-350;Russula;vesca;;4 krasnica;FALSE;7
-351;Russula;virescens;;Golubača,blavijenka,zeka;FALSE;7
+350;Russula;vesca;;4 krasnica;FALSE;5
+351;Russula;virescens;;Golubača,blavijenka,zeka;FALSE;5
 352;Russula;xerampelina;;;FALSE;5
 353;Rutstroemia;bolaris;(Batsch) Rehm;Grabova čašica;FALSE;3
 354;Rutstroemia;bulgarioides;(Rabenh.)Karst.;;FALSE;3
@@ -358,17 +358,17 @@ id;Genus;Species;Variant;Name;protected;edibilityId
 357;Sarcosphaera;coronaria;(Jacq.) J. Schrot.;Ljubičasta krunašica;FALSE;1
 358;Scleroderma;verrucosum;;;FALSE;2
 359;Sclerotinia;tuberosa;(Hedw.) Fuckel;Šumaričin pehar;FALSE;3
-360;Sparassis;crispa;;;TRUE;6
-361;Sparassis;nemecii;;;FALSE;6
+360;Sparassis;crispa;;;TRUE;5
+361;Sparassis;nemecii;;;FALSE;5
 362;Spathularia;flavida;;Žuta spatula,Žuta lopatica;FALSE;3
 363;Sphaerobolus;stellatus;Tode;Top gljiva;FALSE;3
 364;Stereum;sanguinolentum;;;FALSE;3
 365;Strobilurus;esculentus;(Wulfen) Singer;Smrekova češerka;FALSE;5
 366;Stropharia;caerulea;Kreisel;Plava vitičarka;FALSE;3
 367;Suillus;bovinus;;;FALSE;5
-368;Suillus;granulatus;;Slinavka,ovčarka;FALSE;7
+368;Suillus;granulatus;;Slinavka,ovčarka;FALSE;5
 369;Suillus;grevillei;(Klotzsch)Singer;Prstenjak,elegantni vrganj,lični vrganj;FALSE;5
-370;Suillus;luteus;;;FALSE;6
+370;Suillus;luteus;;;FALSE;5
 371;Suillus;variegatus;;;FALSE;5
 372;Suillus;viscidus;;;FALSE;5
 373;Thelephora;caryophyllea;;;FALSE;3
@@ -380,12 +380,12 @@ id;Genus;Species;Variant;Name;protected;edibilityId
 379;Tricholoma;atrosquamosum;;;FALSE;5
 380;Tricholoma;aurantium;;;TRUE;3
 381;Tricholoma;basirubens;;;FALSE;5
-382;Tricholoma;columbetta;;;FALSE;7
+382;Tricholoma;columbetta;;;FALSE;5
 383;Tricholoma;equestre;(Linn.:Fr.)Kummer;Zelenka;FALSE;2
 384;Tricholoma;focale;;;FALSE;3
 385;Tricholoma;pardinum;;;FALSE;2
 386;Tricholoma;squarrulosum;;čehava vitezovka;FALSE;5
-387;Tricholoma;terreum;(Sch:Fr) Kummer;Mišek, lažna sivka, miška, zemljana vitezovka, prljava vitezovka;FALSE;6
+387;Tricholoma;terreum;(Sch:Fr) Kummer;Mišek, lažna sivka, miška, zemljana vitezovka, prljava vitezovka;FALSE;5
 388;Tricholoma;vaccinum;;;FALSE;3
 389;Tricholomopsis;decora;;;FALSE;3
 390;Urnula;craterium;(Schwein.)Fr.;Crni pehar;TRUE;3
