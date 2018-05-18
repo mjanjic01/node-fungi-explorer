@@ -1,7 +1,9 @@
 import 'bootstrap';
 
-import 'map';
+import 'maps';
 import 'image-preview';
+import 'carousel';
 
 import 'images';
 import 'application.scss';
+
