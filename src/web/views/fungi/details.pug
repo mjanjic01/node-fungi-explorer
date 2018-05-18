@@ -1,0 +1,28 @@
+extends /layouts/application.pug
+block content
+
+  .row.justify-content-center
+    .col-md-6
+      h2= fungi.name
+      h5= fungi.fullLatinName
+      p= fungi.isProtected
+      p= fungi.edibility
+
+
+      if images && images.length
+        #images-carousel.carousel.slide(data-ride="carousel")
+          .carousel-inner
+            each image, index in images
+              .carousel-item(class=(index === 0 && 'active'))
+                img.d-block.w-100(src=image alt=fungi.name)
+          a.carousel-control-prev(href="#images-carousel" role="button" data-slide="prev")
+            span.carousel-control-prev-icon(aria-hidden="true")
+            span.sr-only Prethodna
+          a.carousel-control-next(href="#images-carousel" role="button" data-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
+            span.sr-only Sljedeća
+
+
+
+      if locations && locations.length
+        .map.js-fungi-map(data-locations=locations)
