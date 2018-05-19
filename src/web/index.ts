@@ -56,7 +56,7 @@ server.setConfig((app) => {
         maxAge: SESSION_MAX_AGE,
       },
       name: 'sess-id',
-      resave: false,
+      resave: true,
       rolling: true,
       saveUninitialized: false,
       secret: process.env.SESSION_SECRET,
