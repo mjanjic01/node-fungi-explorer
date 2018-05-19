@@ -16,13 +16,12 @@ import {
 import { Fungi, IFungiRepository } from '../../domain';
 import { TYPES } from '../../ioc';
 import { IFungiService } from '../../services/FungiService';
-import authenticationMiddleware from '../middleware/authentication';
 
 @controller('/fungi')
 export default class FungiController {
   constructor(@inject(TYPES.FungiService) private fungiService: IFungiService) { }
 
-  @httpGet('/', authenticationMiddleware, sanitizeParam('query').trim())
+  @httpGet('/', sanitizeParam('query').trim())
   public async searchFungi(@response() res: Response, @queryParam('query') query: string) {
     return res.render('fungi/', {
       data: { query },
@@ -30,7 +29,7 @@ export default class FungiController {
     });
   }
 
-  @httpGet('/:fungiId', authenticationMiddleware)
+  @httpGet('/:fungiId')
   public async fungiDetails(@response() res: Response, @requestParam('fungiId') fungiId: number) {
     const fungi = await this.fungiService.getFungiById(fungiId);
 
