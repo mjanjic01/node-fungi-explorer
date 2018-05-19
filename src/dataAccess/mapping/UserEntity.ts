@@ -46,7 +46,7 @@ export class UserEntity extends User {
     @JoinColumn()
     public club: ClubEntity;
 
-    @ManyToMany((type) => HerbariumEntity)
+    @ManyToMany((type) => HerbariumEntity, (herbarium) => herbarium.owners)
     @JoinTable({
       name: 'UserHerbarium',
     })

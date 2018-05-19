@@ -3,6 +3,7 @@ import {
   Entity,
   EntitySchema,
   JoinColumn,
+  ManyToMany,
   ManyToOne,
   OneToMany,
   OneToOne,
@@ -36,4 +37,7 @@ export class HerbariumEntity extends Herbarium {
 
   @OneToMany((type) => ObservationEntity, (observation) => observation.herbarium)
   public observations: Array<ObservationEntity>;
+
+  @ManyToMany((type) => UserEntity, (user) => user.herbariums)
+  public owners: Array<UserEntity>;
 }
