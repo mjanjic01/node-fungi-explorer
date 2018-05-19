@@ -22,6 +22,10 @@ export default class AuthController {
 
   @httpGet('/login')
   public async getLogin(req, res) {
+    if (req.user) {
+      return res.redirect('/');
+    }
+
     return res.render('auth/login', {
       title: 'Prijava',
     });
@@ -40,6 +44,10 @@ export default class AuthController {
 
   @httpGet('/register')
   public async getRegister(req, res) {
+    if (req.user) {
+      return res.redirect('/');
+    }
+
     return res.render('auth/register', {
       title: 'Registracija',
     });
