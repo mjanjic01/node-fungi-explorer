@@ -1,0 +1,3 @@
+mixin navigationLink(target, name)
+  li.nav-item(class=(target === activeLink && 'active'))
+    a.nav-link(href=target)= name

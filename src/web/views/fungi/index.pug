@@ -1,6 +1,6 @@
 extends /layouts/application.pug
 block content
-  form(action="/fungi/index" method="action")
+  form(action="/fungi" method="action")
         input(type="hidden" name="_csrf" value=csrfToken)
         .form-group
           input.form-control(name="query" type="search" placeholder="Upišite pojmove za pretragu" value=data.query)

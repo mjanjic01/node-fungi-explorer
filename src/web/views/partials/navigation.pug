@@ -4,28 +4,18 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
     span.navbar-toggler-icon
   #navbar-content.collapse.navbar-collapse
     ul.navbar-nav.mr-auto
-      li.nav-item.active
-        a.nav-link(href="/")
-          | Početna
-          span.sr-only (current)
-
-      li.nav-item
-        a.nav-link(href="/fungi") Gljive
-
-      li.nav-item
-        a.nav-link(href="/observation") Zapažanja
-
+      +navigationLink('/', 'Početna')
+      +navigationLink('/fungi', 'Gljive')
+      +navigationLink('/observation', 'Zapažanja')
+      +navigationLink('/herbarium', 'Herbariji')
 
     ul.navbar-nav
       if user
-        li.nav-item
-          a.nav-link(href="/auth/logout") Odjava
+        span.navbar-text= user.username
+        +navigationLink('/auth/logout', 'Odjava')
 
       else
-        li.nav-item
-          a.nav-link(href="/auth/login") Prijava
-
-        li.nav-item
-          a.nav-link(href="/auth/register") Registracija
+        +navigationLink('/auth/login', 'Prijava')
+        +navigationLink('/auth/register', 'Registracija')
 
 
