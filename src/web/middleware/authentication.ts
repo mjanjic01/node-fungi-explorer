@@ -3,6 +3,6 @@ export default function authenticationMiddleware(req, res, next) {
     return next();
   }
 
-  req.session._referringRoute = req.path;
+  req.session._referringRoute = req.url;
   return res.redirect('/auth/login');
 }

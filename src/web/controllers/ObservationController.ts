@@ -18,18 +18,18 @@ import { TYPES } from '../../ioc';
 import { IFungiService } from '../../services/FungiService';
 import authenticationMiddleware from '../middleware/authentication';
 
-@controller('/observation')
+@controller('/observation', authenticationMiddleware)
 export default class ObservationController {
   constructor(@inject(TYPES.FungiService) private fungiService: IFungiService) { }
 
-  @httpGet('/', authenticationMiddleware)
+  @httpGet('/')
   public async getObservations(req, res) {
     return res.render('observation', {
       observations: await this.fungiService.getObservations(),
     });
   }
 
-  @httpGet('/new', authenticationMiddleware)
+  @httpGet('/new')
   public async getCreateObservation(req, res) {
     return res.render('observation/new', {
       fungi: await this.fungiService.getFungi(),
@@ -38,7 +38,6 @@ export default class ObservationController {
 
   @httpPost(
     '/new',
-    authenticationMiddleware,
     body('fungi').not().isEmpty().withMessage('Gljiva je obvezna'),
     body('date').not().isEmpty().withMessage('Datum je obvezan'),
   )
