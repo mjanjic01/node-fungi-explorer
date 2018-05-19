@@ -22,16 +22,9 @@ import authenticationMiddleware from '../middleware/authentication';
 export default class FungiController {
   constructor(@inject(TYPES.FungiService) private fungiService: IFungiService) { }
 
-  @httpGet('/', authenticationMiddleware)
-  public async getFungi(@response() res: Response) {
-    return res.render('fungi', {
-      fungi: await this.fungiService.getFungi(),
-    });
-  }
-
-  @httpGet('/search', authenticationMiddleware, sanitizeParam('query').trim())
+  @httpGet('/', authenticationMiddleware, sanitizeParam('query').trim())
   public async searchFungi(@response() res: Response, @queryParam('query') query: string) {
-    return res.render('fungi/search', {
+    return res.render('fungi/', {
       data: { query },
       fungi: await this.fungiService.searchFungi(query),
     });

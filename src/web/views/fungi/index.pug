@@ -1,11 +1,17 @@
 extends /layouts/application.pug
 block content
+  form(action="/fungi/index" method="action")
+        input(type="hidden" name="_csrf" value=csrfToken)
+        .form-group
+          input.form-control(name="query" type="search" placeholder="Upišite pojmove za pretragu" value=data.query)
 
   .table-responsive
     table.table.table-striped.table-hover
       thead
         tr
-          th(scope="col") Latinski naziv
+          th(scope="col") Rod
+          th(scope="col") Vrsta
+          th(scope="col") Varijanta
           th(scope="col") Naziv
           th(scope="col") Zaštićena
           th(scope="col") Jestivost
@@ -13,7 +19,9 @@ block content
       tbody
         each fungus in fungi
           tr
-            td= fungus.fullLatinName
+            td= fungus.species.genus
+            td= fungus.species
+            td= fungus.variant
             td= fungus.name
             if fungus.isProtected
               td.icon-cell(title="Zaštićena")
@@ -24,4 +32,3 @@ block content
             td= fungus.edibility
             td
               a(href=`/fungi/${fungus.id}`) Vidi
-
