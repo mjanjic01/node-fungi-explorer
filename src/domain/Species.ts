@@ -5,7 +5,7 @@ export default class Species extends Entity {
   public name: string;
   public genus: Genus;
 
-  public toString() {
+  public toString(): string {
     return this.name;
   }
 }
