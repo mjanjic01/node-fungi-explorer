@@ -2,9 +2,12 @@ import { inject } from 'inversify';
 
 import {
   Fungi,
+  Herbarium,
   IFungiRepository,
+  IHerbariumRepository,
   ILocationRepository,
   IObservationRepository,
+  IUserRepository,
   Location,
   Observation,
 } from '../domain';
@@ -19,16 +22,21 @@ export interface IFungiService {
   getObservations(): Promise<Array<Observation>>;
   createObservation(Observation: Observation): Promise<Observation>;
   fungiObservations(fungiId: number): Promise<Array<Observation>>;
+
+  getHerbariumsByUser(userId: number): Promise<Array<Herbarium>>;
 }
 
 @Provide(TYPES.FungiService)
 export class FungiService implements IFungiService {
   constructor(
     @inject(TYPES.FungiRepository) private fungiRepository: IFungiRepository,
+    @inject(TYPES.HerbariumRepository) private herbariumRepository: IHerbariumRepository,
     @inject(TYPES.ObservationRepository) private observationRepository: IObservationRepository,
     @inject(TYPES.LocationRepository) private locationRepository: ILocationRepository,
+    @inject(TYPES.UserRepository) private userRepository: IUserRepository,
   ) { }
 
+  // #region fungi
   public async getFungi(): Promise<Array<Fungi>> {
     return await this.fungiRepository.getAll();
   }
@@ -56,7 +64,9 @@ export class FungiService implements IFungiService {
 
     return this.getFungi();
   }
+  // #endregion fungi
 
+  // #region observations
   public async getObservations(): Promise<Array<Observation>> {
     return await this.observationRepository.getAll();
   }
@@ -74,4 +84,11 @@ export class FungiService implements IFungiService {
       location: observationLocation,
     });
   }
+  // #endregion observations
+
+  // #region herbariums
+  public async getHerbariumsByUser(userId: number): Promise<Array<Herbarium>> {
+    return await this.herbariumRepository.getByUserId(userId);
+  }
+  // #endregion herbariums
 }
