@@ -16,7 +16,9 @@ export default class Repository<T extends Entity> implements IRepository<T> {
   }
 
   public async insert(entity: T): Promise<T> {
-    await this.context.insert(entity);
+    // passing entity as any due to TypeScript bug
+    // https://github.com/Microsoft/TypeScript/issues/21592
+    await this.context.save(entity as any);
     return entity;
   }
 
