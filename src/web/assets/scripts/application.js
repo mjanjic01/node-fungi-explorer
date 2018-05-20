@@ -2,7 +2,7 @@ import 'bootstrap';
 
 import 'maps';
 import 'image-preview';
-import 'carousel';
+import 'bootstrap-init';
 
 import 'images';
 import 'application.scss';

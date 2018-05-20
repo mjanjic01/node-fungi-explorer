@@ -25,10 +25,25 @@ block content
             td= fungus.name
             if fungus.isProtected
               td.icon-cell(title="Zaštićena")
-                .protected-icon
+                .cell-icon
                   include /icons/ic-shield.svg
             else
               td
-            td= fungus.edibility
+
+            td.icon-cell.text-center(data-toggle="tooltip" data-placement="bottom" title=fungus.edibility.rating)
+              .cell-icon
+                if fungus.edibility.rating === 'SMRTNA'
+                  include /icons/ic-skull.svg
+                else if fungus.edibility.rating === 'OTROVNA'
+                  include /icons/ic-mushroom-poisonous.svg
+                else if fungus.edibility.rating === 'NEJESTIVA'
+                  include /icons/ic-fork-crossed.svg
+                else if fungus.edibility.rating === 'UVJETNO'
+                  include /icons/ic-cooking.svg
+                else if fungus.edibility.rating === 'JESTIVA'
+                  include /icons/ic-utensils.svg
+                else if fungus.edibility.rating === 'LJEKOVITA'
+                  include /icons/ic-mushroom-medical.svg
+
             td
               a(href=`/fungi/${fungus.id}`) Vidi
