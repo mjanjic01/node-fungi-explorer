@@ -35,9 +35,9 @@ export class HerbariumEntity extends Herbarium {
   })
   public isPrivate: boolean;
 
-  @OneToMany((type) => ObservationEntity, (observation) => observation.herbarium)
-  public observations: Array<ObservationEntity>;
+  @OneToMany((type) => ObservationEntity, (observation) => observation.herbarium, { eager: true })
+  public observations?: Array<ObservationEntity>;
 
-  @ManyToMany((type) => UserEntity, (user) => user.herbariums)
+  @ManyToMany((type) => UserEntity, (user) => user.herbariums, { eager: true })
   public owners: Array<UserEntity>;
 }
