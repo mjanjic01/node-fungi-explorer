@@ -1,0 +1,21 @@
+extends /layouts/application.pug
+block content
+
+  .row.justify-content-center
+    .col-md-6
+      a.float-right(href=`/herbarium/edit/${herbarium.id}`) Uredi
+      h2= herbarium.name
+      h5= herbarium.description
+      .icon(data-toggle="tooltip" data-placement="right" title=(herbarium.isPrivate ? 'PRIVATAN' : 'JAVNI'))
+        if herbarium.isPrivate
+          include /icons/ic-herbarium-private.svg
+        else
+          include /icons/ic-herbarium-public.svg
+
+      each observation in herbarium.observations
+        h3= observarion.fungi.fullLatinName
+        p= observarion.date
+
+      else
+        p Herbarij ne sadrži zapažanja
+

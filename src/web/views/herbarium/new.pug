@@ -1,0 +1,31 @@
+extends /layouts/application.pug
+block content
+
+  .row.justify-content-center
+    .col-md-6
+      include /partials/errors
+
+      form(action="/herbarium/new" method="post")
+        input(type="hidden" name="_csrf" value=csrfToken)
+        .form-group
+          label Vidljivost
+          .form-check
+            input#public.form-check-input(type="radio" name="isPrivate" value="false" checked)
+            label.icon(for="public")
+              include /icons/ic-herbarium-public.svg
+          .form-check
+            input#private.form-check-input(type="radio" name="isPrivate" value="true")
+            label.icon(for="private")
+              include /icons/ic-herbarium-private.svg
+
+
+        .form-group
+          label(for="name") Naziv
+          input#name.form-control(type="string" name="name" value=data.name required)
+
+        .form-group
+          label(for="description") Opis
+          textarea#description.form-control(rows="3" name="description")= data.description
+
+        button.btn.btn-primary(type="submit") Stvori
+

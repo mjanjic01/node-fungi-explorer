@@ -37,11 +37,14 @@
 }
 
 .icon-cell {
-  vertical-align: middle !important;
+  vertical-align: middle !important; // Bootstrap ¯\_(ツ)_/¯
 }
 
-.protected-icon {
+.cell-icon {
   width: 24px;
-  height: 24px;
   margin: 0 auto;
+}
+
+.icon {
+  width: 24px;
 }
