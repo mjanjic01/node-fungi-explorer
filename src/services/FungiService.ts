@@ -10,6 +10,7 @@ import {
   IUserRepository,
   Location,
   Observation,
+  User,
 } from '../domain';
 import { Provide, TYPES } from '../ioc';
 
@@ -23,7 +24,9 @@ export interface IFungiService {
   createObservation(Observation: Observation): Promise<Observation>;
   fungiObservations(fungiId: number): Promise<Array<Observation>>;
 
+  getHerbariumById(herbariumId: number, user: User): Promise<Herbarium>;
   getHerbariumsByUser(userId: number): Promise<Array<Herbarium>>;
+  createHerbarium(herbarium: Herbarium, user: User): Promise<Herbarium>;
 }
 
 @Provide(TYPES.FungiService)
@@ -87,8 +90,24 @@ export class FungiService implements IFungiService {
   // #endregion observations
 
   // #region herbariums
+  public async getHerbariumById(herbariumId: number, user: User): Promise<Herbarium> {
+    const herbarium = await this.herbariumRepository.getById(herbariumId);
+    const herbariumOwner = herbarium.owners.find((owner) => owner.id === user.id);
+
+    if (herbarium.isPrivate && !herbariumOwner) {
+      throw new Error('Nedozvoljen pristup herbariju');
+    }
+
+    return herbarium;
+  }
+
   public async getHerbariumsByUser(userId: number): Promise<Array<Herbarium>> {
     return await this.herbariumRepository.getByUserId(userId);
+  }
+
+  public async createHerbarium(herbarium: Herbarium, user: User): Promise<Herbarium> {
+    herbarium.owners = [await this.userRepository.getById(user.id)];
+    return await this.herbariumRepository.insert(herbarium);
   }
   // #endregion herbariums
 }
