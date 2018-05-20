@@ -59,7 +59,7 @@ export default class ObservationController {
       longitude,
     } = req.body;
 
-    await this.fungiService.createObservation({
+    const { id } = await this.fungiService.createObservation({
       date,
       description,
       fungi,
@@ -70,6 +70,6 @@ export default class ObservationController {
       },
     });
 
-    return res.redirect('/observation');
+    return res.redirect(`/observation/${id}`);
   }
 }
