@@ -5,15 +5,15 @@ block content
     .col-md-6
       include /partials/errors
 
-      form(action="/herbarium/edit" method="post")
+      form(action=`/herbarium/edit/${data.id}` method="post")
         input(type="hidden" name="_csrf" value=csrfToken)
         .form-group
           label Vidljivost
           .form-check
-            input#public.form-check-input(type="radio" name="isPrivate" value="false")
+            input#public.form-check-input(type="radio" name="isPrivate" value="false" checked=!data.isPrivate)
             label.form-check-label(for="public") Javni
           .form-check
-            input#private.form-check-input(type="radio" name="isPrivate" value="true")
+            input#private.form-check-input(type="radio" name="isPrivate" value="true" checked=data.isPrivate)
             label.form-check-label(for="private") Privatan
 
         .form-group

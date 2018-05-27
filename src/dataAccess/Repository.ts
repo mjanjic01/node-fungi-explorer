@@ -23,7 +23,7 @@ export default class Repository<T extends Entity> implements IRepository<T> {
   }
 
   public async update(entity: T): Promise<T> {
-    await this.context.update(entity.id, entity as object);
+    await this.context.update(entity.id, entity as any);
     return entity;
   }
 

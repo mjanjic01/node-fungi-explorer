@@ -1,8 +1,8 @@
 import { inject } from 'inversify';
-import { Connection, IsNull, Not } from 'typeorm';
+import { Brackets, Connection } from 'typeorm';
 import { Repository as DbSet } from 'typeorm';
 
-import { IObservationRepository, Location, Observation } from '../domain';
+import { IObservationRepository, Location, Observation, User } from '../domain';
 import { Provide, TYPES } from '../ioc';
 import { ObservationEntity } from './mapping/ObservationEntity';
 import Repository from './Repository';
@@ -16,12 +16,24 @@ export default class ObservationRepository extends Repository<Observation> imple
     this.observationContext = context.getRepository(ObservationEntity);
   }
 
-  public getObservationsByFungi(fungiId: number): Promise<Array<Observation>> {
-    return this.observationContext.find({
-      relations: ['location'],
-      where: {
-        fungi: fungiId,
-      },
-    });
+  public getPublicObservations(fungiId: number): Promise<Array<Observation>> {
+    return this.observationContext
+      .createQueryBuilder('Observation')
+        .leftJoinAndSelect('Observation.location', 'Location')
+        .leftJoinAndSelect('Observation.herbarium', 'Herbarium')
+        .where('Observation.fungi = :fungiId', { fungiId })
+        .andWhere('Herbarium.isPrivate = :isPrivate', { isPrivate: false })
+        .getMany();
+  }
+
+  public getObservationsByUser(fungiId: number, userId: number): Promise<Array<Observation>> {
+    return this.observationContext
+      .createQueryBuilder('Observation')
+        .leftJoinAndSelect('Observation.location', 'Location')
+        .leftJoinAndSelect('Observation.herbarium', 'Herbarium')
+        .leftJoinAndSelect('Herbarium.owners', 'User')
+        .where('Observation.fungi = :fungiId', { fungiId })
+        .andWhere('(User.id = :userId OR Herbarium.isPrivate = :isPrivate)', { userId, isPrivate: false })
+        .getMany();
   }
 }

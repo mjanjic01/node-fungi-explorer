@@ -30,7 +30,7 @@ block content
             else
               td
 
-            td.icon-cell.text-center(data-toggle="tooltip" data-placement="bottom" title=fungus.edibility.rating)
+            td.icon-cell.text-center(data-toggle="tooltip" data-placement="bottom" title=fungus.edibility.rating || 'NEPOZNATA')
               .cell-icon
                 if fungus.edibility.rating === 'SMRTNA'
                   include /icons/ic-skull.svg
@@ -44,6 +44,8 @@ block content
                   include /icons/ic-utensils.svg
                 else if fungus.edibility.rating === 'LJEKOVITA'
                   include /icons/ic-mushroom-medical.svg
+                else
+                  span ?
 
             td
               a(href=`/fungi/${fungus.id}`) Vidi

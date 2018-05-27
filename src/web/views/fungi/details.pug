@@ -6,11 +6,25 @@ block content
       h2= fungi.name
       h5= fungi.fullLatinName
       p= fungi.isProtected
-      p= fungi.edibility
+      .icon(data-toggle="tooltip" data-placement="right" title=fungi.edibility.rating || 'NEPOZNATA')
+        if fungi.edibility.rating === 'SMRTNA'
+          include /icons/ic-skull.svg
+        else if fungi.edibility.rating === 'OTROVNA'
+          include /icons/ic-mushroom-poisonous.svg
+        else if fungi.edibility.rating === 'NEJESTIVA'
+          include /icons/ic-fork-crossed.svg
+        else if fungi.edibility.rating === 'UVJETNO'
+          include /icons/ic-cooking.svg
+        else if fungi.edibility.rating === 'JESTIVA'
+          include /icons/ic-utensils.svg
+        else if fungi.edibility.rating === 'LJEKOVITA'
+          include /icons/ic-mushroom-medical.svg
+        else
+          span ?
 
 
       if images && images.length
-        #images-carousel.carousel.slide(data-ride="carousel")
+        #images-carousel.carousel.slide(data-ride="carousel" data-wrap="false")
           .carousel-inner
             each image, index in images
               .carousel-item(class=(index === 0 && 'active'))

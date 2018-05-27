@@ -70,6 +70,6 @@ export default class ObservationController {
       },
     });
 
-    return res.redirect(`/observation/${id}`);
+    return res.redirect(`/observation`);
   }
 }

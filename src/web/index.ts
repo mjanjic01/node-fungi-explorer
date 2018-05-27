@@ -81,7 +81,7 @@ server.setConfig((app) => {
     app.use(errorHandler);
 
     app.use(express.static(path.resolve(__dirname, 'public')));
-    app.use('/uploads', authenticationMiddleware, express.static(path.resolve(process.cwd(), 'uploads')));
+    app.use('/uploads', express.static(path.resolve(process.cwd(), 'uploads')));
 });
 
 const serverInstance = server.build();

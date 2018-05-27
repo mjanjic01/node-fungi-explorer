@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
-import { body, Result, validationResult } from 'express-validator/check';
+import { body, param, Result, validationResult } from 'express-validator/check';
+import { sanitize } from 'express-validator/filter';
 import { inject } from 'inversify';
 import {
   controller,
@@ -37,7 +38,8 @@ export default class HerbariumController {
   @httpPost(
     '/new',
     body('name').not().isEmpty().withMessage('Naziv je obvezan'),
-    body('isPrivate').isBoolean().not().isEmpty().withMessage('Vidljivost je obvezna'),
+    body('isPrivate').not().isEmpty().withMessage('Vidljivost je obvezna'),
+    sanitize('isPrivate').toBoolean(),
   )
   public async createHerbarium(@request() req, @response() res) {
     const errors: Result = validationResult(req);
@@ -102,13 +104,18 @@ export default class HerbariumController {
   @httpPost(
     '/edit/:herbariumId',
     body('name').not().isEmpty().withMessage('Naziv je obvezan'),
-    body('isPrivate').isBoolean().not().isEmpty().withMessage('Vidljivost je obvezna'),
+    body('isPrivate').not().isEmpty().withMessage('Vidljivost je obvezna'),
+    param('herbariumId').isNumeric(),
+    sanitize('isPrivate').toBoolean(),
   )
-  public async editHerbarium(req, res, @requestParam('herbariumId') herbariumId: number) {
+  public async editHerbarium(@request() req, @response() res, @requestParam('herbariumId') herbariumId: number) {
     const errors: Result = validationResult(req);
     if (!errors.isEmpty()) {
-      return res.render(`herbarium/edit/${herbariumId}`, {
-        data: req.body,
+      return res.render(`herbarium/edit`, {
+        data: {
+          ...req.body,
+          id: herbariumId,
+        },
         errors: errors.mapped(),
       });
     }
@@ -119,11 +126,12 @@ export default class HerbariumController {
       isPrivate,
     } = req.body;
 
-    const { id } = await this.fungiService.createHerbarium({
+    const { id } = await this.fungiService.updateHerbarium({
       description,
+      id: herbariumId,
       isPrivate,
       name,
-    }, req.user);
+    });
 
     return res.redirect(`/herbarium/${id}`);
   }

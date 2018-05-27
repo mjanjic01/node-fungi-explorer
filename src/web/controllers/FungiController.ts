@@ -30,14 +30,14 @@ export default class FungiController {
   }
 
   @httpGet('/:fungiId')
-  public async fungiDetails(@response() res: Response, @requestParam('fungiId') fungiId: number) {
+  public async fungiDetails(@request() req, @response() res, @requestParam('fungiId') fungiId: number) {
     const fungi = await this.fungiService.getFungiById(fungiId);
 
     if (!fungi) {
       return res.render('error/404');
     }
 
-    const fungiObservations = await this.fungiService.fungiObservations(fungiId);
+    const fungiObservations = await this.fungiService.fungiObservations(fungiId, req.user);
     const { images, locations } = fungiObservations.reduce((acc, observation) => {
       if (observation.location) {
         acc.locations.push(observation.location);

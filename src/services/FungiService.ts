@@ -22,11 +22,12 @@ export interface IFungiService {
 
   getObservations(): Promise<Array<Observation>>;
   createObservation(Observation: Observation): Promise<Observation>;
-  fungiObservations(fungiId: number): Promise<Array<Observation>>;
+  fungiObservations(fungiId: number, user: User): Promise<Array<Observation>>;
 
   getHerbariumById(herbariumId: number, user: User): Promise<Herbarium>;
   getHerbariumsByUser(userId: number): Promise<Array<Herbarium>>;
   createHerbarium(herbarium: Herbarium, user: User): Promise<Herbarium>;
+  updateHerbarium(herbarium: Herbarium): Promise<Herbarium>;
 }
 
 @Provide(TYPES.FungiService)
@@ -56,8 +57,11 @@ export class FungiService implements IFungiService {
     return await this.fungiRepository.getById(fungiId);
   }
 
-  public async fungiObservations(fungiId: number): Promise<Array<Observation>> {
-    return (await this.observationRepository.getObservationsByFungi(fungiId));
+  public async fungiObservations(fungiId: number, user: User): Promise<Array<Observation>> {
+    if (!user) {
+      return await this.observationRepository.getPublicObservations(fungiId);
+    }
+    return await this.observationRepository.getObservationsByUser(fungiId, user.id);
   }
 
   public async searchFungi(searchTerm: string): Promise<Array<Fungi>> {
@@ -108,6 +112,10 @@ export class FungiService implements IFungiService {
   public async createHerbarium(herbarium: Herbarium, user: User): Promise<Herbarium> {
     herbarium.owners = [await this.userRepository.getById(user.id)];
     return await this.herbariumRepository.insert(herbarium);
+  }
+
+  public async updateHerbarium(herbarium: Herbarium): Promise<Herbarium> {
+    return await this.herbariumRepository.update(herbarium);
   }
   // #endregion herbariums
 }

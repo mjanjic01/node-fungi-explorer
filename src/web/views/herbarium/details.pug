@@ -2,19 +2,37 @@ extends /layouts/application.pug
 block content
 
   .row.justify-content-center
-    .col-md-6
+    .col-12
       a.float-right(href=`/herbarium/edit/${herbarium.id}`) Uredi
+
       h2= herbarium.name
-      h5= herbarium.description
+      p= herbarium.description
+
       .icon(data-toggle="tooltip" data-placement="right" title=(herbarium.isPrivate ? 'PRIVATAN' : 'JAVNI'))
         if herbarium.isPrivate
           include /icons/ic-herbarium-private.svg
         else
           include /icons/ic-herbarium-public.svg
 
-      each observation in herbarium.observations
-        h3= observarion.fungi.fullLatinName
-        p= observarion.date
+      if herbarium.observations && herbarium.observations.length
+        .table-responsive
+          table.table.table-striped.table-hover
+            thead
+              tr
+                th(scope="col") Slika
+                th(scope="col") Gljiva
+                th(scope="col") Datum
+                th(scope="col")
+            tbody
+              each observation in herbarium.observations
+                tr
+                  td
+                    if observation.image
+                      img(src=observation.image width="100px")
+                  td= observation.fungi
+                  td= observation.date
+                  td
+                    a(href=`/observation/${observation.id}`) Vidi
 
       else
         p Herbarij ne sadrži zapažanja

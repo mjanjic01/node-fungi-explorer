@@ -20,6 +20,8 @@ export default class HerbariumRepository extends Repository<Herbarium> implement
     return this.herbariumContext
       .createQueryBuilder('Herbarium')
         .leftJoinAndSelect('Herbarium.owners', 'User')
+        .leftJoinAndSelect('Herbarium.observations', 'Observation')
+        .leftJoinAndSelect('Observation.fungi', 'Fungi')
         .where('User.id = :userId', { userId })
         .getMany();
   }
