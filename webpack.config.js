@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const dotenv = require('dotenv');
 
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -41,12 +42,20 @@ const config = {
         }
       }
     }, {
+      test: /\.vue$/,
+      loader: 'vue-loader'
+    },{
+      test: /\.pug$/,
+      loader: 'pug-plain-loader'
+    }, {
       test: /\.(js|jsx)$/,
       exclude: /(node_modules)/,
       loader: 'babel-loader'
     }, {
       test: /\.(css|scss)$/,
-      use: [
+      use: [{
+          loader: 'vue-style-loader'
+        },
         MiniCssExtractPlugin.loader,
         {
           loader: 'css-loader'
@@ -63,6 +72,7 @@ const config = {
   },
 
   plugins: [
+    new VueLoaderPlugin(),
     new webpack.DefinePlugin({
       MAPBOX_ACCESS_TOKEN: JSON.stringify(process.env.MAPBOX_ACCESS_TOKEN),
     }),
