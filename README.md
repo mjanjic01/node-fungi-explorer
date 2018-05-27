@@ -4,6 +4,52 @@
 - redis 4+
 - postgres 9.4.1
 
+### Setup
+#### Database
+Create `ormconfig.json` in project root with database connection parameters:
+```
+{
+  "type": "dbType",
+  "host": "hostname",
+  "port": port,
+  "username": "username",
+  "password": "password",
+  "database": "databaseName",
+  "synchronize": false,
+  "logging": false,
+  "entities": [
+    "src/dataAccess/mapping/**/*.ts"
+  ],
+  "migrations": [
+    "src/dataAccess/migrations/**/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "src/dataAccess/migrations"
+  }
+}
+
+```
+
+Run:
+```
+yarn typeorm schema:sync
+
+// for npm:
+npm run typeorm schema:sync
+````
+
+#### Server
+I using yarn:
+```
+yarn
+yarn dev // for development
+```
+I using npm:
+```
+npm install
+npm run dev // for development
+```
+
 ### Additional database settings (PostgreSQL)
 
 Create tsvector function, trigger and index:
