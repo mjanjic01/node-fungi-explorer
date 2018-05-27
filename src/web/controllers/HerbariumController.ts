@@ -27,17 +27,21 @@ export default class HerbariumController {
   public async getHerbariums(@request() req, @response() res, @queryParam('userId') userId: number) {
     return res.render('herbarium/', {
       herbariums: await this.fungiService.getHerbariumsByUser(req.user.id),
+      types: await this.fungiService.getHerbariumTypes(),
     });
   }
 
   @httpGet('/new')
   public async getCreateHerbarium(@request() req, @response() res) {
-    return res.render('herbarium/new');
+    return res.render('herbarium/new', {
+      types: await this.fungiService.getHerbariumTypes(),
+    });
   }
 
   @httpPost(
     '/new',
     body('name').not().isEmpty().withMessage('Naziv je obvezan'),
+    body('type').not().isEmpty().withMessage('Vrsta je obvezana'),
     body('isPrivate').not().isEmpty().withMessage('Vidljivost je obvezna'),
     sanitize('isPrivate').toBoolean(),
   )
@@ -53,6 +57,7 @@ export default class HerbariumController {
     const {
       name,
       description,
+      type,
       isPrivate,
     } = req.body;
 
@@ -60,6 +65,7 @@ export default class HerbariumController {
       description,
       isPrivate,
       name,
+      type,
     }, req.user);
 
     return res.redirect(`/herbarium/${id}`);
@@ -98,12 +104,14 @@ export default class HerbariumController {
 
     return res.render('herbarium/edit', {
       data: herbarium,
+      types: await this.fungiService.getHerbariumTypes(),
     });
   }
 
   @httpPost(
     '/edit/:herbariumId',
     body('name').not().isEmpty().withMessage('Naziv je obvezan'),
+    body('type').not().isEmpty().withMessage('Vrsta je obvezana'),
     body('isPrivate').not().isEmpty().withMessage('Vidljivost je obvezna'),
     param('herbariumId').isNumeric(),
     sanitize('isPrivate').toBoolean(),
@@ -123,6 +131,7 @@ export default class HerbariumController {
     const {
       name,
       description,
+      type,
       isPrivate,
     } = req.body;
 
@@ -131,6 +140,7 @@ export default class HerbariumController {
       id: herbariumId,
       isPrivate,
       name,
+      type,
     });
 
     return res.redirect(`/herbarium/${id}`);

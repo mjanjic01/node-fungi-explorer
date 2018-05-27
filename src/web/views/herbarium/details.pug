@@ -7,6 +7,7 @@ block content
 
       h2= herbarium.name
       p= herbarium.description
+      p= herbarium.type
 
       .icon(data-toggle="tooltip" data-placement="right" title=(herbarium.isPrivate ? 'PRIVATAN' : 'JAVNI'))
         if herbarium.isPrivate

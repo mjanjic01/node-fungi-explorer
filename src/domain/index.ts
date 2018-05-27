@@ -4,6 +4,7 @@ import Entity from './Entity';
 import Fungi from './Fungi';
 import Genus from './Genus';
 import Herbarium from './Herbarium';
+import HerbariumType from './HerbariumType';
 import Location from './Location';
 import Observation from './Observation';
 import Species from './Species';
@@ -11,6 +12,7 @@ import User from './User';
 
 import IFungiRepository from './repositories/IFungiRepository';
 import IHerbariumRepository from './repositories/IHerbariumRepository';
+import IHerbariumTypeRepository from './repositories/IHerbariumTypeRepository';
 import ILocationRepository from './repositories/ILocationRepository';
 import IObservationRepository from './repositories/IObservationRepository';
 import IRepository from './repositories/IRepository';
@@ -23,6 +25,7 @@ export {
   Fungi,
   Genus,
   Herbarium,
+  HerbariumType,
   Location,
   Observation,
   Species,
@@ -31,6 +34,7 @@ export {
   IFungiRepository,
   ILocationRepository,
   IHerbariumRepository,
+  IHerbariumTypeRepository,
   IObservationRepository,
   IUserRepository,
   IRepository,

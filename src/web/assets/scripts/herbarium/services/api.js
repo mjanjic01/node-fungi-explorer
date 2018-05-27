@@ -17,7 +17,6 @@ function request(url, options) {
 class ApiService {
   updateHerbariums(herbariums) {
     return Promise.all(herbariums.map((herbarium) => {
-      console.log('updating', herbarium);
       return request(`/herbarium/${herbarium.id}`, {
         method: 'POST',
         body: JSON.stringify(herbarium)
@@ -27,7 +26,6 @@ class ApiService {
 
   deleteHerbariums(herbariumIds) {
     return Promise.all(herbariumIds.map((herbariumId) => {
-      console.log('deleting', herbariumId);
       return request(`/herbarium/${herbariumId}`, {
         method: 'DELETE',
       });

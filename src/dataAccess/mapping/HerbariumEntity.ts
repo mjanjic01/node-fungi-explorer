@@ -11,6 +11,7 @@ import {
 } from 'typeorm';
 
 import { Fungi, Herbarium, Observation } from '../../domain';
+import { HerbariumTypeEntity } from './HerbariumTypeEntity';
 import { ObservationEntity } from './ObservationEntity';
 import { UserEntity } from './UserEntity';
 
@@ -29,6 +30,13 @@ export class HerbariumEntity extends Herbarium {
     nullable: true,
   })
   public description: string;
+
+  @ManyToOne((type) => HerbariumTypeEntity, (types) => types.herbarium, {
+    eager: true,
+    nullable: false,
+  })
+  @JoinColumn()
+  public type: HerbariumTypeEntity;
 
   @Column({
     name: 'private',

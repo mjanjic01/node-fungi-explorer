@@ -6,7 +6,8 @@ import App from './App.vue';
 const $mountEl = document.querySelector('#app');
 
 if ($mountEl) {
-  const herbariums = JSON.parse($mountEl.getAttribute('data'));
+  const herbariums = JSON.parse($mountEl.getAttribute('data-herbariums'));
+  const herbariumTypes = JSON.parse($mountEl.getAttribute('data-types'));
 
   Vue.use(VeeValidate);
   new Vue({
@@ -17,7 +18,8 @@ if ($mountEl) {
     render(h) {
       return h('app', {
         props: {
-          herbariums
+          herbariums,
+          herbariumTypes,
         }
       });
     }

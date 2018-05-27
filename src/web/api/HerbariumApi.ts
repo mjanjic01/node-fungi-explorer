@@ -31,6 +31,7 @@ export default class HerbariumApi {
   @httpPost(
     '/:herbariumId',
     body('name').not().isEmpty().withMessage('Naziv je obvezan'),
+    body('type').not().isEmpty().withMessage('Vrsta je obvezna'),
     body('isPrivate').not().isEmpty().withMessage('Vidljivost je obvezna'),
     param('herbariumId').isNumeric(),
     sanitize('isPrivate').toBoolean(),
@@ -45,6 +46,7 @@ export default class HerbariumApi {
       name,
       description,
       observations,
+      type,
       isPrivate,
     } = req.body;
 
@@ -56,6 +58,7 @@ export default class HerbariumApi {
       id: herbariumId,
       isPrivate,
       name,
+      type,
     });
 
     return res.json(herbarium);

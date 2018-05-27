@@ -9,6 +9,10 @@
       herbarium: {
         type: Object,
         required: true,
+      },
+      herbariumTypes: {
+        type: Array,
+        required: true,
       }
     },
     methods: {
@@ -36,6 +40,16 @@
           @change="onHerbariumChanged"
         )
         label.form-check-label Privatan
+    .form-group
+      select.form-control(
+        v-model="herbarium.type"
+        @change="onHerbariumChanged"
+      )
+        option(
+          v-for="type in herbariumTypes"
+          :key="type.id"
+          :value="type"
+        ) {{type.name}}
     .form-group
       label Naziv
       input.form-control.form-control-sm(

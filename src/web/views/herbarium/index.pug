@@ -3,7 +3,7 @@ block content
 
   if herbariums && herbariums.length
     a.float-right(href="/herbarium/new") Novi herbarij
-    #app(data=herbariums)
+    #app(data-herbariums=herbariums data-types=types)
   else
     h3= "Još nemate niti jedan herbarij. "
       a(href="/herbarium/new") Stvori novi

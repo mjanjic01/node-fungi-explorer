@@ -23,6 +23,10 @@
       herbariums: {
         type: Array,
         required: true,
+      },
+      herbariumTypes: {
+        type: Array,
+        required: true,
       }
     },
     computed: {
@@ -120,6 +124,7 @@
         tr
           th(scope="col") Naziv
           th(scope="col") Opis
+          th(scope="col") Tip
           th(scope="col") Vidljivost
           th.text-right(scope="col") Broj zapažanja
           th(scope="col")
@@ -131,6 +136,17 @@
         )
           td {{herbarium.name}}
           td {{herbarium.description}}
+          td
+            select.form-control(
+              v-model="herbarium.type"
+              @change="onHerbariumModified(herbarium)"
+            )
+              option(
+                v-for="type in herbariumTypes"
+                :key="type.id"
+                :value="type"
+              ) {{type.name}}
+
           td {{herbarium.isPrivate ? 'Privatan' : 'Javan'}}
           td.text-right {{herbarium.observations.length}}
           td
@@ -144,7 +160,8 @@
           td
             button.btn.btn-danger.rounded-0(
               @click="onDeleteClick(herbarium.id)"
-            ) ⨯
+            ) Obriši
+
 
     bootstrap-pagination(
       :pages="pageCount"
@@ -157,12 +174,14 @@
         herbarium-pane(
           v-if="selectedHerbariumLeft"
           :herbarium="selectedHerbariumLeft"
+          :herbariumTypes="herbariumTypes"
           @change:herbarium="onHerbariumModified"
         )
       .col-6
         herbarium-pane(
           v-if="selectedHerbariumRight"
           :herbarium="selectedHerbariumRight"
+          :herbariumTypes="herbariumTypes"
           @change:herbarium="onHerbariumModified"
         )
 

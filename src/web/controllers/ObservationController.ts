@@ -33,12 +33,14 @@ export default class ObservationController {
   public async getCreateObservation(req, res) {
     return res.render('observation/new', {
       fungi: await this.fungiService.getFungi(),
+      herbariums: await this.fungiService.getHerbariumsByUser(req.user.id),
     });
   }
 
   @httpPost(
     '/new',
     body('fungi').not().isEmpty().withMessage('Gljiva je obvezna'),
+    body('herbarium').not().isEmpty().withMessage('Herbarij je obvezna'),
     body('date').not().isEmpty().withMessage('Datum je obvezan'),
   )
   public async createObservation(req, res) {
@@ -55,6 +57,7 @@ export default class ObservationController {
       date,
       description,
       fungi,
+      herbarium,
       latitude,
       longitude,
     } = req.body;
@@ -68,7 +71,7 @@ export default class ObservationController {
         latitude,
         longitude,
       },
-    });
+    }, herbarium);
 
     return res.redirect(`/observation`);
   }

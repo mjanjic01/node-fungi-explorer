@@ -17,6 +17,13 @@ block content
             label.form-check-label(for="private") Privatan
 
         .form-group
+          label(for="type") Tip
+          select#type.form-control(name="type" value=data.type class=errors.type && 'is-invalid' required)
+            each herbariumType in types
+              option(value=herbariumType.id selected=(data.type == herbariumType.id))= herbariumType
+          +errorMessage(errors.type)
+
+        .form-group
           label(for="name") Naziv
           input#name.form-control(type="string" name="name" value=data.name required)
 

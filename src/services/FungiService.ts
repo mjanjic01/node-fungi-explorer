@@ -5,12 +5,14 @@ import {
   Herbarium,
   IFungiRepository,
   IHerbariumRepository,
+  IHerbariumTypeRepository,
   ILocationRepository,
   IObservationRepository,
   IUserRepository,
   Location,
   Observation,
   User,
+  HerbariumType,
 } from '../domain';
 import { Provide, TYPES } from '../ioc';
 
@@ -22,7 +24,7 @@ export interface IFungiService {
 
   getObservations(): Promise<Array<Observation>>;
   setObservationHerbarium(observationId: number, herbariumId: number): Promise<Observation>;
-  createObservation(Observation: Observation): Promise<Observation>;
+  createObservation(Observation: Observation, herbariumId: number): Promise<Observation>;
   fungiObservations(fungiId: number, user: User): Promise<Array<Observation>>;
 
   getHerbariumById(herbariumId: number, user: User): Promise<Herbarium>;
@@ -30,6 +32,7 @@ export interface IFungiService {
   createHerbarium(herbarium: Herbarium, user: User): Promise<Herbarium>;
   updateHerbarium(herbarium: Herbarium): Promise<Herbarium>;
   deleteHerbarium(herbariumId: number): Promise<Herbarium>;
+  getHerbariumTypes(): Promise<Array<HerbariumType>>;
 }
 
 @Provide(TYPES.FungiService)
@@ -37,6 +40,7 @@ export class FungiService implements IFungiService {
   constructor(
     @inject(TYPES.FungiRepository) private fungiRepository: IFungiRepository,
     @inject(TYPES.HerbariumRepository) private herbariumRepository: IHerbariumRepository,
+    @inject(TYPES.HerbariumTypeRepository) private herbariumTypeRepository: IHerbariumTypeRepository,
     @inject(TYPES.ObservationRepository) private observationRepository: IObservationRepository,
     @inject(TYPES.LocationRepository) private locationRepository: ILocationRepository,
     @inject(TYPES.UserRepository) private userRepository: IUserRepository,
@@ -84,18 +88,21 @@ export class FungiService implements IFungiService {
     return await this.observationRepository.setObservationHerbarium(observationId, herbariumId);
   }
 
-  public async createObservation(observationData: Observation): Promise<Observation> {
+  public async createObservation(observationData: Observation, herbariumId: number): Promise<Observation> {
     let observationLocation: Location = null;
     if (observationData.location.latitude && observationData.location.latitude) {
       observationLocation = await this.locationRepository.insert(observationData.location);
     }
-    return await this.observationRepository.insert({
+    const observation: Observation = await this.observationRepository.insert({
       date: observationData.date,
       description: observationData.description,
       fungi: observationData.fungi,
       image: `/${observationData.image}`,
       location: observationLocation,
     });
+    await this.setObservationHerbarium(observation.id, herbariumId);
+
+    return observation;
   }
   // #endregion observations
 
@@ -126,6 +133,10 @@ export class FungiService implements IFungiService {
 
   public async deleteHerbarium(herbariumId: number): Promise<Herbarium> {
     return await this.herbariumRepository.delete(herbariumId);
+  }
+
+  public async getHerbariumTypes(): Promise<Array<HerbariumType>> {
+    return await this.herbariumTypeRepository.getAll();
   }
   // #endregion herbariums
 }

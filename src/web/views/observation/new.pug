@@ -7,6 +7,15 @@ block content
 
       form(action="/observation/new" method="post" enctype="multipart/form-data")
         input(type="hidden" name="_csrf" value=csrfToken)
+
+        .form-group
+          label(for="herbarium") Herbarij
+          select#herbarium.form-control(name="herbarium" value=data.herbarium class=errors.herbarium && 'is-invalid' required)
+            each herbarium in herbariums
+              option(value=herbarium.id selected=(data.herbarium == herbarium.id))= herbarium.name
+
+          +errorMessage(errors.herbarium)
+
         .form-group
           label(for="fungi") Gljiva
           select#fungi.form-control(name="fungi" value=data.fungi class=errors.fungi && 'is-invalid' required)
@@ -32,8 +41,8 @@ block content
 
         .form-group
           label Lokacija opažanja
-          input.js-observation-lon(name="longitude" hidden value=data.longitude)
-          input.js-observation-lat(name="latitude" hidden value=data.latitude)
+          input.js-observation-lon(name="longitude" value=data.longitude)
+          input.js-observation-lat(name="latitude" value=data.latitude)
           .map.js-observation-map
 
         button.btn.btn-primary(type="submit") Dodaj
