@@ -3,29 +3,7 @@ block content
 
   if herbariums && herbariums.length
     a.float-right(href="/herbarium/new") Novi herbarij
-    .table-responsive
-      table.table.table-striped.table-hover
-        thead
-          tr
-            th(scope="col") Naziv
-            th(scope="col") Opis
-            th(scope="col") Vidljivost
-            th.text-right(scope="col") Broj zapažanja
-            th(scope="col")
-        tbody
-          each herbarium in herbariums
-            tr
-              td= herbarium.name
-              td= herbarium.description
-              td.icon-cell.text-center(data-toggle="tooltip" data-placement="bottom" title=(herbarium.isPrivate ? 'PRIVATAN' : 'JAVNI'))
-                .cell-icon
-                  if herbarium.isPrivate
-                  else
-                    include /icons/ic-herbarium-public.svg
-              td.text-right= herbarium.observations ? herbarium.observations.length : 0
-              td
-                a(href=`/herbarium/${herbarium.id}`) Vidi
-
+    #app(data=herbariums)
   else
     h3= "Još nemate niti jedan herbarij. "
       a(href="/herbarium/new") Stvori novi

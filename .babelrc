@@ -5,5 +5,8 @@
         "browsers": ["last 2 versions", "not ie < 11", "android >= 4.2"]
       }
     }]
+  ],
+  "plugins": [
+    "transform-object-rest-spread"
   ]
 }
