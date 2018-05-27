@@ -29,6 +29,7 @@ export interface IFungiService {
   getHerbariumsByUser(userId: number): Promise<Array<Herbarium>>;
   createHerbarium(herbarium: Herbarium, user: User): Promise<Herbarium>;
   updateHerbarium(herbarium: Herbarium): Promise<Herbarium>;
+  deleteHerbarium(herbariumId: number): Promise<Herbarium>;
 }
 
 @Provide(TYPES.FungiService)
@@ -121,6 +122,10 @@ export class FungiService implements IFungiService {
 
   public async updateHerbarium(herbarium: Herbarium): Promise<Herbarium> {
     return await this.herbariumRepository.update(herbarium);
+  }
+
+  public async deleteHerbarium(herbariumId: number): Promise<Herbarium> {
+    return await this.herbariumRepository.delete(herbariumId);
   }
   // #endregion herbariums
 }

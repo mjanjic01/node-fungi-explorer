@@ -48,9 +48,9 @@ export default class HerbariumApi {
       isPrivate,
     } = req.body;
 
-    observations.forEach(async (observation) => {
+    for (const observation of observations) {
       await this.fungiService.setObservationHerbarium(observation.id, herbariumId);
-    });
+    }
     const herbarium = await this.fungiService.updateHerbarium({
       description,
       id: herbariumId,
@@ -58,6 +58,17 @@ export default class HerbariumApi {
       name,
     });
 
+    return res.json(herbarium);
+  }
+
+  @httpDelete('/:herbariumId', param('herbariumId').isNumeric())
+  public async deleteHerbarium(@request() req, @response() res, @requestParam('herbariumId') herbariumId: number) {
+    const errors: Result = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json(errors.mapped());
+    }
+
+    const herbarium = await this.fungiService.deleteHerbarium(herbariumId);
     return res.json(herbarium);
   }
 }

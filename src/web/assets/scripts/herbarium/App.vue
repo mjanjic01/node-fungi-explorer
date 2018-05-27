@@ -27,10 +27,10 @@
     },
     computed: {
       filteredHerbariums() {
-        return this.herbariums.filter((herbarium) => {
+        return this.herbariumsList.filter((herbarium) => {
           const sanitizedQuery = this.searchQuery.trim().toLowerCase();
           return herbarium.name.toLowerCase().includes(sanitizedQuery);
-        })
+        });
       },
       displayHerbariums() {
         return this.filteredHerbariums.slice(this.tableStart, this.tableStep * this.currentPage);
@@ -61,6 +61,16 @@
             break;
         }
       },
+      onDeleteClick(herbariumId) {
+        this.deletedHerbariumIds.push(herbariumId);
+        const herbariumIndex = this.herbariumsList.findIndex((herbarium) => herbarium.id === herbariumId);
+        this.herbariumsList.splice(herbariumIndex, 1);
+        if (this.selectedHerbariumLeft && (this.selectedHerbariumLeft.id === herbariumId)) {
+          this.selectedHerbariumLeft = null;
+        } else if (this.selectedHerbariumRight && (this.selectedHerbariumRight.id === herbariumId)) {
+          this.selectedHerbariumRight = null;
+        }
+      },
       onPageClick(page) {
         this.tableStart = (page - 1) * this.tableStep;
       },
@@ -72,22 +82,29 @@
       onHerbariumChangesSubmitClick() {
         apiService.updateHerbariums(this.herbariums.filter((herbarium) => {
           return this.modifiedHerbariumIds.indexOf(herbarium.id) !== -1;
-        })).then(() => {
+        }))
+        .then(() => {
           this.modifiedHerbariumIds = [];
+        })
+        .then(apiService.deleteHerbariums.bind(apiService, this.deletedHerbariumIds))
+        .then(() => {
+          this.deletedHerbariumIds = [];
         });
       }
     },
     data() {
       return {
         PANE_LOCATIONS,
+        herbariumsList: Array.from(this.herbariums),
         searchQuery: '',
         tableStart: 0,
         tableStep: 5,
         selectedHerbariumLeft: null,
         selectedHerbariumRight: null,
-        modifiedHerbariumIds: []
+        modifiedHerbariumIds: [],
+        deletedHerbariumIds: []
        }
-    },
+    }
   }
 </script>
 
@@ -106,6 +123,7 @@
           th(scope="col") Vidljivost
           th.text-right(scope="col") Broj zapažanja
           th(scope="col")
+          th(scope="col")
       template(slot="body")
         tr(
           v-for="herbarium in displayHerbariums"
@@ -122,6 +140,11 @@
             button.btn.btn-primary.rounded-0(
               @click="onOpenClick(PANE_LOCATIONS.right, herbarium)"
             ) ▶
+
+          td
+            button.btn.btn-danger.rounded-0(
+              @click="onDeleteClick(herbarium.id)"
+            ) ⨯
 
     bootstrap-pagination(
       :pages="pageCount"
@@ -145,7 +168,7 @@
 
       .col-12
         button.btn.btn-primary.mt-2.w-100(
-          v-if="modifiedHerbariumIds.length"
+          v-if="modifiedHerbariumIds.length || deletedHerbariumIds.length"
           @click="onHerbariumChangesSubmitClick"
         ) Pohrani promjene
 
