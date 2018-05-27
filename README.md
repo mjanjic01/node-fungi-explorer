@@ -39,6 +39,8 @@ npm run typeorm schema:sync
 ````
 
 #### Server
+Make sure your database and redis are running.
+
 I using yarn:
 ```
 yarn
