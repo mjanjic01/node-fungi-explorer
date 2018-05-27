@@ -22,6 +22,8 @@ export default class HerbariumRepository extends Repository<Herbarium> implement
         .leftJoinAndSelect('Herbarium.owners', 'User')
         .leftJoinAndSelect('Herbarium.observations', 'Observation')
         .leftJoinAndSelect('Observation.fungi', 'Fungi')
+        .leftJoinAndSelect('Fungi.species', 'Species')
+        .leftJoinAndSelect('Species.genus', 'Genus')
         .where('User.id = :userId', { userId })
         .getMany();
   }

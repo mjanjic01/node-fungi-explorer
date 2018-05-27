@@ -36,4 +36,13 @@ export default class ObservationRepository extends Repository<Observation> imple
         .andWhere('(User.id = :userId OR Herbarium.isPrivate = :isPrivate)', { userId, isPrivate: false })
         .getMany();
   }
+
+  public async setObservationHerbarium(observationId: number, herbariumId: number): Promise<Observation> {
+    await this.observationContext.update({
+      id: observationId,
+    }, {
+      herbarium: herbariumId,
+    } as any);
+    return await this.getById(observationId);
+  }
 }

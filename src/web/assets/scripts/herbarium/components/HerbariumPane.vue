@@ -11,22 +11,20 @@
         required: true,
       }
     },
-    computed: {
-    },
     methods: {
-      onFormSubmit() {
-        this.$emit('submit:form', this.herbarium);
+      onHerbariumChanged() {
+        this.$emit('change:herbarium', this.herbarium);
+      },
+      fungiName(fungi) {
+        return fungi.name ||
+          `${fungi.species.genus.name} ${fungi.species.name} ${fungi.variant || ''}`;
       }
-    },
-    data() {
-      return {
-       }
-    },
+    }
   }
 </script>
 
 <template lang="pug">
-  form(@submit.prevent="onFormSubmit")
+  form
     h3 {{herbarium.name}}
     .form-group
       label Vidljivost
@@ -34,15 +32,21 @@
         input.form-check-input(
           type="checkbox"
           name="isPrivate"
-          v-model="herbarium.isPrivate")
+          v-model="herbarium.isPrivate"
+          @change="onHerbariumChanged"
+        )
         label.form-check-label Privatan
     .form-group
       label Naziv
       input.form-control.form-control-sm(
         type="string"
+        name="name"
         placeholder="Naziv herbarija"
         v-model="herbarium.name"
+        v-validate="'required'"
+        @change="onHerbariumChanged"
       )
+      span(v-show="errors.has('name')") {{ errors.first('name') }}
 
     .form-group
       label Opis
@@ -50,12 +54,14 @@
         rows="3"
         name="description"
         v-model="herbarium.description"
+        @change="onHerbariumChanged"
       ) {{herbarium.description}}
 
     draggable(
       class="draggable"
       v-model="herbarium.observations"
-      :options="{ group: 'observations', pull: true, put: true }"
+      :options="{ group: 'observations', pull: true, put: true}"
+      @change="onHerbariumChanged"
     )
       .d-flex(
         v-for="observation in herbarium.observations"
@@ -64,11 +70,9 @@
         div
           img(:src="observation.image" width="100px")
 
-        div {{observation.fungi.name}}
+        div {{fungiName(observation.fungi)}}
         div {{observation.description}}
         div {{observation.date}}
-
-    button.btn.btn-primary(type="submit") Spremi
 
 </template>
 

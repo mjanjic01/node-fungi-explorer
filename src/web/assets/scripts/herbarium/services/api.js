@@ -15,12 +15,13 @@ function request(url, options) {
 
 
 class ApiService {
-  updateHerbarium(herbarium) {
-    console.log(herbarium);
-    return request(`/herbarium/${herbarium.id}`, {
-      method: 'POST',
-      body: JSON.stringify(herbarium)
-    });
+  updateHerbariums(herbariums) {
+    return Promise.all(herbariums.map((herbarium) => {
+      return request(`/herbarium/${herbarium.id}`, {
+        method: 'POST',
+        body: JSON.stringify(herbarium)
+      });
+    }));
   }
 }
 

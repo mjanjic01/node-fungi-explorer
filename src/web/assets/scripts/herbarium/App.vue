@@ -2,6 +2,7 @@
   import draggable from 'vuedraggable'
 
   import BootstrapTable from 'herbarium/components/BootstrapTable.vue';
+  import BootstrapPagination from 'herbarium/components/BootstrapPagination.vue';
   import HerbariumPane from 'herbarium/components/HerbariumPane.vue';
 
   import apiService from 'herbarium/services/api';
@@ -15,6 +16,7 @@
     components: {
       draggable,
       'bootstrap-table': BootstrapTable,
+      'bootstrap-pagination': BootstrapPagination,
       'herbarium-pane': HerbariumPane,
     },
     props: {
@@ -25,10 +27,19 @@
     },
     computed: {
       filteredHerbariums() {
-        return this.herbariums.filter((h) => {
+        return this.herbariums.filter((herbarium) => {
           const sanitizedQuery = this.searchQuery.trim().toLowerCase();
-          return h.name.toLowerCase().includes(sanitizedQuery);
+          return herbarium.name.toLowerCase().includes(sanitizedQuery);
         })
+      },
+      displayHerbariums() {
+        return this.filteredHerbariums.slice(this.tableStart, this.tableStep * this.currentPage);
+      },
+      pageCount() {
+        return Math.ceil(this.filteredHerbariums.length / this.tableStep);
+      },
+      currentPage() {
+        return Math.ceil(this.tableStart / this.tableStep) + 1;
       }
     },
     methods: {
@@ -50,16 +61,31 @@
             break;
         }
       },
-      onHerbariumFormSubmit(herbarium) {
-        apiService.updateHerbarium(herbarium);
+      onPageClick(page) {
+        this.tableStart = (page - 1) * this.tableStep;
+      },
+      onHerbariumModified(herbarium) {
+        if (this.modifiedHerbariumIds.indexOf(herbarium.id) === -1) {
+          this.modifiedHerbariumIds.push(herbarium.id);
+        }
+      },
+      onHerbariumChangesSubmitClick() {
+        apiService.updateHerbariums(this.herbariums.filter((herbarium) => {
+          return this.modifiedHerbariumIds.indexOf(herbarium.id) !== -1;
+        })).then(() => {
+          this.modifiedHerbariumIds = [];
+        });
       }
     },
     data() {
       return {
         PANE_LOCATIONS,
         searchQuery: '',
+        tableStart: 0,
+        tableStep: 5,
         selectedHerbariumLeft: null,
-        selectedHerbariumRight: null
+        selectedHerbariumRight: null,
+        modifiedHerbariumIds: []
        }
     },
   }
@@ -82,7 +108,7 @@
           th(scope="col")
       template(slot="body")
         tr(
-          v-for="herbarium in filteredHerbariums"
+          v-for="herbarium in displayHerbariums"
           :key="herbarium.id"
         )
           td {{herbarium.name}}
@@ -97,24 +123,33 @@
               @click="onOpenClick(PANE_LOCATIONS.right, herbarium)"
             ) ▶
 
+    bootstrap-pagination(
+      :pages="pageCount"
+      :activePage="currentPage"
+      @click:page="onPageClick"
+    )
 
     .row
       .col-6
         herbarium-pane(
           v-if="selectedHerbariumLeft"
           :herbarium="selectedHerbariumLeft"
-          @submit:form="onHerbariumFormSubmit"
+          @change:herbarium="onHerbariumModified"
         )
       .col-6
         herbarium-pane(
           v-if="selectedHerbariumRight"
           :herbarium="selectedHerbariumRight"
-          @submit:form="onHerbariumFormSubmit"
+          @change:herbarium="onHerbariumModified"
         )
+
+      .col-12
+        button.btn.btn-primary.mt-2.w-100(
+          v-if="modifiedHerbariumIds.length"
+          @click="onHerbariumChangesSubmitClick"
+        ) Pohrani promjene
+
 </template>
 
-<style lang="scss">
-  .my-rule {
-    color: red;
-  }
+<style scoped lang="scss">
 </style>

@@ -74,6 +74,7 @@
     "reflect-metadata": "^0.1.12",
     "typeorm": "^0.2.5",
     "typescript": "^2.7.1",
+    "vee-validate": "^2.0.9",
     "vue": "^2.5.16",
     "vuedraggable": "^2.16.0"
   }

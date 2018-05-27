@@ -21,6 +21,7 @@ export interface IFungiService {
   searchFungi(searchTerm: string): Promise<Array<Fungi>>;
 
   getObservations(): Promise<Array<Observation>>;
+  setObservationHerbarium(observationId: number, herbariumId: number): Promise<Observation>;
   createObservation(Observation: Observation): Promise<Observation>;
   fungiObservations(fungiId: number, user: User): Promise<Array<Observation>>;
 
@@ -76,6 +77,10 @@ export class FungiService implements IFungiService {
   // #region observations
   public async getObservations(): Promise<Array<Observation>> {
     return await this.observationRepository.getAll();
+  }
+
+  public async setObservationHerbarium(observationId: number, herbariumId: number): Promise<Observation> {
+    return await this.observationRepository.setObservationHerbarium(observationId, herbariumId);
   }
 
   public async createObservation(observationData: Observation): Promise<Observation> {
