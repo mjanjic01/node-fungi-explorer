@@ -3,6 +3,7 @@
 
   import BootstrapTable from 'herbarium/components/BootstrapTable.vue';
   import BootstrapPagination from 'herbarium/components/BootstrapPagination.vue';
+  import BootstrapToast from 'herbarium/components/BootstrapToast.vue';
   import HerbariumPane from 'herbarium/components/HerbariumPane.vue';
 
   import apiService from 'herbarium/services/api';
@@ -16,6 +17,7 @@
     components: {
       draggable,
       'bootstrap-table': BootstrapTable,
+      'bootstrap-toast': BootstrapToast,
       'bootstrap-pagination': BootstrapPagination,
       'herbarium-pane': HerbariumPane,
     },
@@ -53,14 +55,12 @@
             if (this.selectedHerbariumRight === herbarium) {
               this.selectedHerbariumRight = this.selectedHerbariumLeft;
             }
-
             this.selectedHerbariumLeft = herbarium;
             break;
           case this.PANE_LOCATIONS.right:
             if (this.selectedHerbariumLeft === herbarium) {
               this.selectedHerbariumLeft = this.selectedHerbariumRight;
             }
-
             this.selectedHerbariumRight = herbarium;
             break;
         }
@@ -75,6 +75,14 @@
           this.selectedHerbariumRight = null;
         }
       },
+      showToast(text, style) {
+        this.isToastVisible = true;
+        this.toastText = text;
+        this.toastStyle = style;
+        setTimeout(() => {
+          this.isToastVisible = false;
+        }, 3000);
+      },
       onPageClick(page) {
         this.tableStart = (page - 1) * this.tableStep;
       },
@@ -84,15 +92,22 @@
         }
       },
       onHerbariumChangesSubmitClick() {
+        this.isSaveDisabled = true;
         apiService.updateHerbariums(this.herbariums.filter((herbarium) => {
           return this.modifiedHerbariumIds.indexOf(herbarium.id) !== -1;
         }))
         .then(() => {
           this.modifiedHerbariumIds = [];
+          return apiService.deleteHerbariums(this.deletedHerbariumIds);
         })
-        .then(apiService.deleteHerbariums.bind(apiService, this.deletedHerbariumIds))
         .then(() => {
           this.deletedHerbariumIds = [];
+          this.isSaveDisabled = false;
+          this.showToast('Promjene uspješno pohranjene', 'success');
+        })
+        .catch(() => {
+          this.showToast('Greška pri spremanju promjena', 'danger');
+          this.isSaveDisabled = false;
         });
       }
     },
@@ -103,6 +118,10 @@
         searchQuery: '',
         tableStart: 0,
         tableStep: 5,
+        isSaveDisabled: false,
+        isToastVisible: false,
+        toastStyle: 'success',
+        toastText: '',
         selectedHerbariumLeft: null,
         selectedHerbariumRight: null,
         modifiedHerbariumIds: [],
@@ -114,6 +133,11 @@
 
 <template lang="pug">
   div
+    bootstrap-toast(
+      :visible="isToastVisible"
+      :toastStyle="toastStyle"
+      @click="isToastVisible = false"
+    ) {{toastText}}
     input.form-control.form-control-sm(
       type="search"
       placeholder="Pretraživanje"
@@ -185,13 +209,18 @@
           @change:herbarium="onHerbariumModified"
         )
 
-      .col-12
-        button.btn.btn-primary.mt-2.w-100(
-          v-if="modifiedHerbariumIds.length || deletedHerbariumIds.length"
-          @click="onHerbariumChangesSubmitClick"
-        ) Pohrani promjene
+    button.btn.btn-primary.save-button(
+      v-if="modifiedHerbariumIds.length || deletedHerbariumIds.length"
+      :disabled="isSaveDisabled"
+      @click="onHerbariumChangesSubmitClick"
+    ) Pohrani promjene ({{modifiedHerbariumIds.length + deletedHerbariumIds.length}})
 
 </template>
 
 <style scoped lang="scss">
+  .save-button {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+  }
 </style>
