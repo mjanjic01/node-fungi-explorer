@@ -15,6 +15,13 @@ function request(url, options) {
 
 
 class ApiService {
+  createHerbarium(herbarium) {
+    return request('/herbarium/new', {
+      method: 'POST',
+      body: JSON.stringify(herbarium)
+    });
+  }
+
   updateHerbariums(herbariums) {
     return Promise.all(herbariums.map((herbarium) => {
       return request(`/herbarium/${herbarium.id}`, {

@@ -29,6 +29,38 @@ export default class HerbariumApi {
   }
 
   @httpPost(
+    '/new',
+    body('name').not().isEmpty().withMessage('Naziv je obvezan'),
+    body('type').not().isEmpty().withMessage('Vrsta je obvezna'),
+    body('isPrivate').not().isEmpty().withMessage('Vidljivost je obvezna'),
+    sanitize('isPrivate').toBoolean(),
+  )
+  public async createHerbarium(@request() req, @response() res) {
+    const errors: Result = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json(errors.mapped());
+    }
+
+    const {
+      name,
+      description,
+      observations,
+      type,
+      isPrivate,
+    } = req.body;
+
+    const herbarium = await this.fungiService.createHerbarium({
+      description,
+      isPrivate,
+      name,
+      observations: [],
+      type,
+    }, req.user);
+
+    return res.json(herbarium);
+  }
+
+  @httpPost(
     '/:herbariumId',
     body('name').not().isEmpty().withMessage('Naziv je obvezan'),
     body('type').not().isEmpty().withMessage('Vrsta je obvezna'),

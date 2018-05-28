@@ -3,8 +3,11 @@
 
   import BootstrapTable from 'herbarium/components/BootstrapTable.vue';
   import BootstrapPagination from 'herbarium/components/BootstrapPagination.vue';
+  import BootstrapModal from 'herbarium/components/BootstrapModal.vue';
   import BootstrapToast from 'herbarium/components/BootstrapToast.vue';
   import HerbariumPane from 'herbarium/components/HerbariumPane.vue';
+
+  import HerbariumForm from 'herbarium/components/forms/HerbariumForm.vue';
 
   import apiService from 'herbarium/services/api';
 
@@ -18,8 +21,10 @@
       draggable,
       'bootstrap-table': BootstrapTable,
       'bootstrap-toast': BootstrapToast,
+      'bootstrap-modal': BootstrapModal,
       'bootstrap-pagination': BootstrapPagination,
       'herbarium-pane': HerbariumPane,
+      'herbarium-form': HerbariumForm,
     },
     props: {
       herbariums: {
@@ -109,6 +114,26 @@
           this.showToast('Greška pri spremanju promjena', 'danger');
           this.isSaveDisabled = false;
         });
+      },
+      onHerbariumCreateClick() {
+        this.isModalVisible = true;
+      },
+      onHerbariumCreateSubmit(herbarium) {
+        apiService.createHerbarium(herbarium)
+          .then((herbarium) => {
+            this.isModalVisible = false;
+            this.showToast(`Herbarij ${herbarium.name} je uspješno stvoren`, 'success');
+            const newHerbarium = {
+              ...herbarium,
+              type: this.herbariumTypes.find(({id}) => id === herbarium.type)
+            }
+            this.herbariumsList.unshift(newHerbarium);
+            this.herbariums.unshift(newHerbarium);
+          })
+          .catch(() => {
+            this.isModalVisible = false;
+            this.showToast('Greška pri stvaranju herbarija', 'danger');
+          })
       }
     },
     data() {
@@ -119,6 +144,7 @@
         tableStart: 0,
         tableStep: 5,
         isSaveDisabled: false,
+        isModalVisible: false,
         isToastVisible: false,
         toastStyle: 'success',
         toastText: '',
@@ -138,6 +164,18 @@
       :toastStyle="toastStyle"
       @click="isToastVisible = false"
     ) {{toastText}}
+    bootstrap-modal(
+      title="Novi herbarij"
+      :visible="isModalVisible"
+      @hide="isModalVisible = false"
+    )
+      herbarium-form(
+        :herbariumTypes="herbariumTypes"
+        @submit="onHerbariumCreateSubmit"
+      )
+
+    .btn.btn-primary.float-right(@click="onHerbariumCreateClick") Novi herbarij
+
     input.form-control.form-control-sm(
       type="search"
       placeholder="Pretraživanje"
