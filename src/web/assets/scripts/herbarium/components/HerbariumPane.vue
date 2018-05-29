@@ -81,7 +81,7 @@
           :options="{ group: 'observations', pull: true, put: true}"
           @change="onHerbariumChanged"
         )
-          .d-flex(
+          .d-flex.draggable-item(
             v-for="observation in herbarium.observations"
             :key="observation.id"
           )
@@ -99,5 +99,14 @@
     height: 500px;
     overflow: auto;
     background: #F5F5F5;
+  }
+
+  .draggable-item {
+    cursor: -webkit-grab;
+
+    &:active,
+    &:focus {
+      cursor: -webkit-grabbing;
+    }
   }
 </style>

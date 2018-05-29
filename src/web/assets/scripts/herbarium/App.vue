@@ -40,7 +40,10 @@
       filteredHerbariums() {
         return this.herbariumsList.filter((herbarium) => {
           const sanitizedQuery = this.searchQuery.trim().toLowerCase();
-          return herbarium.name.toLowerCase().includes(sanitizedQuery);
+          return herbarium.name.toLowerCase().includes(sanitizedQuery) ||
+            herbarium.description.toLowerCase().includes(sanitizedQuery) ||
+            (herbarium.isPrivate ? 'privatan' : 'javan').includes(sanitizedQuery) ||
+            herbarium.type.name.toLowerCase().includes(sanitizedQuery);
         });
       },
       displayHerbariums() {
@@ -127,8 +130,9 @@
               ...herbarium,
               type: this.herbariumTypes.find(({id}) => id === herbarium.type)
             }
-            this.herbariumsList.unshift(newHerbarium);
-            this.herbariums.unshift(newHerbarium);
+            this.herbariumsList.push(newHerbarium);
+            this.herbariums.push(newHerbarium);
+            this.tableStart = Math.floor(this.herbariumsList.length / this.tableStep) * this.tableStep;
           })
           .catch(() => {
             this.isModalVisible = false;
@@ -174,9 +178,9 @@
         @submit="onHerbariumCreateSubmit"
       )
 
-    .btn.btn-primary.float-right(@click="onHerbariumCreateClick") Novi herbarij
+    .btn.btn-primary.float-right.rounded-0(@click="onHerbariumCreateClick") Novi herbarij
 
-    input.form-control.form-control-sm(
+    input.form-control.form-control-sm.rounded-0(
       type="search"
       placeholder="Pretraživanje"
       v-model="searchQuery"

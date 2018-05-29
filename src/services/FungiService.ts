@@ -3,6 +3,7 @@ import { inject } from 'inversify';
 import {
   Fungi,
   Herbarium,
+  HerbariumType,
   IFungiRepository,
   IHerbariumRepository,
   IHerbariumTypeRepository,
@@ -12,7 +13,6 @@ import {
   Location,
   Observation,
   User,
-  HerbariumType,
 } from '../domain';
 import { Provide, TYPES } from '../ioc';
 
