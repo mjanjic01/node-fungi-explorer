@@ -17,7 +17,7 @@
     },
     methods: {
       onHerbariumChanged(change) {
-        if (change.removed || change.added) {
+        if (!change.moved) {
           this.$emit('change:herbarium', this.herbarium);
         }
       },
