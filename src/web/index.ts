@@ -9,14 +9,14 @@ import * as helmet from 'helmet';
 import * as multer from 'multer';
 import * as passport from 'passport';
 import * as path from 'path';
+import * as prettyjson from 'prettyjson';
 import 'reflect-metadata';
 
-import { InversifyExpressServer } from 'inversify-express-utils';
+import { getRouteInfo, InversifyExpressServer } from 'inversify-express-utils';
 
 import { container } from '../ioc';
 import '../ioc/loader';
 import assetsMiddleware from './middleware/assets';
-import authenticationMiddleware from './middleware/authentication';
 import developmentMiddleware from './middleware/development';
 import errorHandler from './middleware/errorHandler';
 import localsMiddleware from './middleware/locals';
@@ -73,8 +73,7 @@ server.setConfig((app) => {
         return next(err);
       }
 
-      res.status(403);
-      res.render('error/403');
+      res.status(403).render('error/403');
     });
     app.use(helmet());
     app.use(localsMiddleware);
@@ -86,8 +85,10 @@ server.setConfig((app) => {
 
 const serverInstance = server.build();
 serverInstance.get('*', (req, res) => {
-  res.status(404);
-  res.render('error/404');
+  const routeInfo = getRouteInfo(container);
+  res.status(404).render('error/404', {
+    routes: prettyjson.render({ routes: routeInfo }, { noColor: true}),
+  });
 });
 serverInstance.listen(serverInstance.get('port'));
 

@@ -3,5 +3,5 @@ export default function(err, req, res, next) {
     return next(err);
   }
   res.status(500);
-  res.render('error', { err });
+  res.render('error/500', { err });
 }

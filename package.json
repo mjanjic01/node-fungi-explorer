@@ -14,7 +14,7 @@
     "build": "tsc",
     "dev": "NODE_ENV='development' nodemon",
     "start": "NODE_ENV='production' node dist/main",
-    "test": "NODE_ENV='test' mocha -r ts-node/register --reporter spec --check-leaks test/**/*.ts --globals __core-js_shared__",
+    "test": "NODE_ENV='test' mocha --delay -r ts-node/register --reporter spec --check-leaks test/**/*.ts --globals __core-js_shared__,typeormMetadataArgsStorage",
     "precommit": "yarn lint"
   },
   "devDependencies": {
@@ -38,6 +38,7 @@
     "nodemon": "^1.14.12",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.0.1",
+    "sqlite3": "^4.0.0",
     "supertest": "^3.0.0",
     "ts-node": "^4.1.0",
     "tslint": "^5.9.1",
@@ -70,6 +71,7 @@
     "passport": "^0.4.0",
     "pg": "^7.4.2",
     "popper.js": "^1.14.3",
+    "prettyjson": "^1.2.1",
     "pug": "^2.0.0-rc.4",
     "reflect-metadata": "^0.1.12",
     "typeorm": "^0.2.5",

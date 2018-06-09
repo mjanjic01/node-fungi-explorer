@@ -23,7 +23,7 @@ export default class FungiController {
 
   @httpGet('/', sanitizeParam('query').trim())
   public async searchFungi(@response() res: Response, @queryParam('query') query: string) {
-    return res.render('fungi/', {
+    return res.render('fungi', {
       data: { query },
       fungi: await this.fungiService.searchFungi(query),
     });

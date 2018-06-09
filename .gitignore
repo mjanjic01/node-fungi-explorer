@@ -62,6 +62,7 @@ dist/
 
 # ormconfig db connection options
 ormconfig.json
+ormconfig.test.json
 
 # asset bundle stats
 src/web/assets/bundle.stats.json

@@ -1,6 +1,14 @@
+import { Application } from 'express';
 import { agent } from 'supertest';
 
-import app from '../src';
+import server from '../src/index.js';
+
+let app: Application;
+server.then((serverInstance) => {
+  app = serverInstance.default;
+  run();
+});
+after(process.exit.bind(null, 0));
 
 describe('GET /', () => {
   it('should return 200 OK', (done) => {
