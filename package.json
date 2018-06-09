@@ -16,7 +16,7 @@
     "start": "NODE_ENV='production' node dist/main",
     "test": "NODE_ENV='test' mocha --delay -r ts-node/register -s 400 --reporter spec --globals __core-js_shared__,typeormMetadataArgsStorage --exit --check-leaks ./test/**/*.spec.ts",
     "coverage": "nyc yarn test",
-    "coverage:report": "nyc --reporter text-lcov yarn test && node -r dotenv/config node_modules/codeclimate-test-reporter/bin/codeclimate.js < coverage/lcov.info",
+    "coverage:report": "nyc --reporter lcov yarn test && node -r dotenv/config node_modules/codeclimate-test-reporter/bin/codeclimate.js < coverage/lcov.info",
     "precommit": "yarn lint"
   },
   "devDependencies": {
