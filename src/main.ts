@@ -1,4 +1,5 @@
 import { Connection, createConnection } from 'typeorm';
+import { container, TYPES } from './ioc';
 
 async function getConnectionConfig(): Promise<any> {
   if (process.env.NODE_ENV === 'test') {
@@ -11,6 +12,10 @@ async function getConnectionConfig(): Promise<any> {
 const app = getConnectionConfig()
   .then(createConnection)
   .then(async (connection: Connection) => {
+    container
+      .bind<Connection>(TYPES.DbConnectionProvider)
+      .toConstantValue(connection);
+
     const instance = await import('./web');
 
     // tslint:disable-next-line no-console

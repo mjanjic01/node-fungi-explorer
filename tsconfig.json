@@ -15,7 +15,8 @@
       "node",
       "express",
       "express-validator",
-      "mocha"
+      "mocha",
+      "chai"
     ],
     "target": "es6",
     "sourceMap": true,

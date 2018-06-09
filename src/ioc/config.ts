@@ -11,10 +11,6 @@ import TYPES from './types';
 const container = new Container();
 const Provide = makeProvideDecorator(container);
 
-container
-  .bind<Connection>(TYPES.DbConnectionProvider)
-  .toConstantValue(getConnection());
-
 export {
   container,
   Provide,

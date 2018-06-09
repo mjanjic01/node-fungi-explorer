@@ -1,0 +1,8 @@
+
+
+{
+  "extends": "@infinumjs/tslint-config",
+  "rules": {
+    "no-unused-expression": false
+  }
+}

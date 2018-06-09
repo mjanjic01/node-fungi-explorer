@@ -33,6 +33,7 @@ export interface IFungiService {
   updateHerbarium(herbarium: Herbarium): Promise<Herbarium>;
   deleteHerbarium(herbariumId: number): Promise<Herbarium>;
   getHerbariumTypes(): Promise<Array<HerbariumType>>;
+  createHerbariumType(herbariumType: HerbariumType): Promise<HerbariumType>;
 }
 
 @Provide(TYPES.FungiService)
@@ -123,7 +124,35 @@ export class FungiService implements IFungiService {
   }
 
   public async createHerbarium(herbarium: Herbarium, user: User): Promise<Herbarium> {
-    herbarium.owners = [await this.userRepository.getById(user.id)];
+    const errors = [];
+    if (!herbarium.name) {
+      errors.push('Naziv herbarija je obvezan.');
+    }
+
+    if (
+      herbarium.name &&
+      (herbarium.name.length < 3 || herbarium.name.length > 20)
+    ) {
+      errors.push('Naziv herbarija mora biti između 3 i 20 znakova duljine.');
+    }
+
+    if (
+      herbarium.description &&
+      herbarium.description.length > 255
+    ) {
+      errors.push('Maksimalna duljina opisa herbarija je 255 znakova.');
+    }
+
+    const owner = await this.userRepository.getById(user.id);
+    if (!owner) {
+      errors.push(`Korisnik s identifikatorom ${user.id} ne postoji.`);
+    }
+
+    if (errors.length) {
+      throw new Error(errors.join('\n'));
+    }
+
+    herbarium.owners = [owner];
     return await this.herbariumRepository.insert(herbarium);
   }
 
@@ -137,6 +166,10 @@ export class FungiService implements IFungiService {
 
   public async getHerbariumTypes(): Promise<Array<HerbariumType>> {
     return await this.herbariumTypeRepository.getAll();
+  }
+
+  public async createHerbariumType(herbariumType: HerbariumType): Promise<HerbariumType> {
+    return await this.herbariumTypeRepository.insert(herbariumType);
   }
   // #endregion herbariums
 }

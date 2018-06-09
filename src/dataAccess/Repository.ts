@@ -32,4 +32,8 @@ export default class Repository<T extends Entity> implements IRepository<T> {
     await this.context.remove(entity);
     return entity;
   }
+
+  public async deleteAll(): Promise<void> {
+    await this.context.delete({});
+  }
 }

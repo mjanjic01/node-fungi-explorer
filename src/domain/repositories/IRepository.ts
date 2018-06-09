@@ -6,4 +6,5 @@ export default interface IRepository<T extends Entity> {
   insert(entity: T): Promise<T>;
   update(entity: T): Promise<T>;
   delete(id: number): Promise<T>;
+  deleteAll(): Promise<void>;
 }
