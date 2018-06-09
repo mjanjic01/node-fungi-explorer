@@ -14,7 +14,8 @@
     "build": "tsc",
     "dev": "NODE_ENV='development' nodemon",
     "start": "NODE_ENV='production' node dist/main",
-    "test": "NODE_ENV='test' mocha --delay -r ts-node/register --reporter spec --check-leaks test/**/*.ts --globals __core-js_shared__,typeormMetadataArgsStorage",
+    "test": "NODE_ENV='test' mocha --delay -r ts-node/register --reporter spec --globals __core-js_shared__,typeormMetadataArgsStorage --check-leaks test/**/*.spec.ts",
+    "coverage": "nyc yarn test",
     "precommit": "yarn lint"
   },
   "devDependencies": {
@@ -36,6 +37,7 @@
     "mocha": "^5.0.4",
     "node-sass": "^4.9.0",
     "nodemon": "^1.14.12",
+    "nyc": "^12.0.2",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.0.1",
     "sqlite3": "^4.0.0",
