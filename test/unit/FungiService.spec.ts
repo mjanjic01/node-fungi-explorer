@@ -1,6 +1,6 @@
 import * as chai from 'chai';
 
-import { HerbariumType, IHerbariumRepository, User } from '../../src/domain';
+import { IHerbariumRepository, User } from '../../src/domain';
 import { container, TYPES } from '../../src/ioc';
 import '../../src/ioc/loader';
 import { IFungiService } from '../../src/services/FungiService';
@@ -30,11 +30,9 @@ class MockHerbariumRepository implements IHerbariumRepository {
 }
 
 let fungiService: IFungiService;
-let originalRepository: IHerbariumRepository;
 
 before(async () => {
   fungiService = container.get(TYPES.FungiService);
-  originalRepository = container.get(TYPES.HerbariumRepository);
   container.rebind(TYPES.HerbariumRepository).toConstantValue(new MockHerbariumRepository());
 });
 
@@ -56,8 +54,4 @@ describe('FungiService', () => {
       chai.expect(e).to.be.an('error');
     }
   });
-});
-
-after(async () => {
-  await import('../../src/dataAccess/HerbariumRepository');
 });
