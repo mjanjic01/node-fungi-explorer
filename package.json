@@ -14,8 +14,10 @@
     "build": "tsc",
     "dev": "NODE_ENV='development' nodemon",
     "start": "NODE_ENV='production' node dist/main",
-    "test": "NODE_ENV='test' mocha --delay -r ts-node/register --reporter spec --globals __core-js_shared__,typeormMetadataArgsStorage --check-leaks test/**/*.spec.ts",
+    "test": "NODE_ENV='test' mocha --delay -r ts-node/register --reporter spec --globals __core-js_shared__,typeormMetadataArgsStorage --recursive --check-leaks test/**/*.spec.ts",
+    "test:unit": "NODE_ENV='test' mocha --delay -r ts-node/register --reporter spec --globals __core-js_shared__,typeormMetadataArgsStorage --recursive --check-leaks test/unit/**/*.spec.ts",
     "coverage": "nyc yarn test",
+    "coverage:report": "nyc --reporter text-lcov yarn test && node -r dotenv/config node_modules/codeclimate-test-reporter/bin/codeclimate.js < coverage/lcov.info",
     "precommit": "yarn lint"
   },
   "devDependencies": {
@@ -55,6 +57,7 @@
     "bcrypt": "^2.0.1",
     "body-parser": "^1.18.2",
     "bootstrap": "^4.1.1",
+    "codeclimate-test-reporter": "^0.5.0",
     "compression": "^1.7.2",
     "connect-redis": "^3.3.3",
     "cookie-parser": "^1.4.3",
