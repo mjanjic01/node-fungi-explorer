@@ -21,6 +21,7 @@ import developmentMiddleware from './middleware/development';
 import errorHandler from './middleware/errorHandler';
 import localsMiddleware from './middleware/locals';
 
+const isDevelopment = process.env.NODE_ENV === 'development';
 const CSRF_ERR_CODE = 'EBADCSRFTOKEN';
 const SESSION_MAX_AGE = 7200000; // 2 * 60 * 60 * 1000 (2 hours)
 
@@ -38,7 +39,7 @@ server.setConfig((app) => {
     app.locals.errors = {};
 
     dotenv.config();
-    if (process.env.NODE_ENV === 'development') {
+    if (isDevelopment) {
       app.use(developmentMiddleware);
     }
 
@@ -87,7 +88,7 @@ const serverInstance = server.build();
 serverInstance.get('*', (req, res) => {
   const routeInfo = getRouteInfo(container);
   res.status(404).render('error/404', {
-    routes: prettyjson.render({ routes: routeInfo }, { noColor: true}),
+    routes: isDevelopment ? prettyjson.render({ routes: routeInfo }, { noColor: true }) : null,
   });
 });
 serverInstance.listen(serverInstance.get('port'));
